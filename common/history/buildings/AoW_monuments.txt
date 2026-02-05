@@ -1,0 +1,216 @@
+﻿BUILDINGS={
+	#s:STATE_NORTHERN_TRANSYLVANIA={
+	#	region_state:AUS={
+	#		create_building={
+	#			building="building_transylvania_state"
+	#			level=1
+	#		}
+	#	}
+	#}
+
+	s:STATE_NORTHERN_TRANSYLVANIA = {
+		every_scope_state = {
+			create_building={
+				building="building_transylvania_state"
+				level=1
+			}
+   		}
+	}
+
+	s:STATE_NEW_YORK={
+		every_scope_state={
+			create_building={
+				building="building_newyork_sanctum"
+				level=1
+			}
+		}
+	}
+	s:STATE_SHAOZHOU={
+		every_scope_state={
+			create_building={
+				building="building_hongkong_sanctum"
+				level=1
+			}
+		}
+	}
+	s:STATE_HIMALAYAS={
+		every_scope_state={
+			create_building={
+				building="building_kamar_taj"
+				level=1
+			}
+		}
+	}
+	s:STATE_HOME_COUNTIES={
+		every_scope_state={
+			create_building={
+				building="building_london_sanctum"
+				level=1
+			}
+		}
+	}
+	s:STATE_HIGHLANDS={
+		every_scope_state={
+			create_building={
+				building="building_hogwarts"
+				level=1
+			}
+		}
+	}
+	s:STATE_AQUITAINE={
+		every_scope_state={
+			create_building={
+				building="building_beauxbatons"
+				level=1
+			}
+		}
+	}
+	s:STATE_PERM={
+		every_scope_state={
+			create_building={
+				building="building_durmstrang"
+				level=1
+			}
+		}
+	}
+	s:STATE_KYUSHU={
+		every_scope_state={
+			create_building={
+				building="building_mahoutokoro"
+				level=1
+			}
+		}
+	}
+	s:STATE_UGANDA={
+		region_state:BUG={
+			create_building={
+				building="building_uagadou"
+				level=1
+			}
+		}
+	}
+	s:STATE_GOIAS={
+		every_scope_state={
+			create_building={
+				building="building_castelobruxo"
+				level=1
+			}
+		}
+	}
+	s:STATE_MASSACHUSETTS={
+		every_scope_state={
+			create_building={
+				building="building_ilvermorny"
+				level=1
+			}
+		}
+	}
+	s:STATE_PUERTO_RICO={
+		every_scope_state={
+			create_building={
+				building="building_castillo_san_felipe_del_morro"
+				level=1
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

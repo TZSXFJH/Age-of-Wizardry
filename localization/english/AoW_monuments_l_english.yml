@@ -1,0 +1,54 @@
+﻿l_english:
+#-------------------Monuments----------------------------
+ 
+ building_transylvania_state: "Transylvania State"
+ pmg_base_building_transylvania_state: "Transylvania State"
+ pm_default_building_transylvania_state: "Wizard University"
+
+ building_castillo_san_felipe_del_morro: "Castillo San Felipe del Morro"
+ pmg_base_building_castillo_san_felipe_del_morro: "Castillo San Felipe del Morro"
+ pm_default_building_castillo_san_felipe_del_morro: "The ancient battlefield where Alex and Justin compete to be the family wizard"
+
+ building_hogwarts: "Hogwarts"
+ pmg_base_building_hogwarts: "Hogwarts"
+ pm_default_building_hogwarts: "School of Witchcraft and Wizardry"
+
+ building_kamar_taj: "Kamar Taj"
+ pmg_base_building_kamartaj: "Kamar Taj"
+ pm_default_building_kamartaj: "The home and training grounds to the Masters of the Mystic Arts"
+
+ building_london_sanctum: "London Sanctum"
+ pmg_base_building_london_sanctum: "One of the sanctuaries of the Masters of the Mystic Arts"
+ pm_default_building_london_sanctum: "Sanctuaries of the Masters of the Mystic Arts"
+
+ building_newyork_sanctum: "New York Sanctum"
+ pmg_base_building_newyork_sanctum: "One of the sanctuaries of the Masters of the Mystic Arts"
+ pm_default_building_newyork_sanctum: "Sanctuaries of the Masters of the Mystic Arts"
+
+ building_hongkong_sanctum: "Hong Kong Sanctum"
+ pmg_base_building_hongkong_sanctum: "One of the sanctuaries of the Masters of the Mystic Arts"
+ pm_default_building_hongkong_sanctum: "Sanctuaries of the Masters of the Mystic Arts"
+
+ building_beauxbatons: "Beauxbatons"
+ pmg_base_building_beauxbatons: "Beauxbatons"
+ pm_default_building_beauxbatons: "School of Witchcraft and Wizardry"
+
+ building_durmstrang: "Durmstrang"
+ pmg_base_building_durmstrang: "Durmstrang"
+ pm_default_building_durmstrang: "School of Witchcraft and Wizardry"
+
+ building_mahoutokoro: "Mahoutokoro"
+ pmg_base_building_mahoutokoro: "Mahoutokoro"
+ pm_default_building_mahoutokoro: "School of Witchcraft and Wizardry"
+
+ building_uagadou: "Uagadou"
+ pmg_base_building_uagadou: "Uagadou"
+ pm_default_building_uagadou: "School of Witchcraft and Wizardry"
+
+ building_castelobruxo: "Castelobruxo"
+ pmg_base_building_castelobruxo: "Castelobruxo"
+ pm_default_building_castelobruxo: "School of Witchcraft and Wizardry"
+
+ building_ilvermorny: "Ilvermorny"
+ pmg_base_building_ilvermorny: "Ilvermorny"
+ pm_default_building_ilvermorny: "School of Witchcraft and Wizardry"

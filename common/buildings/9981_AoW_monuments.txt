@@ -1,0 +1,406 @@
+﻿REPLACE_OR_CREATE:building_castillo_san_felipe_del_morro = {
+	building_group = bg_magic_monuments
+	icon = "gfx/interface/icons/building_icons/castillo_san_felipe_del_morro.dds"
+	expandable = no
+	buildable = no
+	downsizeable = no
+	unique = yes
+	locator = "castillo_san_felipe_del_morro_locator"
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+	
+	entity_not_constructed = { }
+	entity_under_construction = { "building_construction_3x3_entity" }
+	entity_constructed = { "wonder_angkorwat_01_entity"}
+	
+	city_gfx_interactions = {
+		clear_size_area = yes
+		size = 5
+	
+	}
+	
+	production_method_groups = {
+		pmg_base_building_castillo_san_felipe_del_morro
+	}
+	
+	possible = { 
+		state_region = s:STATE_PUERTO_RICO
+	}
+
+	
+	required_construction = construction_cost_monument
+}
+
+REPLACE_OR_CREATE:building_hogwarts = {
+	building_group = bg_magic_monuments
+	icon = "gfx/interface/icons/building_icons/hogwarts.dds"
+	expandable = no
+	buildable = no
+	downsizeable = no
+	unique = yes
+	locator = "hogwarts_locator"
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+	
+	entity_not_constructed = { }
+	entity_under_construction = { "building_construction_3x3_entity" }
+	entity_constructed = { "wonder_angkorwat_01_entity"}
+	
+	city_gfx_interactions = {
+		clear_size_area = yes
+		size = 5
+	
+	}
+	
+	production_method_groups = {
+		pmg_base_building_hogwarts
+	}
+	
+	possible = {
+		state_region = s:STATE_HIGHLANDS
+	}
+
+	
+	required_construction = construction_cost_monument
+}
+
+REPLACE_OR_CREATE:building_kamar_taj = {
+	building_group = bg_magic_monuments
+	icon = "gfx/interface/icons/building_icons/kamartaj.dds"
+	expandable = no
+	downsizeable = no
+	unique = yes
+	buildable = no
+	locator = "kamartaj_locator"
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+	
+	entity_not_constructed = { }
+	entity_under_construction = { "building_construction_3x3_entity" }
+	entity_constructed = { "wonder_angkorwat_01_entity"}
+	
+	city_gfx_interactions = {
+		clear_size_area = yes
+		size = 5
+	}
+	
+	production_method_groups = {
+		pmg_base_building_kamartaj
+	}
+	
+	required_construction = construction_cost_monument
+	
+	possible = {
+		state_region = s:STATE_HIMALAYAS
+	}
+}
+
+REPLACE_OR_CREATE:building_london_sanctum = {
+	building_group = bg_magic_monuments
+	icon = "gfx/interface/icons/building_icons/london_sanctum.dds"
+	expandable = no
+	buildable = no
+	downsizeable = no
+	unique = yes
+	locator = "london_sanctum_locator"
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+	
+	entity_not_constructed = {}
+	entity_under_construction = {}
+	entity_constructed = {}
+	
+	city_gfx_interactions = {
+		clear_size_area = yes
+		size = 1
+	}
+	
+	production_method_groups = {
+		pmg_base_building_london_sanctum
+	}
+	
+	required_construction = construction_cost_monument
+	
+	possible = {
+		state_region = s:STATE_HOME_COUNTIES
+	}
+}
+
+REPLACE_OR_CREATE:building_newyork_sanctum = {
+	building_group = bg_magic_monuments
+	icon = "gfx/interface/icons/building_icons/newyork_sanctum.dds"
+	expandable = no
+	buildable = no
+	downsizeable = no
+	unique = yes
+	locator = "newyork_sanctum_locator"
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+	
+	entity_not_constructed = {}
+	entity_under_construction = {}
+	entity_constructed = {}
+	
+	city_gfx_interactions = {
+		clear_size_area = yes
+		size = 1
+	}
+	
+	production_method_groups = {
+		pmg_base_building_newyork_sanctum
+	}
+	
+	required_construction = construction_cost_monument
+	
+	possible = {
+		state_region = s:STATE_NEW_YORK
+	}
+}
+
+REPLACE_OR_CREATE:building_hongkong_sanctum = {
+	building_group = bg_magic_monuments
+	icon = "gfx/interface/icons/building_icons/hongkong_sanctum.dds"
+	expandable = no
+	buildable = no
+	downsizeable = no
+	unique = yes
+	locator = "hongkong_sanctum_locator"
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+	
+	entity_not_constructed = {}
+	entity_under_construction = {}
+	entity_constructed = {}
+	
+	city_gfx_interactions = {
+		clear_size_area = yes
+		size = 1
+	}
+	
+	production_method_groups = {
+		pmg_base_building_hongkong_sanctum
+	}
+	
+	required_construction = construction_cost_monument
+	
+	possible = {
+		state_region = s:STATE_SHAOZHOU
+	}
+}
+
+REPLACE_OR_CREATE:building_beauxbatons = {
+	building_group = bg_magic_monuments
+	icon = "gfx/interface/icons/building_icons/beauxbatons.dds"
+	expandable = no
+	buildable = no
+	downsizeable = no
+	unique = yes
+	locator = "beauxbatons_locator"
+	
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+
+	entity_not_constructed = {}
+	entity_under_construction = {}
+	entity_constructed = {}
+	
+	city_gfx_interactions = {
+		clear_size_area = yes
+		size = 1
+	}
+	
+	production_method_groups = {
+		pmg_base_building_beauxbatons
+	}
+	
+	required_construction = construction_cost_monument
+	
+	possible = {
+		state_region = s:STATE_AQUITAINE
+	}
+}
+
+REPLACE_OR_CREATE:building_durmstrang = {
+	building_group = bg_magic_monuments
+	icon = "gfx/interface/icons/building_icons/durmstrang.dds"
+	expandable = no
+	buildable = no
+	downsizeable = no
+	unique = yes
+	locator = "durmstrang_locator"
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+	
+	entity_not_constructed = {}
+	entity_under_construction = {}
+	entity_constructed = {}
+	
+	city_gfx_interactions = {
+		clear_size_area = yes
+		size = 1
+	}
+	
+	production_method_groups = {
+		pmg_base_building_durmstrang
+	}
+	
+	required_construction = construction_cost_monument
+	
+	possible = {
+		state_region = s:STATE_PERM
+	}
+}
+
+REPLACE_OR_CREATE:building_mahoutokoro = {
+	building_group = bg_magic_monuments
+	icon = "gfx/interface/icons/building_icons/mahoutokoro.dds"
+	expandable = no
+	buildable = no
+	downsizeable = no
+	unique = yes
+	locator = "mahoutokoro_locator"
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+	
+	entity_not_constructed = {}
+	entity_under_construction = {}
+	entity_constructed = {}
+	
+	city_gfx_interactions = {
+		clear_size_area = yes
+		size = 1
+	}
+	
+	production_method_groups = {
+		pmg_base_building_mahoutokoro
+	}
+	
+	required_construction = construction_cost_monument
+	
+	possible = {
+		state_region = s:STATE_KYUSHU
+	}
+}
+
+REPLACE_OR_CREATE:building_uagadou = {
+	building_group = bg_magic_monuments
+	icon = "gfx/interface/icons/building_icons/uagadou.dds"
+	expandable = no
+	buildable = no
+	downsizeable = no
+	unique = yes
+	locator = "uagadou_locator"
+	
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+	
+	entity_not_constructed = {}
+	entity_under_construction = {}
+	entity_constructed = {}
+	
+	city_gfx_interactions = {
+		clear_size_area = yes
+		size = 1
+	}
+	
+	production_method_groups = {
+		pmg_base_building_uagadou
+	}
+	
+	required_construction = construction_cost_monument
+	
+	possible = {
+		state_region = s:STATE_UGANDA
+	}
+}
+
+REPLACE_OR_CREATE:building_castelobruxo = {
+	building_group = bg_magic_monuments
+	icon = "gfx/interface/icons/building_icons/castelobruxo.dds"
+	expandable = no
+	buildable = no
+	downsizeable = no
+	unique = yes
+	locator = "castelobruxo_locator"
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+	
+	entity_not_constructed = {}
+	entity_under_construction = {}
+	entity_constructed = { "wonder_chichen_itza_01_entity"}
+	
+	city_gfx_interactions = {
+		clear_size_area = yes
+		size = 4
+	}
+	
+	production_method_groups = {
+		pmg_base_building_castelobruxo
+	}
+	
+	required_construction = construction_cost_monument
+	
+	possible = {
+		state_region = s:STATE_GOIAS
+	}
+}
+
+REPLACE_OR_CREATE:building_ilvermorny = {
+	building_group = bg_magic_monuments
+	icon = "gfx/interface/icons/building_icons/ilvermorny.dds"
+	expandable = no
+	buildable = no
+	downsizeable = no
+	unique = yes
+	locator = "ilvermorny_locator"
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+	
+	entity_not_constructed = {}
+	entity_under_construction = {}
+	entity_constructed = {}
+	
+	city_gfx_interactions = {
+		clear_size_area = yes
+		size = 1
+	}
+	
+	production_method_groups = {
+		pmg_base_building_ilvermorny
+	}
+	
+	required_construction = construction_cost_monument
+	
+	possible = {
+		state_region = s:STATE_MASSACHUSETTS
+	}
+}
+
+REPLACE_OR_CREATE:building_transylvania_state = {
+	building_group = bg_magic_monuments
+	icon = "gfx/interface/icons/building_icons/transylvania_state.dds"
+	expandable = no
+	buildable = no
+	downsizeable = no
+	unique = yes
+	locator = "transylvania_state_locator"
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+	
+	entity_not_constructed = {}
+	entity_under_construction = {}
+	entity_constructed = {}
+	
+	city_gfx_interactions = {
+		clear_size_area = yes
+		size = 1
+	}
+	
+	production_method_groups = {
+		pmg_base_building_transylvania_state
+	}
+	
+	required_construction = construction_cost_monument
+	
+	possible = {
+		state_region = s:STATE_NORTHERN_TRANSYLVANIA
+	}
+}

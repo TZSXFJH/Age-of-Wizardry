@@ -1,0 +1,94 @@
+@sol_icon_fontsize = 45
+
+### GOODS ICONS
+
+texticon = {
+	icon = crystal
+	iconsize = { 
+		texture = "gfx/interface/icons/goods_icons/crystal.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = obsidian
+	iconsize = { 
+		texture = "gfx/interface/icons/goods_icons/obsidian.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = mana
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/mana.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = magic_jewelry
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/magic_jewelry.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = magic_wand
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/magic_wand.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = magic_hat
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/magic_hat.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = potions
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/potions.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+### POP ICONS
+
+
+texticon = {
+  icon = mages
+  iconsize = {
+    offset = { 0 50 }
+    texture = "gfx/interface/icons/pops_icons/mages.dds"
+    fontsize = 250
+  }
+}
+
+texticon = {
+  icon = mages
+  iconsize = {
+    offset = { 0 5 }
+    texture = "gfx/interface/icons/pops_icons/mages_15.dds"
+    fontsize = 30
+  }
+}

@@ -1,0 +1,18 @@
+﻿# This is executed last among all history
+GLOBAL = {
+	every_country = {
+		add_technology_researched = magic_warfare_9981
+		add_technology_researched = magic_initiation_9981
+		add_technology_researched = magic_education_and_research_9981
+	}
+	every_country = {
+		limit = {
+			any_scope_building = {
+				is_building_group = bg_magic_monuments
+			}
+		}
+		add_technology_researched = magic_extraction_and_processing_9981
+		add_technology_researched = enchantment_9981
+		add_technology_researched = mages_and_society_9981
+	}
+}

@@ -1,0 +1,11 @@
+﻿REPLACE_OR_CREATE:lawgroup_magic_users = {
+	law_group_category = power_structure
+	affected_by_regime_change = yes
+    ideological_opinion_impact = 0.5
+}
+
+# REPLACE_OR_CREATE:lawgroup_magic_knowledge = {
+# 	law_group_category = economy
+# 	affected_by_regime_change = no
+# 	ideological_opinion_impact = 0.25
+# }

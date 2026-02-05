@@ -1,0 +1,11 @@
+﻿prestige_good_generic_magic_wand = {
+	base_good = magic_wand
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_generic_magic_wand.dds"
+}
+
+prestige_good_generic_mana = {
+	base_good = mana
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_generic_mana.dds"
+}

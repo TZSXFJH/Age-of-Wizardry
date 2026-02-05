@@ -1,0 +1,208 @@
+﻿### ERA 0
+REPLACE_OR_CREATE:magic_initiation_9981 = {
+#Unlocks Basic Infusion for Mana Infusion Industry
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/magic_initiation.dds"
+	category = production
+
+	ai_weight = {
+		value = 3
+	}
+}
+
+### ERA 1
+
+REPLACE_OR_CREATE:magic_extraction_and_processing_9981 = {
+#Unlocks Mana Infusion Industry
+#Unlocks Wand Factory
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/magic_extraction_and_processing.dds"
+	category = production
+	unlocking_technologies = {
+		magic_initiation_9981
+	}
+	ai_weight = {
+		value = 3
+	}
+}
+
+### ERA 2
+
+REPLACE_OR_CREATE:enchantment_9981 = {
+#Unlocks Stabilizer for Mana Infusion Industry
+#Unlocks Stabilizer for Transmutation Factory
+#Unlocks Basic Enchantment for Wand Factory
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/enchantment.dds"
+	category = production
+	unlocking_technologies = {
+		magic_extraction_and_processing_9981
+		lathe
+	}
+	ai_weight = {
+		value = 2
+	}
+}
+
+REPLACE_OR_CREATE:engravement_9981 = {
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/engravement.dds"
+	category = production
+	unlocking_technologies = {
+		magic_extraction_and_processing_9981
+	}
+	modifier = {
+		building_group_bg_manufacturing_throughput_add = 0.25
+		building_group_bg_mining_throughput_add = 0.25
+		building_construction_sector_throughput_add = 0.25
+	}
+	ai_weight = {
+		value = 2
+	}
+}
+
+
+REPLACE_OR_CREATE:transmutation_9981 = {
+#Unlocks Transmutation Factory
+#Unlocks Transmutation for Mana Infusion Industry
+#Unlocks Coal to Gold practice for Magic Academy
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/transmutation.dds"
+	category = production
+	unlocking_technologies = {
+		magic_extraction_and_processing_9981
+	}
+	ai_weight = {
+		value = 2
+	}
+}
+
+
+### ERA 3
+
+REPLACE_OR_CREATE:healing_potion_9981 = {
+#Unlocks Healing Solution Institute
+#Unlocks multiple production methods for Healing Solution Institute
+	era = era_3
+	texture = "gfx/interface/icons/goods_icons/potions.dds"
+	category = production
+	unlocking_technologies = {
+		transmutation_9981
+	}
+	ai_weight = {
+		value = 2
+	}
+}
+
+REPLACE_OR_CREATE:automated_fabrication_9981 = {
+#Unlocks Automated Crystal Oricess for Mana Infusion Industry
+#Unlocks Magic  and Mechanized Production Method for Wand Factory
+	era = era_3
+	texture = "gfx/interface/icons/invention_icons/automated_fabrication_9981.dds"
+	category = production
+	unlocking_technologies = {
+		engravement_9981
+		enchantment_9981
+		transmutation_9981
+	}
+	ai_weight = {
+		value = 2
+	}
+}
+
+REPLACE_OR_CREATE:advanced_engravement_9981 = {
+	era = era_3
+	texture = "gfx/interface/icons/invention_icons/advanced_engravement.dds"
+	category = production
+	unlocking_technologies = {
+		engravement_9981
+		mechanical_tools
+	}
+	modifier = {
+		building_group_bg_manufacturing_throughput_add = 0.25
+		building_group_bg_mining_throughput_add = 0.25
+		building_construction_sector_throughput_add = 0.25
+		building_group_bg_agriculture_throughput_add = 0.25
+	}
+	ai_weight = {
+		value = 1
+	}
+}
+
+REPLACE_OR_CREATE:advanced_enchantment_9981 = {
+#Unlocks Advanced Enchantment for Wand Factory
+	era = era_3
+	texture = "gfx/interface/icons/invention_icons/advanced_enchantment.dds"
+	category = production
+	unlocking_technologies = {
+		enchantment_9981
+	}
+	ai_weight = {
+		value = 1
+	}
+}
+
+REPLACE_OR_CREATE:advanced_transmutation_9981 = {
+#Unlocks Advanced Hardwood Transmutation Method for Transmutation Factory
+	era = era_3
+	texture = "gfx/interface/icons/invention_icons/transmutation.dds"
+	category = production
+	unlocking_technologies = {
+		transmutation_9981
+	}
+	ai_weight = {
+		value = 1
+	}
+}
+
+### ERA 4
+
+REPLACE_OR_CREATE:mastered_transmutation_9981 = {
+#unlocks Mana Crystal-Fired Plant pm for Pwer Plants
+#Unlocks Mass Coal to Gold pratice for Magic Academy
+#Unlocks Electro Transmutation for Mana Infusion Industry
+#Unlocks Mastered Hardwood Transmutation Method for Transmutation Factory
+#Unlocks Mastered Sulfur and Ruber Synthetic Method for Transmutation Factory
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/mastered_transmutation.dds"
+	category = production
+	unlocking_technologies = {
+		advanced_transmutation_9981
+	}
+	ai_weight = {
+		value = 1
+	}
+}
+
+REPLACE_OR_CREATE:mastered_engravement_9981 = {
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/mastered_engravement.dds"
+	category = production
+	unlocking_technologies = {
+		advanced_engravement_9981
+	}
+	modifier = {
+		building_group_bg_manufacturing_throughput_add = 0.25
+		building_group_bg_mining_throughput_add = 0.25
+		building_construction_sector_throughput_add = 0.25
+		building_group_bg_agriculture_throughput_add = 0.1
+	}
+	ai_weight = {
+		value = 1
+	}
+}
+
+REPLACE_OR_CREATE:mastered_enchantment_9981 = {
+#Unlocks Advanced Stabilizer for Mana Infusion Industry
+#Unlocks Advanced Stabilizer for Transmutation Factory
+#Unlocks Matered Enchantment for Wand Factory
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/mastered_enchantment.dds"
+	category = production
+	unlocking_technologies = {
+		advanced_enchantment_9981
+	}
+	ai_weight = {
+		value = 1
+	}
+}

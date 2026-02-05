@@ -1,0 +1,11 @@
+﻿INJECT:middle_class = {
+	allowed_professions = {
+		mages
+	}
+}
+
+INJECT:brahmins = {
+	allowed_professions = {
+		mages
+	}
+}

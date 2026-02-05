@@ -1,0 +1,138 @@
+﻿# REPLACE_OR_CREATE:law_secret_societies = {
+# 	group = lawgroup_magic_users
+# 	icon = gfx/interface/icons/temp.dds
+# 	progressiveness = -50
+# 	modifier = {
+# 		country_authority_add = 100
+# 		country_mages_pol_str_mult = -0.5
+# 		country_clergymen_pol_str_mult = 0.1
+# 	}
+# 	on_activate = {
+# 		custom_tooltip = {
+# 			text = secret_societies_tt
+# 			set_variable = secret_societies
+# 		}
+# 	}
+# 	on_deactivate = {
+# 		hidden_effect = {
+# 			remove_variable = secret_societies
+# 		}
+# 	}
+# 	# Petitions
+# 	ai_enact_weight_modifier = {
+# 		value = 0
+# 		if = {
+# 			limit = {
+# 				ai_has_enact_weight_modifier_journal_entries = yes
+# 			}
+# 			add = 750
+# 		}
+# 		if = {
+# 			limit = {
+# 				OR = {
+# 					ruler ?= {
+# 						interest_group ?= {
+# 							is_interest_group_type = ig_devout
+# 						}
+# 					}
+# 					has_law_or_variant = law_type:law_state_religion
+# 				}
+# 			}
+# 			add = 1000
+# 		}
+# 	}
+# }
+
+# REPLACE_OR_CREATE:law_magical_consistory = {
+# 	group = lawgroup_magic_users
+# 	icon = gfx/interface/icons/temp.dds
+# 	progressiveness = -25
+# 	modifier = {
+# 		country_authority_add = 50
+# 		country_mages_pol_str_mult = 0.25
+# 		building_group_bg_gate_magic_industry_throughput_add = -0.3
+# 		country_tech_research_speed_mult = 0.15
+# 	}
+# 	ai_enact_weight_modifier = {
+# 		value = 0
+# 		if = {
+# 			limit = {
+# 				ai_has_enact_weight_modifier_journal_entries = yes
+# 			}
+# 			add = 750
+# 		}
+# 		if = {
+# 			limit = {
+# 				OR = {
+# 					ruler ?= {
+# 						interest_group ?= {
+# 							is_interest_group_type = ig_gate_magic_users
+# 						}
+# 					}
+# 					has_law_or_variant = law_type:law_theocracy
+# 				}
+# 			}
+# 			add = 1000
+# 		}
+# 	}
+# }
+
+# REPLACE_OR_CREATE:law_free_association = {
+# 	group = lawgroup_magic_users
+# 	icon = gfx/interface/icons/temp.dds
+# 	progressiveness = 0
+# 	# Petitions
+# 	ai_enact_weight_modifier = {
+# 		value = 0
+# 		if = {
+# 			limit = {
+# 				ai_has_enact_weight_modifier_journal_entries = yes
+# 			}
+# 			add = 750
+# 		}
+# 		if = {
+# 			limit = {
+# 				AND = {
+# 					ruler ?= {
+# 						interest_group ?= {
+# 							NOT = {
+# 								is_interest_group_type = ig_devout
+# 							}
+# 						}
+# 					}
+# 					has_law_or_variant = law_type:law_secret_societies
+# 				}
+# 			}
+# 			add = 1000
+# 		}
+# 	}
+# }
+
+# REPLACE_OR_CREATE:law_thaumaturge_union = {
+# 	group = lawgroup_magic_users
+# 	icon = gfx/interface/icons/temp.dds
+# 	progressiveness = 50
+# 	modifier = {
+# 		country_mages_pol_str_mult = 0.1
+# 		country_machinists_pol_str_mult = 0.1
+# 		building_minimum_wage_mult = 0.15
+# 	}
+# 	can_enact = {
+# 		always = no
+# 	}
+# 	on_activate = {
+# 		ig:ig_gate_magic_users ?= {
+# 			add_ideology = ideology_populist
+# 		}
+# 	}
+# 	# Petitions
+# 	ai_enact_weight_modifier = {
+# 		value = 0
+# 		if = {
+# 			limit = {
+# 				ai_has_enact_weight_modifier_journal_entries = yes
+# 			}
+# 			add = 750
+# 		}
+# 	}
+# }

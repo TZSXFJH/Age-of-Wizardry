@@ -1,0 +1,78 @@
+﻿l_english:
+
+ magic_initiation_9981_desc: "This technology serves as the foundation for the study and mastery of elemental magic. It unlocks the basics of magic manipulation and control, allowing for the discovery and development of more advanced magic techniques and applications."
+
+ magic_extraction_and_processing_9981_desc: "This technology involves extracting and infusing magical elements from their raw sources (air) and processing them into usable forms. The results of this process are used for creating magical goods and advanced spellcraft."
+ magic_powered_weapon_9981_desc: "Magic-Powered Weapons technology enables the creation of weapons imbued with magic energy, resulting in increased firepower and abilities./n These weapons have revolutionized military operations, giving armies a strategic advantage in combat."
+ magic_infused_armor_9981_desc: "Technology that integrates magic into protective gear, enhancing the durability and defensive capabilities of armor worn by soldiers in battle. This results in better protection for soldiers and improved chances of survival on the battlefield."
+
+ automated_fabrication_9981_desc: "Imagine a world where magic is used to produce everyday goods. Automated Fabrication using magic would allow for the creation of objects through the use of spells and incantations. For instance, a spell of transmutation could be used to convert raw materials into finished products, while an enchantment spell could be used to imbue the object with specific properties, such as strength or durability. The end result is a magically-powered production line that is able to efficiently and quickly produce a wide range of goods. \n This technology would have far-reaching implications for society, potentially transforming the way goods are produced and distributed. Automated Fabrication using magic could revolutionize industries such as manufacturing, construction, and transportation, among others."
+
+ enchantment_9981_desc: "Enchantment, is a magical formula intended to trigger a magical effect on a person or objects. The formula can be spoken, sung or chanted. With this new technology, we can now use machines to increase the cast speed, range, accuracy and effiency, with some cost."
+ advanced_enchantment_9981_desc: "You've achieved an advanced breakthrough this technology"
+ mastered_enchantment_9981_desc: "You've mastered this technology"
+
+ engravement_9981_desc: "By drawing lines of formation on items and structures, we can strengthen them and add magic buffs to them, as well as increase their magic conductivity and durability."
+ advanced_engravement_9981_desc: "You've achieved an advanced breakthrough this technology"
+ mastered_engravement_9981_desc: "You've mastered this technology"
+
+ transmutation_9981_desc: "Transmutation is the permanent magical transformation of matter from kind to another, and is a power relegated only to Alchemy. Perhaps the most famous example of this is the transformation of lead into gold (but not worth it because the cost is too high)."
+ advanced_transmutation_9981_desc: "You've achieved an advanced breakthrough this technology"
+ mastered_transmutation_9981_desc: "You've mastered this technology"
+
+
+ magic_tower_9981_desc: "Wizardry Infrastructure is a gamechanger in the world. It allows you to seamlessly integrate magic into buildings, make them stronger and cast magic over a wide area."
+ enchanted_magic_tower_9981_desc: "Apply enchantment tech to the buildings."
+ engraved_enchanted_magic_tower_9981_desc: "Apply both engravement and enchantment techs to the buildings."
+ mastery_magic_tower_9981_desc: "You've mastered this technology."
+ ultimate_magic_tower_9981_desc: "Unleash the ultimate power!"
+
+ buff_module_9981_desc: "The invention of this module allows your magic tower to cast buffs in the state in which it's located."
+ advanced_buff_module_9981_desc: "We have achieved a major breakthrough in this technology after much research and testing."
+ legendary_buff_module_9981_desc: "This breakthrough would become legendary for its immense and astonishing effect."
+
+ shield_module_9981_desc: "The invention of this module allows your magic tower to cast a protection shield in the state in which it's located."
+ advanced_shield_module_9981_desc: "We have achieved a major breakthrough in this technology after much research and testing."
+ mastered_shield_module_9981_desc: "After a lot of effort and sacrifice, you've mastered this technology."
+
+ magic_education_and_research_9981_desc: "Magic Education and Research refers to the integration of magic into the fields of education and research. This could include the use of magic to enhance the learning experience, create new and innovative research methods, and explore the use of magic in various academic disciplines. /n The goal of Magic Education and Research is to expand knowledge and understanding of magic and its potential applications, while promoting its responsible and ethical use."
+ magic_urban_development_9981_desc: "This technology could focus on improving the layout and design of cities, using magic to enhance the flow of people and goods, and to create more livable spaces."
+ mages_and_society_9981_desc: "Focuses on the integration of magic into society and how it affects different aspects of daily life, such as education, healthcare, and the criminal justice system."
+ magic_based_economy_9981_desc: "This technology focuses on the integration of magic into the economic system, allowing for new and innovative ways to trade goods and services."
+ magic_engraved_infrastructure_9981_desc: "Magic engraved infrastructure is a technology that involves using engraved symbols or designs to enhance the performance of physical structures and systems."
+ magic_infused_medicine_9981_desc: "Magic infused medicine refers to a type of medical treatment that incorporates elements of magic or supernatural forces to enhance or supplement conventional medical practices. This type of medicine may involve the use of spells, incantations, or mystical symbols to promote healing and alleviate symptoms."
+ magic_suggery_9981_desc: "Magic Surgery is a term that refers to a surgical procedure that utilizes magic or supernatural elements in order to enhance the healing process and achieve better outcomes. This technology seeks to merge the principles of magic and traditional surgery, using spells and incantations to manipulate the body's natural energy and promote faster and more complete healing. The goal of Magic Surgery is to improve patient outcomes, reduce the risk of complications, and offer a new way to approach surgical procedures."
+ magic_rehabilitation_9981_desc: "Magic Rehabilitation refers to a type of medical treatment that uses magic to help patients recover from injuries, illnesses, or disabilities. This could include spells, potions, or enchanted devices that promote healing, alleviate pain, or improve mobility. The goal of magic rehabilitation is to provide a more effective, faster, and less invasive way of helping patients recover from their conditions."
+ magic_infused_architecture_9981_desc: "Integrates magic into the design and construction of buildings, creating structures that are both aesthetically pleasing and imbued with magical properties."
+ magic_infused_art_and_culture_9981_desc: "This technology explores the use of magic in the arts, such as music, theater, and visual arts, and how it can be used to create new and exciting forms of artistic expression."
+ magic_and_ethics_9981_desc: "This technology could focus on the study of ethical considerations in magic usage, such as responsibility, power, and consequences."
+ magic_and_philosophy_9981_desc: "This technology could focus on the philosophical implications of magic, including its relationship to religion, science, and the meaning of existence."
+ magic_cultural_exchange_9981_desc: "Allows the exchange of magical knowledge and practices between different countries and regions, promoting cross-cultural understanding and collaboration."
+ neural_enhancement_protocols_desc: "Develop magical techniques to stimulate and expand the minds of newborn children, significantly increasing their intelligence and capacity for innovation."
+
+
+ healing_potion_9981_desc: "With the invetnion of this technology, we are no longer depended on Opium and Alcohol to heal our people and our soldiers."
+ magic_artillery_9981_desc: "Unleash the devastating force of magic upon the battlefield with enchanted siege engines, capable of shattering fortifications and obliterating enemy formations."
+ early_stage_exoskeleton_9981_desc: "Construct the first basic exoskeletons, granting soldiers increased load-bearing capacity and endurance on the battlefield."
+ exoskeleton_9981_desc: "Enhance soldier capabilities with exoskeletons, granting superior strength, stamina, and the ability to carry heavier equipment over longer distances."
+ real_mobile_armor_9981_desc: "Master the art of magitech piloting with Magitech Exoframes, becoming one with a formidable fusion of magic and machine."
+
+ reduce_mana_output_mult: "After casting this spell, the [concept_magic_density] will be lowered in a wide area.\nAll @mana! #V Mana Crystal output#! in yours and your adjacent countries will be lowered by #N 30%#!" 
+ all_adjacent_countries_reduce_relation: "#N All adjacent countries' relations toward you will deteriorate:#!"
+ runes_of_kof_kol_decision_taken_custom: "This spell can only be casted every #V 6 years#!. Count yourself."
+
+ runes_of_kof_kol_decision: "Runes of Kof-Kol"
+ runes_of_kof_kol_decision_desc: "Runes of Kof-Kol, is a #V 'forgetting'#! spell that allows its subjects to forget anything as long as it is within the spell's parameters before casting.\n#P In this case, the world will forget how aggressive we are.#!"
+
+ mobilization_option_healing_potions_desc: "This cannot re-generate lost limbs but can heal wounds and prevent blood lost in a matter of seconds."
+ mobilization_option_magic_powered_personal_weapons_desc: "Harness the raw power of magic to forge weapons deadlier and more precise than conventional arms."
+ mobilization_option_magic_artillery_desc: "Extend the reach of your armies with magic artillery, bombarding distant targets with pinpoint accuracy and devastating magical effects."
+ mobilization_option_magic_infused_personal_armor_desc: "Slightly increase soldier's survival rate."
+ mobilization_option_early_exoskeleton_desc: "Increase soldier's stamina, move speed but takes longer to get ready."
+ mobilization_option_exoskeleton_desc: "Engraved with multiple magic spells and weapons, this will release fear on the battlefield."
+ mobilization_option_portable_shield_module_desc: "Install a portable shield on your soldier or tanks, this can stand a direct hit from artillery's shell."
+
+ combat_unit_type_magic_infantry_desc: "Equipped with magic small arms. Can be lined up in standard 2 rows or divided into groups to adapt to each front."
+ combat_unit_type_runic_artillery_desc: "Early experiments in infusing traditional artillery with magical energies."
+ combat_unit_type_magitek_artillery_desc: "A testament to magitek advancement, these artillery units unleash both devastating physical projectiles and potent magical blasts."
+ combat_unit_type_battle_mages_desc: "Mounted battle mages who wield staffs allowing them to cast powerful spells while charging into battle. When they come close to the enemies, they then cast spell to form magic energized lance around the staff, turn it into a powerful meele weapon."

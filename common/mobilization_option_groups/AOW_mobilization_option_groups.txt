@@ -1,0 +1,4 @@
+﻿REPLACE_OR_CREATE:equipments = {
+    icon = "gfx/interface/icons/generic_icons/generic_concept_icon.dds"
+    weight = 3
+}

@@ -1,0 +1,25 @@
+﻿REPLACE_OR_CREATE:pmg_mining_crystal = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_picks_and_shovels_crystal
+		pm_atmospheric_engine_pump_crystal
+		pm_condensing_engine_pump_crystal
+		pm_diesel_pump_crystal
+	}
+}
+
+REPLACE_OR_CREATE:pmg_mining_obsidian = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_no_obsidian_mining
+		pm_obsidian_mining
+	}
+}
+
+REPLACE_OR_CREATE:pmg_train_automation_aow_mine = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_no_train_automation_aow_mine
+		pm_train_automation_aow_mine
+	}
+}

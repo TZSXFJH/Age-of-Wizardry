@@ -1,0 +1,5 @@
+﻿l_simp_chinese:
+  state_trait_obsidian: "黑曜石矿藏"
+  state_trait_crystal_sparse: "稀少水晶矿藏"
+  state_trait_crystal_modest: "适中水晶矿藏"
+  state_trait_crystal_abundant: "丰富水晶矿藏"

@@ -1,0 +1,72 @@
+﻿INJECT:company_basic_metal_mining = {
+	building_types = {
+		building_gemstone_mine
+	}
+}
+
+INJECT:company_basic_mineral_mining = {
+	building_types = {
+		building_gemstone_mine
+	}
+}
+
+INJECT:company_basic_chemicals = {
+	building_types = {
+		building_transmutation_factory
+	}
+	extension_building_types = {
+		building_mana_infuse_industry
+	}
+}
+
+company_aow_alchemy = {
+	icon = "gfx/interface/icons/company_icons/company_aow_alchemy.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+	flavored_company = no
+	uses_dynamic_naming = yes
+	dynamic_company_type_names = {
+		"dynamic_company_type_company"
+		"dynamic_company_type_consortium"
+		"dynamic_company_type_guild"
+		"dynamic_company_type_society"
+		"dynamic_company_type_fellowship"
+	}
+	building_types = {
+		building_mana_infuse_industry
+		building_transmutation_factory
+	}
+	extension_building_types = {
+		building_wand_factory
+		building_healing_solutions_institute
+	}
+	possible_prestige_goods = {
+		prestige_good_generic_mana
+	}
+	possible = {
+		any_scope_state = {
+			any_scope_building = {
+				OR = {
+					is_building_type = building_mana_infuse_industry
+					is_building_type = building_transmutation_factory
+				}
+				level >= 5
+			}
+		}
+	}
+	prosperity_modifier = {
+		building_group_bg_gate_magic_industry = 0.1
+		country_weekly_innovation_mult = 0.25
+		country_weekly_innovation_max_add = 25
+	}
+	ai_will_do = {
+		any_scope_state = {
+			any_scope_building = {
+				OR = {
+					is_building_type = building_mana_infuse_industry
+					is_building_type = building_transmutation_factory
+				}
+				level >= 3
+			}
+		}
+	}
+}

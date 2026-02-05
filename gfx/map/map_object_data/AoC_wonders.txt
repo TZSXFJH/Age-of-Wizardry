@@ -1,0 +1,207 @@
+﻿game_object_locator={
+	name="transylvania_state_locator"
+	clamp_to_water_level=no
+	render_under_water=no
+	generated_content=no
+	layer="static"
+	instances={
+		{
+			id=1
+			position={ 4673.99 3.37 2652.92 }
+			rotation={ -0.000000 -0.000000 -0.000000 0.000000 }
+			scale={ 0.500000 0.500000 0.500000 }
+		}
+	}
+}
+
+game_object_locator={
+	name="castillo_san_felipe_del_morro_locator"
+	clamp_to_water_level=no
+	render_under_water=no
+	generated_content=no
+	layer="static"
+	instances={
+		{
+			id=1
+			position={ 2587.83 2.11 1932.29 }
+			rotation={ -0.000000 -0.000000 -0.000000 0.000000 }
+			scale={ 0.500000 0.500000 0.500000 }
+		}
+	}
+}
+
+game_object_locator={
+	name="hogwarts_locator"
+	clamp_to_water_level=no
+	render_under_water=no
+	generated_content=no
+	layer="static"
+	instances={
+		{
+			id=1
+			position={ 4013.00 4.54 2927.49 }
+			rotation={ -0.000000 -0.000000 -0.000000 0.000000 }
+			scale={ 1.000000 1.000000 1.000000 }
+		}
+	}
+}
+
+game_object_locator={
+	name="kamartaj_locator"
+	clamp_to_water_level=no
+	render_under_water=no
+	generated_content=no
+	layer="static"
+	instances={
+		{
+			id=1
+			position={ 6008.56 11.58 2196.81 }
+			rotation={ -0.000000 -0.000000 -0.000000 0.000000 }
+			scale={ 1.000000 1.000000 1.000000 }
+		}
+	}
+}
+
+game_object_locator={
+	name="london_sanctum_locator"
+	clamp_to_water_level=no
+	render_under_water=no
+	generated_content=no
+	layer="static"
+	instances={
+		{
+			id=1
+			position={ 4098.28 3.46 2807.90 }
+			rotation={ -0.000000 -0.000000 -0.000000 0.000000 }
+			scale={ 0.100000 0.100000 0.100000 }
+		}
+	}
+}
+
+game_object_locator={
+	name="newyork_sanctum_locator"
+	clamp_to_water_level=no
+	render_under_water=no
+	generated_content=no
+	layer="static"
+	instances={
+		{
+			id=1
+			position={ 2409.58 1.93 2494.25 }
+			rotation={ -0.000000 -0.000000 -0.000000 0.000000 }
+			scale={ 0.100000 0.100000 0.100000 }
+		}
+	}
+}
+
+game_object_locator={
+	name="hongkong_sanctum_locator"
+	clamp_to_water_level=no
+	render_under_water=no
+	generated_content=no
+	layer="static"
+	instances={
+		{
+			id=1
+			position={ 6692.97 1.78 2026.50 }
+			rotation={ -0.000000 -0.000000 -0.000000 0.000000 }
+			scale={ 0.100000 0.100000 0.100000 }
+		}
+	}
+}
+
+game_object_locator={
+	name="beauxbatons_locator"
+	clamp_to_water_level=no
+	render_under_water=no
+	generated_content=no
+	layer="static"
+	instances={
+		{
+			id=1
+			position={ 4093.03 8.34 2541.16 }
+			rotation={ -0.000000 -0.000000 -0.000000 0.000000 }
+			scale={ 0.100000 0.100000 0.100000 }
+		}
+	}
+}
+
+game_object_locator={
+	name="durmstrang_locator"
+	clamp_to_water_level=no
+	render_under_water=no
+	generated_content=no
+	layer="static"
+	instances={
+		{
+			id=1
+			position={ 5434.68 8.79 3185.28 }
+			rotation={ -0.000000 -0.000000 -0.000000 0.000000 }
+			scale={ 0.100000 0.100000 0.100000 }
+		}
+	}
+}
+
+game_object_locator={
+	name="mahoutokoro_locator"
+	clamp_to_water_level=no
+	render_under_water=no
+	generated_content=no
+	layer="static"
+	instances={
+		{
+			id=1
+			position={ 7313.14 2.17 2042.47 }
+			rotation={ -0.000000 -0.000000 -0.000000 0.000000 }
+			scale={ 0.100000 0.100000 0.100000 }
+		}
+	}
+}
+
+game_object_locator={
+	name="uagadou_locator"
+	clamp_to_water_level=no
+	render_under_water=no
+	generated_content=no
+	layer="static"
+	instances={
+		{
+			id=1
+			position={ 4866.76 2.26 1543.95 }
+			rotation={ -0.000000 -0.000000 -0.000000 0.000000 }
+			scale={ 0.100000 0.100000 0.100000 }
+		}
+	}
+}
+
+game_object_locator={
+	name="castelobruxo_locator"
+	clamp_to_water_level=no
+	render_under_water=no
+	generated_content=no
+	layer="static"
+	instances={
+		{
+			id=1
+			position={ 2968.85 2.02 1293.38 }
+			rotation={ -0.000000 -0.000000 -0.000000 0.000000 }
+			scale={ 0.900000 0.900000 0.900000 }
+		}
+	}
+}
+
+game_object_locator={
+	name="ilvermorny_locator"
+	clamp_to_water_level=no
+	render_under_water=no
+	generated_content=no
+	layer="static"
+	instances={
+		{
+			id=1
+			position={ 2431.22 5.93 2544.21 }
+			rotation={ -0.000000 -0.000000 -0.000000 0.000000 }
+			scale={ 0.100000 0.100000 0.100000 }
+		}
+	}
+}

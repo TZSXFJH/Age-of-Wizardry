@@ -1,0 +1,5 @@
+﻿INJECT:building_textile_mill = {
+	production_method_groups = {
+		pmg_magic_hat_building_textile_mill
+	}
+}

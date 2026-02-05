@@ -1,0 +1,9 @@
+﻿l_simp_chinese:
+ mages: "@mages!$mages_no_icon$"
+ mages_only_icon: "@mages!"
+ mages_no_icon: "法师"
+ mages_desc: "法师是具有特殊和强大能力的个人。无论法师来自哪个阶层或背景，只要有天赋并通过培训，就能成为法师。他们的政治倾向于小市民和知识分子。"
+ mages_QUALIFICATIONS_DESC: "只有拥有足够[concept_literacy]的人群能成为#v $mages$#!。[concept_wealth]和[concept_literacy]越高，转变潜力就越高；但后者影响程度较低。低[concept_acceptance][concept_culture]的人群转变需要更长时间。#v $Everybody$#!都能成为#v $mages$#!。"
+ POP_mages: "$mages$[concept_profession]"
+ state_mages_investment_pool_efficiency_mult: "$mages$[concept_investment_pool]贡献效率"
+ state_mages_investment_pool_efficiency_mult_desc: "提高或降低$mages$将自身收益贡献给[concept_investment_pool]的比重"

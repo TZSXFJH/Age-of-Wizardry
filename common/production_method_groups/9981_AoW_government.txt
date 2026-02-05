@@ -1,0 +1,48 @@
+﻿REPLACE_OR_CREATE:pmg_shield_module = {
+	ai_selection = most_productive
+	
+	production_methods = {
+		pm_shield_module_off
+		pm_light_shield
+		pm_medium_shield
+		pm_heavy_shield
+	}
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+}
+
+REPLACE_OR_CREATE:pmg_military_buff_module = {
+	ai_selection = most_productive
+	
+	production_methods = {
+		pm_military_buff_module_off
+		pm_offense_buff
+		pm_defense_buff
+		pm_mixed_buff
+	}
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+}
+
+REPLACE_OR_CREATE:pmg_civilian_buff_module = {
+	ai_selection = most_productive
+	
+	production_methods = {
+		pm_civilian_buff_module_off
+		pm_clensed_mind
+		pm_civilian_birth_rate_buff
+		pm_civilian_mortality_buff
+	}
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+}
+
+REPLACE_OR_CREATE:pmg_astrological_unit = {
+	ai_selection = most_productive
+	
+	production_methods = {
+		pm_magic_buff_module_off
+		pm_economic_buff
+		pm_social_buff
+		pm_political_buff
+	}
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+}
+

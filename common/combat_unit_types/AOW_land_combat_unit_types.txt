@@ -1,0 +1,316 @@
+﻿### ARMY
+
+### Infantry
+
+INJECT:combat_unit_type_irregular_infantry = {
+	upgrades = {
+        combat_unit_type_magic_infantry
+	}
+}
+
+INJECT:combat_unit_type_line_infantry = {
+    upgrades = {
+        combat_unit_type_magic_infantry
+	}
+}
+
+INJECT:combat_unit_type_skirmish_infantry = {
+    upgrades = {
+        combat_unit_type_magic_infantry
+	}
+}
+
+REPLACE_OR_CREATE:combat_unit_type_magic_infantry = {
+    group = combat_unit_group_infantry
+    max_manpower = 1000
+
+    conscript_peasant_levies = yes
+
+    upkeep_modifier = {
+        goods_input_small_arms_add = 2
+        goods_input_ammunition_add = 1
+        goods_input_mana_add = 1
+    }
+
+    battle_modifier = {
+        unit_offense_add = 35
+        unit_defense_add = 40
+        unit_morale_loss_add = 10
+    }
+
+    unlocking_technologies = { magic_powered_weapon_9981  }
+
+    combat_unit_image = {
+        trigger = { 
+            has_culture_graphics = east_asian
+        }
+        texture = "gfx/unit_illustrations/magic_infantry.dds"
+    }
+
+    combat_unit_image = {
+        trigger = { 
+            has_culture_graphics = south_asian
+        }
+        texture = "gfx/unit_illustrations/magic_infantry.dds"
+    }
+
+    combat_unit_image = {
+        trigger = { 
+            has_culture_graphics = african
+        }
+        texture = "gfx/unit_illustrations/magic_infantry.dds"
+    }
+
+    combat_unit_image = {
+        trigger = { 
+            has_culture_graphics = arabic
+        }
+        texture = "gfx/unit_illustrations/magic_infantry.dds"
+    }
+
+    combat_unit_image = {
+        # fallback
+        texture = "gfx/unit_illustrations/magic_infantry.dds"
+    }
+
+    upgrades = {
+        combat_unit_type_squad_infantry
+        combat_unit_type_mechanized_infantry
+    }
+}
+
+### Artillery
+
+INJECT:combat_unit_type_cannon_artillery = {
+    upgrades = {
+        combat_unit_type_runic_artillery
+        combat_unit_type_magitek_artillery
+    }
+}
+
+INJECT:combat_unit_type_mobile_artillery = {
+    upgrades = {
+        combat_unit_type_runic_artillery
+        combat_unit_type_magitek_artillery
+    }
+}
+
+REPLACE_OR_CREATE:combat_unit_type_runic_artillery = {
+    group = combat_unit_group_artillery
+    max_manpower = 1000
+
+    upkeep_modifier = {
+        goods_input_artillery_add = 1
+        goods_input_mana_add = 1
+    }
+    
+    battle_modifier = {
+        unit_offense_add = 40
+        unit_defense_add = 15
+        unit_morale_loss_add = 10
+        unit_morale_damage_mult = 0.2
+        unit_kill_rate_add = 0.12
+        unit_devastation_mult = 0.13
+    }
+
+    formation_modifier = {
+        military_formation_mobilization_speed_mult = -0.3
+        military_formation_movement_speed_mult = -0.2
+    }
+
+    unlocking_technologies = { magic_artillery_9981 }
+
+    combat_unit_image = {
+        trigger = { 
+            has_culture_graphics = east_asian
+        }
+        texture = "gfx/unit_illustrations/runic_arty.dds"
+    }
+
+    combat_unit_image = {
+        trigger = { 
+            has_culture_graphics = south_asian
+        }
+        texture = "gfx/unit_illustrations/runic_arty.dds"
+    }
+
+    combat_unit_image = {
+        trigger = { 
+            has_culture_graphics = african
+        }
+        texture = "gfx/unit_illustrations/runic_arty.dds"
+    }
+
+    combat_unit_image = {
+        trigger = { 
+            has_culture_graphics = arabic
+        }
+        texture = "gfx/unit_illustrations/runic_arty.dds"
+    }
+
+    combat_unit_image = {
+        # fallback
+        texture = "gfx/unit_illustrations/runic_arty.dds"
+    }
+
+    upgrades = {
+        combat_unit_type_shrapnel_artillery
+        combat_unit_type_siege_artillery
+        combat_unit_type_magitek_artillery
+    }
+}
+
+INJECT:combat_unit_type_shrapnel_artillery = {
+    upgrades = {
+        combat_unit_type_magitek_artillery
+    }
+}
+
+INJECT:combat_unit_type_siege_artillery = {
+    upgrades = {
+        combat_unit_type_magitek_artillery
+    }
+}
+
+REPLACE_OR_CREATE:combat_unit_type_magitek_artillery = {
+    group = combat_unit_group_artillery
+    max_manpower = 1000
+    
+    upkeep_modifier = {
+        goods_input_artillery_add = 4
+        goods_input_ammunition_add = 4
+        goods_input_radios_add = 1
+        goods_input_mana_add = 2
+    }
+
+    battle_modifier = {
+        unit_offense_add = 70
+        unit_defense_add = 40
+        unit_morale_loss_add = 6
+        unit_kill_rate_add = 0.25
+        unit_devastation_mult = 0.25
+    }
+
+    formation_modifier = {
+        military_formation_mobilization_speed_mult = -0.3
+        military_formation_movement_speed_mult = -0.3
+    }
+
+    unlocking_technologies = { ultimate_magic_tower_9981 }
+
+    combat_unit_image = {
+        trigger = { 
+            has_culture_graphics = east_asian
+        }
+        texture = "gfx/unit_illustrations/magitek_arty.dds"
+    }
+
+    combat_unit_image = {
+        trigger = { 
+            has_culture_graphics = south_asian
+        }
+        texture = "gfx/unit_illustrations/magitek_arty.dds"
+    }
+
+    combat_unit_image = {
+        trigger = { 
+            has_culture_graphics = african
+        }
+        texture = "gfx/unit_illustrations/magitek_arty.dds"
+    }
+
+    combat_unit_image = {
+        trigger = { 
+            has_culture_graphics = arabic
+        }
+        texture = "gfx/unit_illustrations/magitek_arty.dds"
+    }
+
+    combat_unit_image = {
+        # fallback
+        texture = "gfx/unit_illustrations/magitek_arty.dds"
+    }
+}
+
+### Cavalry
+
+INJECT:combat_unit_type_hussars = {
+    upgrades = {
+        combat_unit_type_battle_mages
+    }
+}
+
+INJECT:combat_unit_type_dragoons = {
+    upgrades = {
+        combat_unit_type_battle_mages
+    }
+}
+
+INJECT:combat_unit_type_cuirassiers = {
+    upgrades = {
+        combat_unit_type_battle_mages
+    }
+}
+
+INJECT:combat_unit_type_lancers = {
+    upgrades = {
+        combat_unit_type_battle_mages
+    }
+}
+
+
+REPLACE_OR_CREATE:combat_unit_type_battle_mages = {
+    group = combat_unit_group_cavalry
+    max_manpower = 1000
+    
+    upkeep_modifier = {
+        goods_input_mana_add = 2
+        goods_input_grain_add = 1
+        goods_input_magic_wand_add = 2
+        goods_input_iron_add = 2
+    }
+
+    battle_modifier = {
+        unit_offense_add = 35
+        unit_defense_add = 30
+        unit_morale_damage_mult = 0.1
+        unit_kill_rate_add = 0.05
+        unit_morale_loss_mult = 0.02
+        unit_occupation_mult = 0.4
+    }
+
+    unlocking_technologies = { magic_infused_armor_9981 }
+    
+    combat_unit_image = {
+        trigger = { 
+            has_culture_graphics = east_asian
+        }
+        texture = "gfx/unit_illustrations/battle_mages.dds"
+    }
+
+    combat_unit_image = {
+        trigger = { 
+            has_culture_graphics = south_asian
+        }
+        texture = "gfx/unit_illustrations/battle_mages.dds"
+    }
+
+    combat_unit_image = {
+        trigger = { 
+            has_culture_graphics = african
+        }
+        texture = "gfx/unit_illustrations/battle_mages.dds"
+    }
+
+    combat_unit_image = {
+        trigger = { 
+            has_culture_graphics = arabic
+        }
+        texture = "gfx/unit_illustrations/battle_mages.dds"
+    }
+
+    combat_unit_image = {
+        # fallback
+        texture = "gfx/unit_illustrations/battle_mages.dds"
+    }
+}

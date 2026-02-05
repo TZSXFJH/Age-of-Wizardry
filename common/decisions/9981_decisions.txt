@@ -1,0 +1,53 @@
+﻿runes_of_kof_kol_decision = {
+	is_shown = {
+		infamy >= 30
+	}
+
+	possible = {
+		infamy >= 30
+		custom_tooltip = {
+			text = runes_of_kof_kol_decision_taken_custom
+		}
+		hidden_trigger = {
+			NOT = { has_variable = runes_of_kof_kol_decision_taken }
+		}
+	}
+	
+	when_taken = {
+		set_variable = {
+			name = runes_of_kof_kol_decision_taken
+			years = 6
+		}
+		change_infamy = -1000
+		custom_tooltip = {
+			text = reduce_mana_output_mult
+		}
+		custom_tooltip = {
+			text = all_adjacent_countries_reduce_relation
+		}
+		every_country = {
+			limit = { is_adjacent_to_country = ROOT }
+			change_relations = {
+				country = ROOT
+				value = -30
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				limit = { 
+					or = { 
+						is_adjacent_to_country = ROOT
+						this = ROOT
+					}
+				}
+				add_modifier = {
+					name = modifier_magic_drained
+					years = 3
+				}
+			}
+		}
+	}
+	ai_chance = {
+		value = 0
+	}
+}

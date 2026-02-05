@@ -1,0 +1,53 @@
+﻿l_simp_chinese: 
+# BUILDING_GROUPS
+ bg_aow_mining: "开采"
+ bg_gate_magic_industry: "魔法产业"
+ bg_magic_monuments: "魔法奇观"
+
+ # DUMMY
+ pm_disabled: "无"
+
+ # MINE
+ building_gemstone_mine: "宝石矿场"
+ state_building_gemstone_mine_max_level_add: "宝石矿场最大等级"
+ state_building_gemstone_mine_max_level_add_desc: "对建筑宝石矿场最大等级的增益或惩罚"
+
+ pmg_mining_crystal: "水晶开采"
+ pm_picks_and_shovels_crystal: "镐与铲"
+ pm_atmospheric_engine_pump_crystal: "大气蒸汽机泵"
+ pm_condensing_engine_pump_crystal: "冷凝蒸汽机泵"
+ pm_diesel_pump_crystal: "柴油泵"
+
+ pmg_mining_obsidian: "黑曜石开采"
+ pm_no_obsidian_mining: "未启用"
+ pm_obsidian_mining: "黑曜石开采"
+
+ pmg_train_automation_aow_mine: "铁路运输"
+ pm_no_train_automation_aow_mine: "未启用"
+ pm_train_automation_aow_mine: "铁路运输"
+
+ # INDUSTRY
+ building_wand_factory: "秘术锻造厂"
+
+ pmg_warding_array: "防护阵列"
+ pm_no_warding_array: "无防护"
+ pm_obsidian_warding_array: "黑曜石防护阵列"
+
+ building_transmutation_factory: "嬗变工坊"
+ building_mana_infuse_industry: "魔能灌注产业"
+ building_healing_solutions_institute: "治疗研究所"
+ 
+ building_magic_tower: "魔能塔"
+ building_magic_academy: "魔法学院"
+
+ pmg_magic_hat_building_textile_mill: "魔法帽生产"
+ pm_no_magic_hat_method: "未启用"
+ pm_herbal_sewing: "草药缝纫"
+ pm_crystal_interweave: "水晶交织"
+
+ pmg_base_building_crystal_transmutation: "水晶嬗变"
+ pm_no_crystal_transmutation: "未启用"
+ pm_glass_thermal_recrystallization: "再结晶"
+ pm_glass_aetheric_saturation: "以太饱和"
+
+

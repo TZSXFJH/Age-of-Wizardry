@@ -1,0 +1,5 @@
+﻿TRY_INJECT:postal_savings = {
+	modifier = {
+		state_mages_investment_pool_efficiency_mult = 0.15
+	}
+}

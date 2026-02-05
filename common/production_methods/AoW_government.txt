@@ -1,0 +1,319 @@
+﻿#------------------------------------------------------------------------------
+
+REPLACE_OR_CREATE:pm_shield_module_off = {
+	texture = "gfx/interface/icons/production_method_icons/disabled.dds"
+	is_default = yes
+}
+
+REPLACE_OR_CREATE:pm_light_shield = {
+	texture = "gfx/interface/icons/ai_attitude_icons/protective.dds"
+
+	unlocking_technologies = {
+		shield_module_9981
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_mana_add = 1
+		}
+		level_scaled = {
+			building_employment_mages_add = 100
+		}
+	}
+	country_modifiers = {
+		level_scaled = {
+			state_pollution_reduction_health_mult = -0.05
+			country_authority_add = 50
+			unit_morale_loss_mult = -0.03
+			unit_defense_add = 1
+		}
+	}
+}
+
+REPLACE_OR_CREATE:pm_medium_shield = {
+	texture = "gfx/interface/icons/ai_attitude_icons/protective.dds"
+
+	unlocking_technologies = {
+		advanced_shield_module_9981
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_mana_add = 3
+		}
+		level_scaled = {
+			building_employment_mages_add = 100
+		}
+	}
+	country_modifiers = {
+		level_scaled = {
+			country_authority_add = 80
+			unit_defense_add = 2
+			military_formation_attrition_risk_add = -5
+			battle_casualties_mult = -0.2
+			state_pollution_reduction_health_mult = -0.08
+			unit_morale_loss_mult = -0.05
+		}
+	}
+}
+
+REPLACE_OR_CREATE:pm_heavy_shield = {
+	texture = "gfx/interface/icons/ai_attitude_icons/protective.dds"
+
+	unlocking_technologies = {
+		mastered_shield_module_9981
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_mana_add = 6
+		}
+		level_scaled = {
+			building_employment_mages_add = 100
+		}
+	}
+	country_modifiers = {
+		level_scaled = {
+			country_authority_add = 100
+			unit_defense_add = 3
+			military_formation_attrition_risk_add = -5
+			battle_casualties_mult = -0.4
+			state_pollution_reduction_health_mult = -0.1
+			unit_morale_loss_mult = -0.1
+		}
+	}
+}
+
+#------------------------------------------------------------------------------
+REPLACE_OR_CREATE:pm_military_buff_module_off = {
+	texture = "gfx/interface/icons/production_method_icons/unused/disabled.dds"
+	is_default = yes
+}
+
+REPLACE_OR_CREATE:pm_offense_buff = {
+	texture = "gfx/interface/icons/generic_icons/unused/unit_attack.dds"
+
+	# unlocking_technologies = {
+	# 	buff_module_9981
+	# }
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_mana_add = 2
+		}
+		level_scaled = {
+			building_employment_mages_add = 100
+		}
+	}
+
+	country_modifiers = {
+		level_scaled = {
+			unit_offense_add = 2
+		}
+	}
+}
+
+REPLACE_OR_CREATE:pm_defense_buff = {
+	texture = "gfx/interface/icons/generic_icons/unused/unit_defense.dds"
+
+	# unlocking_technologies = {
+	# 	buff_module_9981
+	# }
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_mana_add = 2
+		}
+		level_scaled = {
+			building_employment_mages_add = 100
+		}
+	}
+	country_modifiers = {
+		level_scaled = {
+			unit_defense_add = 2
+		}
+	}
+
+}
+
+REPLACE_OR_CREATE:pm_mixed_buff = {
+	texture = "gfx/interface/icons/generic_icons/unused/price_marketability_high.dds"
+
+	unlocking_technologies = {
+		advanced_buff_module_9981
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_mana_add = 7
+		}
+		level_scaled = {
+			building_employment_mages_add = 100
+		}
+	}
+	country_modifiers = {
+		level_scaled = {
+			unit_defense_add = 1
+			unit_offense_add = 1
+		}
+	}
+}
+#------------------------------------------------------------------------------
+REPLACE_OR_CREATE:pm_civilian_buff_module_off = {
+	texture = "gfx/interface/icons/production_method_icons/unused/disabled.dds"
+	is_default = yes
+}
+
+REPLACE_OR_CREATE:pm_civilian_birth_rate_buff = {
+	texture = "gfx/interface/icons/generic_icons/unused/culture_icon.dds"
+
+	unlocking_technologies = {
+		legendary_buff_module_9981
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_mana_add = 2
+		}
+		level_scaled = {
+			building_employment_mages_add = 100
+		}
+	}
+	country_modifiers = {	
+		level_scaled = {
+			state_birth_rate_mult = 0.1
+		}
+	}
+}
+
+REPLACE_OR_CREATE:pm_civilian_mortality_buff = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+
+	unlocking_technologies = {
+		legendary_buff_module_9981
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_mana_add = 2
+		}
+		level_scaled = {
+			building_employment_mages_add = 10
+		}
+	}
+	state_modifiers = {	
+		level_scaled = {
+			state_mortality_mult = -0.1
+			state_mortality_turmoil_mult = -0.3
+		}
+	}
+}
+
+REPLACE_OR_CREATE:pm_clensed_mind = {
+	texture = "gfx/interface/icons/generic_icons/historical_character_icon.dds"
+
+	unlocking_technologies = {
+		#legendary_buff_module_9981
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_mana_add = 2
+			goods_input_sugar_add = 3
+		}
+		level_scaled = {
+			building_employment_mages_add = 100
+		}
+	}
+	state_modifiers = {	
+		level_scaled = {
+			state_peasants_education_access_add = 0.02
+			state_education_access_add = 0.03
+		}
+	}
+}
+
+#--------------------------------------------------------------------------
+
+REPLACE_OR_CREATE:pm_magic_buff_module_off = {
+	texture = "gfx/interface/icons/production_method_icons/unused/disabled.dds"
+	is_default = yes
+}
+
+REPLACE_OR_CREATE:pm_economic_buff = {
+	texture = "gfx/interface/icons/generic_icons/coin_icon_03.dds"
+
+	unlocking_technologies = {
+		legendary_buff_module_9981
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_mana_add = 1
+			goods_input_glass_add = 3
+		}
+		level_scaled = {
+			building_employment_mages_add = 500
+		}
+	}
+	country_modifiers = {	
+		level_scaled = {
+			building_group_bg_gate_magic_industry_throughput_add = 0.05
+			state_market_access_price_impact = 0.01
+		}
+	}
+}
+
+REPLACE_OR_CREATE:pm_social_buff = {
+	texture = "gfx/interface/icons/generic_icons/amenability.dds"
+
+	unlocking_technologies = {
+		legendary_buff_module_9981
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_mana_add = 1
+			goods_input_glass_add = 3
+		}
+		level_scaled = {
+			building_employment_mages_add = 500
+		}
+	}
+	country_modifiers = {	
+		level_scaled = {
+			state_expected_sol_mult = -0.02
+			state_conversion_mult = 0.2
+			state_working_adult_ratio_add = 0.01
+		}
+	}
+}
+
+REPLACE_OR_CREATE:pm_political_buff = {
+	texture = "gfx/interface/icons/generic_icons/literacy.dds"
+
+	unlocking_technologies = {
+		legendary_buff_module_9981
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_mana_add = 1
+			goods_input_glass_add = 1
+			goods_input_paper_add = 2
+		}
+		level_scaled = {
+			building_employment_mages_add = 50
+		}
+	}
+	country_modifiers = {
+		level_scaled = {
+			country_legitimacy_base_add = 5
+			country_influence_add = 100
+			country_improve_relations_speed_mult = 0.1
+			country_authority_add = 100
+			country_bureaucracy_investment_cost_factor_mult = -0.05
+			state_tax_capacity_mult = 0.05
+		}
+	}
+}

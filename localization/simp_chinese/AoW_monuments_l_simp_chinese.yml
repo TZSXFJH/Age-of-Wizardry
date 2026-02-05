@@ -1,0 +1,51 @@
+﻿l_simp_chinese:
+ building_transylvania_state: "特兰西瓦尼亚"
+ pmg_base_building_transylvania_state: "特兰西瓦尼亚"
+ pm_default_building_transylvania_state: "魔法学院"
+
+ building_castillo_san_felipe_del_morro: "圣菲利普海角城堡"
+ pmg_base_building_castillo_san_felipe_del_morro: "圣菲利普海角城堡"
+ pm_default_building_castillo_san_felipe_del_morro: "亚历克斯和贾斯汀为成为家族巫师而竞争时的古老战场。"
+
+ building_hogwarts: "霍格沃茨"
+ pmg_base_building_hogwarts: "霍格沃茨"
+ pm_default_building_hogwarts: "魔法学校"
+
+ building_kamar_taj: "卡玛泰姬"
+ pmg_base_building_kamartaj: "卡玛泰姬"
+ pm_default_building_kamartaj: "秘术大师的家园和训练场所。"
+
+ building_london_sanctum: "伦敦圣殿"
+ pmg_base_building_london_sanctum: "某位秘术大师的圣所之一"
+ pm_default_building_london_sanctum: "秘术大师的圣所。"
+
+ building_newyork_sanctum: "纽约圣殿"
+ pmg_base_building_newyork_sanctum: "某位秘术大师的圣所之一"
+ pm_default_building_newyork_sanctum: "秘术大师的圣所。"
+
+ building_hongkong_sanctum: "香港圣殿"
+ pmg_base_building_hongkong_sanctum: "某位秘术大师的圣所之一"
+ pm_default_building_hongkong_sanctum: "秘术大师的圣所。"
+
+ building_beauxbatons: "布斯巴顿"
+ pmg_base_building_beauxbatons: "布斯巴顿"
+ pm_default_building_beauxbatons: "魔法学校"
+
+ building_durmstrang: "德姆斯特朗"
+ pmg_base_building_durmstrang: "德姆斯特朗"
+ pm_default_building_durmstrang: "魔法学校"
+ building_mahoutokoro: "魔法所"
+ pmg_base_building_mahoutokoro: "魔法所"
+ pm_default_building_mahoutokoro: "魔法学校"
+
+ building_uagadou: "瓦加度"
+ pmg_base_building_uagadou: "瓦加度"
+ pm_default_building_uagadou: "魔法学校"
+
+ building_castelobruxo: "卡斯特罗布舍"
+ pmg_base_building_castelobruxo: "卡斯特罗布舍"
+ pm_default_building_castelobruxo: "魔法学校"
+
+ building_ilvermorny: "伊尔弗莫尼"
+ pmg_base_building_ilvermorny: "伊尔弗莫尼"
+ pm_default_building_ilvermorny: "魔法学校"

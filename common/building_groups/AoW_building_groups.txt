@@ -1,0 +1,26 @@
+﻿REPLACE_OR_CREATE:bg_magic_monuments = {
+	parent_group = bg_government
+	lens = special
+	inheritable_construction = yes
+	economy_of_scale = no
+}
+
+REPLACE_OR_CREATE:bg_gate_magic_industry = {
+    parent_group = bg_manufacturing
+
+    lens = light_industry
+
+    urbanization = 20
+    infrastructure_usage_per_level = 2
+}
+
+REPLACE_OR_CREATE:bg_aow_mining = {
+	parent_group = bg_mining
+
+	always_possible = yes
+
+	cash_reserves_max = 25000
+
+	construction_efficiency_modifier = yes
+	self_investment_chance_modifier = yes
+}

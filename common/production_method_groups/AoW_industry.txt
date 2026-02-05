@@ -1,0 +1,160 @@
+﻿#infuse_industry----------------------------------------------------------
+
+REPLACE_OR_CREATE:pmg_base_building_mana_infuse_industry = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_basic_infusion
+		pm_transmutation
+		pm_electro_transmutation
+	}
+}
+
+REPLACE_OR_CREATE:pmg_warding_array = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_no_warding_array
+		pm_obsidian_warding_array
+	}
+}
+
+REPLACE_OR_CREATE:pmg_automation_building_mana_infuse_industry = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
+	production_methods = {
+		pm_manual_crystal_processing
+		pm_automated_crystal_processing
+	}
+}
+
+#wand_production----------------------------------------------------------
+
+REPLACE_OR_CREATE:pmg_base_building_wand_production = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_traditional_production
+		pm_wand_lathe
+		pm_wand_mechanized_workshops
+		pm_wand_magic_mechanized_workshops
+	}
+}
+
+REPLACE_OR_CREATE:pmg_magic_jewelry_production = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_hand_crafting_jewelry
+		pm_lost_wax_casting
+		pm_mechanical_infusion_with_spellbound_gears
+	}
+}
+
+REPLACE_OR_CREATE:pmg_wand_production_enchantment = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_wand_disabled_enchantment
+		pm_wand_basic_enchantment
+		pm_wand_advanced_enchantment
+		pm_wand_mastered_enchantment
+	}
+}
+
+REPLACE_OR_CREATE:pmg_automation_building_wand_production = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
+	production_methods = {
+		pm_automation_disabled
+		pm_watertube_boiler_building_wand_manufacturies
+		pm_rotary_valve_engine_building_wand_manufacturies
+		pm_assembly_lines_building_wand_manufacturies
+	}
+}
+
+#alchemy-----------------------------------------------------
+REPLACE_OR_CREATE:pmg_base_building_crystal_transmutation = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_glass_thermal_recrystallization
+		pm_glass_aetheric_saturation
+	}
+}
+
+REPLACE_OR_CREATE:pmg_base_building_wood_to_hardwood = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_no_hardwood_transmutation_method
+		pm_basic_hardwood_transmutation_method
+		pm_advanced_hardwood_transmutation_method
+		pm_mastered_hardwood_transmutation_method
+	}
+}
+
+REPLACE_OR_CREATE:pmg_base_building_sulfur_synthetic = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_no_sulfur_synthetic_method
+		pm_basic_sulfur_synthetic_method
+		pm_advanced_sulfur_synthetic_method
+		pm_mastered_sulfur_synthetic_method
+	}
+}
+
+REPLACE_OR_CREATE:pmg_automation_building_transmutation_factory = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
+	production_methods = {
+		pm_automation_disabled
+		pm_watertube_boiler_building_transmutation_factory
+		pm_rotary_valve_engine_building_transmutation_factory
+		pm_assembly_lines_building_transmutation_factory
+	}
+}
+
+#-------------------hsi--------------------------
+REPLACE_OR_CREATE:pmg_hsi_operation_center = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
+	production_methods = {
+		pm_community_care_center
+		pm_medical_center
+		pm_hospital_and_research_center
+	}
+}
+
+REPLACE_OR_CREATE:pmg_hsi_production_methods = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
+	production_methods = {
+		pm_ancient_recipe
+		pm_improved_formula
+		pm_modern_formula
+	}
+}
+
+REPLACE_OR_CREATE:pmg_hsi_potion_sources = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
+	production_methods = {
+		pm_meat_source_potion
+		pm_vegan_source_potion
+		pm_omnisource_potion
+	}
+}
+
+REPLACE_OR_CREATE:pmg_automation_building_hsi = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
+	production_methods = {
+		pm_automation_disabled
+		pm_watertube_boiler_building_hsi
+		pm_rotary_valve_engine_building_hsi
+		pm_assembly_lines_building_hsi
+	}
+}
+
+#power_plant----------------------------------------------------------
+INJECT:pmg_base_building_power_plant = {
+	production_methods = {
+		pm_mana_crystal_fired_plant
+	}
+}
+#textile_mill-------------------------------------------------------------
+REPLACE_OR_CREATE:pmg_magic_hat_building_textile_mill = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_no_magic_hat_method
+		pm_herbal_sewing
+		pm_crystal_interweave
+	}
+}

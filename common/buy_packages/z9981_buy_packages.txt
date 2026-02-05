@@ -1,0 +1,455 @@
+﻿INJECT:wealth_9 = {
+	goods = {
+		popneed_magic_supply = 23
+	}
+}
+INJECT:wealth_10 = {
+	goods = {
+		popneed_magic_supply = 24
+	}
+}
+INJECT:wealth_11 = {
+	goods = {
+		popneed_magic_supply = 28
+	}
+}
+INJECT:wealth_12 = {
+	goods = {
+		popneed_magic_supply = 35
+	}
+}
+INJECT:wealth_13 = {
+	goods = {
+		popneed_magic_supply = 40
+	}
+}
+INJECT:wealth_14 = {
+	goods = {
+		popneed_magic_supply = 47
+	}
+}
+INJECT:wealth_15 = {
+	goods = {
+		popneed_magic_supply = 44
+	}
+}
+INJECT:wealth_16 = {
+	goods = {
+		popneed_magic_supply = 47
+	}
+}
+INJECT:wealth_17 = {
+	goods = {
+		popneed_magic_supply = 53
+	}
+}
+INJECT:wealth_18 = {
+	goods = {
+		popneed_magic_supply = 57
+	}
+}
+INJECT:wealth_19 = {
+	goods = {
+		popneed_magic_supply = 62
+	}
+}
+INJECT:wealth_20 = {
+	goods = {
+		popneed_magic_supply = 63
+	}
+}
+INJECT:wealth_21 = {
+	goods = {
+		popneed_magic_supply = 68
+	}
+}
+INJECT:wealth_22 = {
+	goods = {
+		popneed_magic_supply = 73
+	}
+}
+INJECT:wealth_23 = {
+	goods = {
+		popneed_magic_supply = 79
+	}
+}
+INJECT:wealth_24 = {
+	goods = {
+		popneed_magic_supply = 86
+	}
+}
+INJECT:wealth_25 = {
+	goods = {
+		popneed_magic_supply = 94
+	}
+}
+INJECT:wealth_26 = {
+	goods = {
+		popneed_magic_supply = 110
+	}
+}
+INJECT:wealth_27 = {
+	goods = {
+		popneed_magic_supply = 128
+	}
+}
+INJECT:wealth_28 = {
+	goods = {
+		popneed_magic_supply = 140
+	}
+}
+INJECT:wealth_29 = {
+	goods = {
+		popneed_magic_supply = 152
+	}
+}
+INJECT:wealth_30 = {
+	goods = {
+		popneed_magic_supply = 159
+	}
+}
+INJECT:wealth_31 = {
+	goods = {
+		popneed_magic_supply = 171
+	}
+}
+INJECT:wealth_32 = {
+	goods = {
+		popneed_magic_supply = 183
+	}
+}
+INJECT:wealth_33 = {
+	goods = {
+		popneed_magic_supply = 197
+	}
+}
+INJECT:wealth_34 = {
+	goods = {
+		popneed_magic_supply = 212
+	}
+}
+INJECT:wealth_35 = {
+	goods = {
+		popneed_magic_supply = 231
+	}
+}
+INJECT:wealth_36 = {
+	goods = {
+		popneed_magic_supply = 249
+	}
+}
+INJECT:wealth_37 = {
+	goods = {
+		popneed_magic_supply = 268
+	}
+}
+INJECT:wealth_38 = {
+	goods = {
+		popneed_magic_supply = 289
+	}
+}
+INJECT:wealth_39 = {
+	goods = {
+		popneed_magic_supply = 312
+	}
+}
+INJECT:wealth_40 = {
+	goods = {
+		popneed_magic_supply = 338
+	}
+}
+INJECT:wealth_41 = {
+	goods = {
+		popneed_magic_supply = 366
+	}
+}
+INJECT:wealth_42 = {
+	goods = {
+		popneed_magic_supply = 396
+	}
+}
+INJECT:wealth_43 = {
+	goods = {
+		popneed_magic_supply = 430
+	}
+}
+INJECT:wealth_44 = {
+	goods = {
+		popneed_magic_supply = 467
+	}
+}
+INJECT:wealth_45 = {
+	goods = {
+		popneed_magic_supply = 507
+	}
+}
+INJECT:wealth_46 = {
+	goods = {
+		popneed_magic_supply = 551
+	}
+}
+INJECT:wealth_47 = {
+	goods = {
+		popneed_magic_supply = 599
+	}
+}
+INJECT:wealth_48 = {
+	goods = {
+		popneed_magic_supply = 652
+	}
+}
+INJECT:wealth_49 = {
+	goods = {
+		popneed_magic_supply = 710
+	}
+}
+INJECT:wealth_50 = {
+	goods = {
+		popneed_magic_supply = 774
+	}
+}
+INJECT:wealth_51 = {
+	goods = {
+		popneed_magic_supply = 844
+	}
+}
+INJECT:wealth_52 = {
+	goods = {
+		popneed_magic_supply = 920
+	}
+}
+INJECT:wealth_53 = {
+	goods = {
+		popneed_magic_supply = 1004
+	}
+}
+INJECT:wealth_54 = {
+	goods = {
+		popneed_magic_supply = 1096
+	}
+}
+INJECT:wealth_55 = {
+	goods = {
+		popneed_magic_supply = 1196
+	}
+}
+INJECT:wealth_56 = {
+	goods = {
+		popneed_magic_supply = 1306
+	}
+}
+INJECT:wealth_57 = {
+	goods = {
+		popneed_magic_supply = 1427
+	}
+}
+INJECT:wealth_58 = {
+	goods = {
+		popneed_magic_supply = 1559
+	}
+}
+INJECT:wealth_59 = {
+	goods = {
+		popneed_magic_supply = 1705
+	}
+}
+INJECT:wealth_60 = {
+	goods = {
+		popneed_magic_supply = 1864
+	}
+}
+INJECT:wealth_61 = {
+	goods = {
+		popneed_magic_supply = 2038
+	}
+}
+INJECT:wealth_62 = {
+	goods = {
+		popneed_magic_supply = 2229
+	}
+}
+INJECT:wealth_63 = {
+	goods = {
+		popneed_magic_supply = 2439
+	}
+}
+INJECT:wealth_64 = {
+	goods = {
+		popneed_magic_supply = 2669
+	}
+}
+INJECT:wealth_65 = {
+	goods = {
+		popneed_magic_supply = 2921
+	}
+}
+INJECT:wealth_66 = {
+	goods = {
+		popneed_magic_supply = 3197
+	}
+}
+INJECT:wealth_67 = {
+	goods = {
+		popneed_magic_supply = 3501
+	}
+}
+INJECT:wealth_68 = {
+	goods = {
+		popneed_magic_supply = 3833
+	}
+}
+INJECT:wealth_69 = {
+	goods = {
+		popneed_magic_supply = 4198
+	}
+}
+INJECT:wealth_70 = {
+	goods = {
+		popneed_magic_supply = 4599
+	}
+}
+INJECT:wealth_71 = {
+	goods = {
+		popneed_magic_supply = 5038
+	}
+}
+INJECT:wealth_72 = {
+	goods = {
+		popneed_magic_supply = 5520
+	}
+}
+INJECT:wealth_73 = {
+	goods = {
+		popneed_magic_supply = 6048
+	}
+}
+INJECT:wealth_74 = {
+	goods = {
+		popneed_magic_supply = 6628
+	}
+}
+INJECT:wealth_75 = {
+	goods = {
+		popneed_magic_supply = 7265
+	}
+}
+INJECT:wealth_76 = {
+	goods = {
+		popneed_magic_supply = 7964
+	}
+}
+INJECT:wealth_77 = {
+	goods = {
+		popneed_magic_supply = 8730
+	}
+}
+INJECT:wealth_78 = {
+	goods = {
+		popneed_magic_supply = 9572
+	}
+}
+INJECT:wealth_79 = {
+	goods = {
+		popneed_magic_supply = 10495
+	}
+}
+INJECT:wealth_80 = {
+	goods = {
+		popneed_magic_supply = 11509
+	}
+}
+INJECT:wealth_81 = {
+	goods = {
+		popneed_magic_supply = 12621
+	}
+}
+INJECT:wealth_82 = {
+	goods = {
+		popneed_magic_supply = 13843
+	}
+}
+INJECT:wealth_83 = {
+	goods = {
+		popneed_magic_supply = 15183
+	}
+}
+INJECT:wealth_84 = {
+	goods = {
+		popneed_magic_supply = 16655
+	}
+}
+INJECT:wealth_85 = {
+	goods = {
+		popneed_magic_supply = 18271
+	}
+}
+INJECT:wealth_86 = {
+	goods = {
+		popneed_magic_supply = 20045
+	}
+}
+INJECT:wealth_87 = {
+	goods = {
+		popneed_magic_supply = 21993
+	}
+}
+INJECT:wealth_88 = {
+	goods = {
+		popneed_magic_supply = 24131
+	}
+}
+INJECT:wealth_89 = {
+	goods = {
+		popneed_magic_supply = 26480
+	}
+}
+INJECT:wealth_90 = {
+	goods = {
+		popneed_magic_supply = 29058
+	}
+}
+INJECT:wealth_91 = {
+	goods = {
+		popneed_magic_supply = 31890
+	}
+}
+INJECT:wealth_92 = {
+	goods = {
+		popneed_magic_supply = 34999
+	}
+}
+INJECT:wealth_93 = {
+	goods = {
+		popneed_magic_supply = 38413
+	}
+}
+INJECT:wealth_94 = {
+	goods = {
+		popneed_magic_supply = 42163
+	}
+}
+INJECT:wealth_95 = {
+	goods = {
+		popneed_magic_supply = 46282
+	}
+}
+INJECT:wealth_96 = {
+	goods = {
+		popneed_magic_supply = 50805
+	}
+}
+INJECT:wealth_97 = {
+	goods = {
+		popneed_magic_supply = 55772
+	}
+}
+INJECT:wealth_98 = {
+	goods = {
+		popneed_magic_supply = 61228
+	}
+}
+INJECT:wealth_99 = {
+	goods = {
+		popneed_magic_supply = 67221
+	}
+}

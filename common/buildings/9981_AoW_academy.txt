@@ -1,0 +1,27 @@
+﻿REPLACE_OR_CREATE:building_magic_academy = {
+
+	building_group = bg_technology
+
+	unlocking_technologies = {
+		magic_education_and_research_9981
+	}
+
+	production_method_groups = {
+		pmg_base_building_magic_academy
+		pmg_academy_production
+		pmg_magic_practice
+	}
+
+	icon = "gfx/interface/icons/building_icons/magic_academy.dds"
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+
+	required_construction = construction_cost_medium 
+
+	# possible = {
+	# 	owner = {
+	# 		NOT = {
+	# 			# has_variable = secret_societies
+	# 		}
+	# 	}
+	# }
+}

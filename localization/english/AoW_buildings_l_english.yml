@@ -1,0 +1,152 @@
+﻿l_english:
+# BUILDING_GROUPS
+ bg_aow_mining: "Mining"
+ bg_gate_magic_industry: "Magic Industry"
+ bg_magic_monuments: "Magic Monuments"
+
+# DUMMY
+ pm_disabled: "Disabled"
+
+# MINE
+# GEMSTONE MINE
+ building_gemstone_mine: "Gemstone Mine"
+ state_building_gemstone_mine_max_level_add: "Gemstone Mine Max Level"
+ state_building_gemstone_mine_max_level_add_desc: "Gemstone Mine Max Level"
+
+ pmg_mining_crystal: "Crystal Mining"
+ pm_picks_and_shovels_crystal: "Picks and Shovels"
+ pm_atmospheric_engine_pump_crystal: "Atmospheric Engine Pump"
+ pm_condensing_engine_pump_crystal: "Condensing Engine Pump"
+ pm_diesel_pump_crystal: "Diesel Pump"
+
+ pmg_mining_obsidian: "Obsidian Mining"
+ pm_no_obsidian_mining: "Disabled"
+ pm_obsidian_mining: "Obsidian Mining"
+
+ pmg_train_automation_aow_mine: "Rail Transportation"
+ pm_no_train_automation_aow_mine: "Disabled"
+ pm_train_automation_aow_mine: "Rail Transportation"
+#
+
+ building_mana_infuse_industry: "Mana Infusion Industry"
+
+ pmg_base_building_mana_infuse_industry: "Mana Infusion Industry"
+ pm_basic_infusion: "Basic Infusion"
+ pm_transmutation: "Transmutation"
+ pm_electro_transmutation: "Electro Transmutation"
+
+ pmg_warding_array: "Warding Array"
+ pm_no_warding_array: "No Warding Array"
+ pm_obsidian_warding_array: "Obsidian Warding Array"
+
+ pmg_automation_building_mana_infuse_industry: "Automation"
+ pm_manual_crystal_processing: "Manual Crystal Process"
+ pm_automated_crystal_processing: "Automated Crystal Process"
+
+#
+
+ building_wand_factory: "Mystic Forge"
+ 
+ pmg_base_building_wand_production: "Wand Production"
+ pm_traditional_production: "Traditional Production Method"
+ pm_wand_lathe: "Lathe"
+ pm_wand_mechanized_workshops: "Mechanized Production Method"
+ pm_wand_magic_mechanized_workshops: "Magic and Mechanized Production Method"
+
+ pmg_magic_jewelry_production: "Magic Jewelries Production"
+ pm_hand_crafting_jewelry: "Hand Crafting Jewelries"
+ pm_lost_wax_casting: "Lost Wax Casting"
+ pm_mechanical_infusion_with_spellbound_gears: "Mechanical Infusion with Spellbound Gears"
+
+ pmg_wand_production_enchantment: "Enchantment"
+ pm_wand_disabled_enchantment: "No Enchantment"
+ pm_wand_basic_enchantment: "Basic Enchantment"
+ pm_wand_advanced_enchantment: "Advanced Enchantment"
+ pm_wand_mastered_enchantment: "Mastered Enchantment"
+
+ pmg_automation_building_wand_production: "Automation"
+ pm_watertube_boiler_building_wand_manufacturies: "Watertube Boiler"
+ pm_rotary_valve_engine_building_wand_manufacturies: "Rotary Valve Engine"
+ pm_assembly_lines_building_wand_manufacturies: "Assembly Lines"
+
+#
+
+ building_transmutation_factory: "Transmutation Factory"
+
+ pmg_base_building_wood_to_hardwood: "Wood to Hardwood"
+ pm_no_hardwood_transmutation_method: "Disabled"
+ pm_basic_hardwood_transmutation_method: "Basic Hardwood Transmutation Method"
+ pm_advanced_hardwood_transmutation_method: "Advanced Hardwood Transmutation Method"
+ pm_mastered_hardwood_transmutation_method: "Mastered Hardwood Transmutation Method"
+
+ pmg_base_building_sulfur_synthetic: "Sulfur Synthetic"
+ pm_no_sulfur_synthetic_method: "Disabled"
+ pm_basic_sulfur_synthetic_method: "Basic Sulfur and Ruber Synthetic Method"
+ pm_advanced_sulfur_synthetic_method: "Advanced Sulfur and Ruber Synthetic Method"
+ pm_mastered_sulfur_synthetic_method: "Mastered Sulfur and Ruber Synthetic Method"
+
+ pmg_base_building_crystal_transmutation: "Crystal Transmutation"
+ pm_glass_thermal_recrystallization: "Thermal Recrystallization"
+ pm_glass_aetheric_saturation: "Aetheric Saturation"
+
+ pmg_automation_building_transmutation_factory: "Automation"
+ pm_watertube_boiler_building_transmutation_factory: "Watertube Boiler"
+ pm_rotary_valve_engine_building_transmutation_factory: "Rotary Valve Engine"
+ pm_assembly_lines_building_transmutation_factory: "Assembly Lines"
+
+#
+ building_magic_academy: "Magic Academy"
+
+ pmg_base_building_magic_academy: "Magic Academy"
+ pm_magical_scholastics: "Magical Scholastics"
+ pm_mages_and_society: "mages and Society"
+ pm_magic_and_ethics: "Magic and Ethics"
+ pm_magic_and_philosophy: "Magic and Philosophy"
+ 
+ pmg_academy_production: "Arts"
+ pm_academy_inactive: "Inactive"
+ pm_magic_infused_art_and_culture: "Interactive Art"
+
+ pmg_magic_practice: "Magic Practices"
+ pm_idle_mode_ac: "No Practicing"
+ pm_coal_to_gold_practice: "Coal to Gold practice"
+ pm_mass_coal_to_gold_practice: "Mass Coal to Gold practice"
+
+#
+
+ pmg_AOW_medical_aid: "Medical Aid"
+ pm_wound_dressing: "Wound Dressing"
+ pm_healing_potion: "Healing Potion"
+ pm_AOW_field_hospitals: "Field Hospitals"
+
+#
+ building_healing_solutions_institute: "Healing Solutions Institute"
+ 
+ pmg_hsi_operation_center: "Operation Center"
+ pm_community_care_center: "Community Care Center"
+ pm_medical_center: "Medical Center"
+ pm_hospital_and_research_center: "Hospital and Research Center"
+
+ pmg_hsi_production_methods: "Recipes"
+ pm_ancient_recipe: "Ancient Recipe"
+ pm_improved_formula: "Improved Formular"
+ pm_modern_formula: "Modern Recipe"
+
+ pmg_hsi_potion_sources: "Potion Sources"
+ pm_meat_source_potion: "Meat-source Potion"
+ pm_vegan_source_potion: "Vegan-source Potion"
+ pm_omnisource_potion: "Omni-source Potion"
+
+ pmg_automation_building_hsi: "Automation"
+ pm_watertube_boiler_building_hsi: "Watertube Boiler"
+ pm_rotary_valve_engine_building_hsi: "Rotary Valve Engine"
+ pm_assembly_lines_building_hsi: "Assembly Lines"
+
+#
+ pmg_magic_hat_building_textile_mill: "Magic Hat Production"
+ pm_no_magic_hat_method: "Disabled"
+ pm_herbal_sewing: "Herbal Sewing"
+ pm_crystal_interweave: "Crystal Interweave"
+
+#
+ pm_mana_crystal_fired_plant: "Mana Crystal-Fired Plant"

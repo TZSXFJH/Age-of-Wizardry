@@ -1,0 +1,11 @@
+﻿
+stormed_building_throughput_mana_mult_01 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	state_infrastructure_mult = 2
+	goods_output_mana_add = -25
+}
+
+modifier_magic_drained = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	goods_output_mana_mult = -0.5
+}

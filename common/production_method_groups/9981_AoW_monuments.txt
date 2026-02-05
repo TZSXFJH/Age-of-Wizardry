@@ -1,0 +1,150 @@
+﻿
+# To ensure the game rule 'monument_effects' works properly, new monument buildings added should be given the optional base methods
+# 	pm_monument_prestige_only
+#	pm_monument_no_effects
+# 
+# 'monument_effects' additionally needs to be amended with flags disabling the new monument's Base method
+# PM Groups for Monuments should have the 'is_hidden_when_unavailable' flag to ensure only one alternative is visible at any time (unless the player actually has an option they can switch to)
+
+REPLACE_OR_CREATE:pmg_base_building_transylvania_state = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+	is_hidden_when_unavailable = yes
+
+	production_methods = {
+		pm_default_building_transylvania_state
+		pm_monument_no_effects
+	}
+}
+
+REPLACE_OR_CREATE:pmg_base_building_castillo_san_felipe_del_morro = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+	is_hidden_when_unavailable = yes
+
+	production_methods = {
+		pm_default_building_castillo_san_felipe_del_morro
+		pm_monument_no_effects
+	}
+}
+
+REPLACE_OR_CREATE:pmg_base_building_hogwarts = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+	is_hidden_when_unavailable = yes
+
+	production_methods = {
+		pm_default_building_hogwarts
+		pm_monument_no_effects
+	}
+}
+
+REPLACE_OR_CREATE:pmg_base_building_kamartaj = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+	is_hidden_when_unavailable = yes
+
+	production_methods = {
+		pm_default_building_kamartaj
+		pm_monument_no_effects
+	}
+}
+
+REPLACE_OR_CREATE:pmg_base_building_london_sanctum = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+	is_hidden_when_unavailable = yes
+
+	production_methods = {
+		pm_default_building_london_sanctum
+		pm_monument_no_effects
+	}
+}
+
+REPLACE_OR_CREATE:pmg_base_building_newyork_sanctum = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+	is_hidden_when_unavailable = yes
+
+	production_methods = {
+		pm_default_building_newyork_sanctum
+		pm_monument_no_effects
+	}
+}
+
+REPLACE_OR_CREATE:pmg_base_building_hongkong_sanctum = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+	is_hidden_when_unavailable = yes
+
+	production_methods = {
+		pm_default_building_hongkong_sanctum
+		pm_monument_no_effects
+	}
+}
+
+REPLACE_OR_CREATE:pmg_base_building_beauxbatons = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+	is_hidden_when_unavailable = yes
+
+	production_methods = {
+		pm_default_building_beauxbatons
+		pm_monument_no_effects
+	}
+}
+
+REPLACE_OR_CREATE:pmg_base_building_durmstrang = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+	is_hidden_when_unavailable = yes
+
+	production_methods = {
+		pm_default_building_durmstrang
+		pm_monument_no_effects
+	}
+}
+
+REPLACE_OR_CREATE:pmg_base_building_mahoutokoro = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+	is_hidden_when_unavailable = yes
+
+	production_methods = {
+		pm_default_building_mahoutokoro
+		pm_monument_no_effects
+	}
+}
+
+REPLACE_OR_CREATE:pmg_base_building_uagadou = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+	is_hidden_when_unavailable = yes
+
+	production_methods = {
+		pm_default_building_uagadou
+		pm_monument_no_effects
+	}
+}
+
+REPLACE_OR_CREATE:pmg_base_building_castelobruxo = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+	is_hidden_when_unavailable = yes
+
+	production_methods = {
+		pm_default_building_castelobruxo
+		pm_monument_no_effects
+	}
+}
+
+REPLACE_OR_CREATE:pmg_base_building_ilvermorny = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+	is_hidden_when_unavailable = yes
+
+	production_methods = {
+		pm_default_building_ilvermorny
+		pm_monument_no_effects
+	}
+}

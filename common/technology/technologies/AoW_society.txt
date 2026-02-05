@@ -1,0 +1,224 @@
+﻿### ERA 0
+REPLACE_OR_CREATE:magic_education_and_research_9981 = { 
+#Unlocks Magic Academy
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/magic_education_and_research.dds"
+	category = society
+	ai_weight = {
+		value = 3
+	}
+}  
+
+### ERA 1
+
+REPLACE_OR_CREATE:magic_urban_development_9981 = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/magic_urban_development.dds"
+	category = society
+	unlocking_technologies = {
+		magic_education_and_research_9981
+		urban_planning
+	}
+	modifier = {
+		state_infrastructure_from_population_add = 2
+		state_infrastructure_from_population_max_add = 10	
+		country_max_weekly_construction_progress_add = 20
+	}
+	ai_weight = {
+		value = 3
+	}
+}
+
+### ERA 2
+
+REPLACE_OR_CREATE:mages_and_society_9981 = { #unlocks PM for academy
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/mages_and_society.dds"
+	category = society
+	unlocking_technologies = {
+		magic_education_and_research_9981
+	}
+	modifier = {
+		country_weekly_innovation_max_add = 5
+	}
+	ai_weight = {
+		value = 2
+	}
+}
+
+REPLACE_OR_CREATE:magic_based_economy_9981 = {
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/magic_based_economy.dds"
+	category = society
+	unlocking_technologies = {
+		mages_and_society_9981
+	}
+	modifier = {
+		state_tax_capacity_mult = 0.2
+		country_consumption_tax_cost_mult = -0.1
+	}
+	ai_weight = {
+		value = 1
+	}
+}
+
+REPLACE_OR_CREATE:magic_engraved_infrastructure_9981 = {
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/magic_engraved_infrastructure.dds"
+	category = society
+	unlocking_technologies = {
+		magic_education_and_research_9981
+	}
+	modifier = {
+		state_infrastructure_add = 20
+		state_infrastructure_mult = 0.1
+	}
+	ai_weight = {
+		value = 1
+	}
+}
+
+REPLACE_OR_CREATE:magic_infused_medicine_9981 = {
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/magic_infused_medicine.dds"
+	category = society
+	unlocking_technologies = {
+		mages_and_society_9981
+	}
+	modifier = {
+		country_radicals_from_conquest_mult = -0.3
+		country_war_exhaustion_casualties_mult = -0.2
+	}
+	ai_weight = {
+		value = 2
+	}
+}
+
+### ERA 3
+
+REPLACE_OR_CREATE:magic_suggery_9981 = {
+	era = era_3
+	texture = "gfx/interface/icons/invention_icons/magic_suggery.dds"
+	category = society
+	unlocking_technologies = {
+		magic_infused_medicine_9981
+	}
+	modifier = {
+		unit_recovery_rate_add = 0.1
+		state_mortality_mult = -0.05
+	}
+	ai_weight = {
+		value = 1
+	}
+}
+
+
+REPLACE_OR_CREATE:magic_rehabilitation_9981 = {
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/magic_rehabilitation.dds"
+	category = society
+	unlocking_technologies = {
+		magic_suggery_9981
+	}
+	modifier = {
+		unit_recovery_rate_add = 0.3
+		state_mortality_mult = -0.1
+	}
+	ai_weight = {
+		value = 1
+	}
+}
+
+
+REPLACE_OR_CREATE:magic_infused_architecture_9981 = {
+	era = era_3
+	texture = "gfx/interface/icons/invention_icons/magic_infused_architecture.dds"
+	category = society
+	unlocking_technologies = {
+		magic_engraved_infrastructure_9981
+	}
+	modifier = {
+		country_construction_add = 10
+		country_prestige_mult = 0.05
+	}
+	ai_weight = {
+		value = 1
+	}
+}
+
+REPLACE_OR_CREATE:magic_infused_art_and_culture_9981 = { #new pm for magic academy
+	era = era_3
+	texture = "gfx/interface/icons/invention_icons/magic_infused_art_and_culture.dds"
+	category = society
+	unlocking_technologies = {
+		magic_infused_architecture_9981
+	}
+	ai_weight = {
+		value = 1
+	}
+}
+
+REPLACE_OR_CREATE:magic_and_ethics_9981 = { #new pm for magic academy
+	era = era_3
+	texture = "gfx/interface/icons/invention_icons/magic_and_ethics.dds"
+	category = society
+	unlocking_technologies = {
+		mages_and_society_9981
+	}
+	modifier = {
+		country_weekly_innovation_max_add = 10
+	}
+	ai_weight = {
+		value = 1
+	}
+}
+
+### ERA 4
+
+REPLACE_OR_CREATE:magic_and_philosophy_9981 = { #new pm for magic academy
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/magic_and_philosophy.dds"
+	category = society
+	unlocking_technologies = {
+		magic_and_ethics_9981
+	}
+	modifier = {
+		country_weekly_innovation_max_add = 10
+	}
+	ai_weight = {
+		value = 1
+	}
+}
+
+REPLACE_OR_CREATE:neural_enhancement_protocols = {
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/brainglow.dds"
+	category = society
+	unlocking_technologies = {
+		magic_suggery_9981
+	}
+	modifier = {
+		country_weekly_innovation_max_add = 100
+		country_weekly_innovation_mult = 0.75
+	}
+	ai_weight = {
+		value = 1
+	}
+}
+
+REPLACE_OR_CREATE:magic_cultural_exchange_9981 = {
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/magic_cultural_exchange.dds"
+	category = society
+	unlocking_technologies = {
+		magic_infused_art_and_culture_9981
+	}
+	modifier = {
+		country_tension_decay_mult = 0.2
+		country_improve_relations_speed_mult = 0.3
+	}
+	ai_weight = {
+		value = 1
+	}
+}
+

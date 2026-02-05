@@ -1,0 +1,184 @@
+﻿REPLACE_OR_CREATE:pm_idle_mode_ac = {
+	texture = "gfx/interface/icons/production_method_icons/no_automation.dds"
+}
+
+REPLACE_OR_CREATE:pm_coal_to_gold_practice = {
+	texture = "gfx/interface/icons/production_method_icons/gold_mining.dds"
+
+	unlocking_technologies = {
+		transmutation_9981
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_coal_add = 20
+			goods_input_mana_add = 4
+			goods_output_gold_add = 20
+		}	
+	}
+}
+
+REPLACE_OR_CREATE:pm_mass_coal_to_gold_practice = {
+	texture = "gfx/interface/icons/production_method_icons/gold_mining.dds"
+	
+	unlocking_technologies = {
+		mastered_transmutation_9981
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_coal_add = 80
+			goods_input_mana_add = 15
+			goods_output_gold_add = 80
+		}	
+	}
+}
+
+REPLACE_OR_CREATE:pm_magical_scholastics = {
+	texture = "gfx/interface/icons/production_method_icons/scholastic_education.dds"
+	
+	country_modifiers = {
+		workforce_scaled = { 
+			country_weekly_innovation_add = 5
+		}
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_paper_add = 5
+			goods_input_magic_wand_add = 50
+		}	
+	
+		level_scaled = {
+			building_employment_mages_add = 500
+			building_employment_clerks_add = 1000
+			building_employment_laborers_add = 500
+		}
+	}
+	
+	state_modifiers = {
+		workforce_scaled = { 
+			state_pop_qualifications_mult = 0.1
+		}	
+	}
+}
+
+REPLACE_OR_CREATE:pm_mages_and_society = {
+	texture = "gfx/interface/icons/production_method_icons/unused/stock_exchange.dds"
+	
+	unlocking_technologies = {
+		mages_and_society_9981
+	}
+
+	country_modifiers = {
+		workforce_scaled = { 
+			country_weekly_innovation_add = 8
+		}
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_paper_add = 8
+			goods_input_magic_wand_add = 90
+		}	
+	
+		level_scaled = {
+			building_employment_mages_add = 600
+			building_employment_clerks_add = 1200
+			building_employment_laborers_add = 600
+		}
+	}
+	
+	state_modifiers = {
+		workforce_scaled = { 
+			state_pop_qualifications_mult = 0.15
+		}	
+	}
+}
+
+REPLACE_OR_CREATE:pm_magic_and_ethics = {
+	texture = "gfx/interface/icons/production_method_icons/nitroglycerin.dds"
+	
+	unlocking_technologies = {
+		magic_and_ethics_9981
+	}
+
+	country_modifiers = {
+		workforce_scaled = { 
+			country_weekly_innovation_add = 11
+		}
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_paper_add = 15
+			goods_input_magic_wand_add = 130
+		}	
+	
+		level_scaled = {
+			building_employment_mages_add = 700
+			building_employment_clerks_add = 1500
+			building_employment_laborers_add = 700
+		}
+	}
+	
+	state_modifiers = {
+		workforce_scaled = { 
+			state_pop_qualifications_mult = 0.2
+		}	
+	}
+}
+
+REPLACE_OR_CREATE:pm_magic_and_philosophy = {
+	texture = "gfx/interface/icons/production_method_icons/analytical_philosophy_department.dds"
+	
+	unlocking_technologies = {
+		magic_and_philosophy_9981
+	}
+
+	country_modifiers = {
+		workforce_scaled = { 
+			country_weekly_innovation_add = 15
+		}
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_paper_add = 25
+			goods_input_magic_wand_add = 190
+		}	
+	
+		level_scaled = {
+			building_employment_mages_add = 850
+			building_employment_clerks_add = 1700
+			building_employment_laborers_add = 900
+		}
+	}
+	
+	state_modifiers = {
+		workforce_scaled = { 
+			state_pop_qualifications_mult = 0.25
+		}	
+	}
+}
+
+REPLACE_OR_CREATE:pm_academy_inactive = {
+	texture = "gfx/interface/icons/production_method_icons/unused/no_philosophy_dept.dds"
+}
+
+REPLACE_OR_CREATE:pm_magic_infused_art_and_culture = {
+	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
+
+	unlocking_technologies = {
+		magic_infused_art_and_culture_9981
+	}
+
+	building_modifiers = {		
+	
+		workforce_scaled = {
+			goods_input_paper_add = 10 # 150
+			goods_input_mana_add = 2
+			goods_output_fine_art_add = 8 # 600
+		}				
+	}
+}

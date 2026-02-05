@@ -1,0 +1,74 @@
+﻿##############
+# INDUSTRIAL #
+##############
+
+REPLACE_OR_CREATE:mana = {
+	texture = "gfx/interface/icons/goods_icons/mana.dds"
+	cost = 50
+	category = industrial
+	
+	prestige_factor = 8
+}
+
+REPLACE_OR_CREATE:potions = {
+	texture = "gfx/interface/icons/goods_icons/potions.dds"
+	cost = 50
+	category = industrial
+	
+	prestige_factor = 5
+	traded_quantity = 4
+}
+
+REPLACE_OR_CREATE:crystal = {
+	texture = "gfx/interface/icons/goods_icons/crystal.dds"
+	cost = 30
+	category = industrial
+	
+	prestige_factor = 5
+}
+
+REPLACE_OR_CREATE:obsidian = {
+	texture = "gfx/interface/icons/goods_icons/obsidian.dds"
+	cost = 100
+	category = industrial
+
+	prestige_factor = 10
+}
+##########
+# LUXURY #
+##########
+
+REPLACE_OR_CREATE:magic_hat = {
+	texture = "gfx/interface/icons/goods_icons/magic_hat.dds"
+	cost = 60
+	category = luxury
+	
+	obsession_chance = 0.1
+	prestige_factor = 8
+	convoy_cost_multiplier = 0.75
+	traded_quantity = 4 # 240
+}
+
+REPLACE_OR_CREATE:magic_wand = {
+	texture = "gfx/interface/icons/goods_icons/magic_wand.dds"
+	cost = 65
+	category = luxury
+	
+	obsession_chance = 0.1
+	prestige_factor = 12
+
+	traded_quantity = 10
+	convoy_cost_multiplier = 0.8
+}
+
+REPLACE_OR_CREATE:magic_jewelry = {
+	texture = "gfx/interface/icons/goods_icons/magic_jewelry.dds"
+	cost = 300
+	category = luxury
+	
+	obsession_chance = 1.6
+	prestige_factor = 10
+	
+	traded_quantity = 8
+	convoy_cost_multiplier = 0.60
+}

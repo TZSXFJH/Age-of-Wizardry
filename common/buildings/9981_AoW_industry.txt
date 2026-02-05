@@ -1,0 +1,127 @@
+﻿# MANUFACTURING INDUSTRIES
+
+REPLACE_OR_CREATE:building_mana_infuse_industry = {
+	building_group = bg_gate_magic_industry
+	icon = "gfx/interface/icons/building_icons/mana_infuse_industry.dds"
+	ownership_type = self
+	ai_nationalization_desire = 0.15
+	ai_value = 1900
+	
+	unlocking_technologies = {
+		magic_extraction_and_processing_9981
+	}
+
+	production_method_groups = {
+		pmg_base_building_mana_infuse_industry
+		pmg_warding_array
+		pmg_automation_building_mana_infuse_industry
+	}
+
+	required_construction = construction_cost_very_high
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_heavy_industry.dds"   
+
+	# possible = {
+	# 	owner = {
+	# 		NOT = {
+	# 			# has_variable = secret_societies
+	# 		}
+	# 	}
+	# }
+}
+
+REPLACE_OR_CREATE:building_wand_factory = {
+	building_group = bg_gate_magic_industry
+	icon = "gfx/interface/icons/building_icons/magic_wand_factory.dds"
+	ownership_type = self
+	ai_nationalization_desire = 0.1
+
+	unlocking_technologies = {
+		magic_extraction_and_processing_9981
+	}
+
+	production_method_groups = {
+		pmg_base_building_wand_production
+		pmg_magic_jewelry_production
+		pmg_wand_production_enchantment
+		pmg_automation_building_wand_production
+	}
+
+	required_construction = construction_cost_high
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
+
+	# possible = {
+	# 	owner = {
+	# 		NOT = {
+	# 			# has_variable = secret_societies
+	# 		}
+	# 	}
+	# }
+}
+
+REPLACE_OR_CREATE:building_transmutation_factory = {
+	building_group = bg_gate_magic_industry
+	icon = "gfx/interface/icons/building_icons/transmutation_factory.dds"
+	ownership_type = self
+	ai_nationalization_desire = 0.25
+	
+	unlocking_technologies = {
+		transmutation_9981
+	}
+
+	production_method_groups = {
+		pmg_base_building_crystal_transmutation
+		pmg_base_building_wood_to_hardwood
+		pmg_base_building_sulfur_synthetic
+		pmg_warding_array
+		pmg_automation_building_transmutation_factory
+	}
+
+	possible = {
+		owner = {
+			NOT = {
+				OR = {
+					# has_variable = secret_societies
+					has_law_or_variant = law_type:law_industry_banned
+					has_law_or_variant = law_type:law_extraction_economy
+				}
+			}
+		}
+	}
+
+	required_construction = construction_cost_very_high
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_heavy_industry.dds"    
+}
+
+REPLACE_OR_CREATE:building_healing_solutions_institute = {
+	building_group = bg_gate_magic_industry
+	icon = "gfx/interface/icons/building_icons/healing_solutions_institute.dds"
+	ownership_type = self
+	ai_nationalization_desire = 0.25
+	
+	unlocking_technologies = {
+		healing_potion_9981
+	}
+
+	production_method_groups = {
+		pmg_hsi_operation_center
+		pmg_hsi_production_methods
+		pmg_hsi_potion_sources
+		pmg_automation_building_hsi
+	}
+
+	possible = {
+		owner = {
+			NOT = {
+				OR = {
+					# has_variable = secret_societies
+					has_law_or_variant = law_type:law_industry_banned
+					has_law_or_variant = law_type:law_extraction_economy
+				}
+			}
+		}
+	}
+
+	required_construction = construction_cost_high
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds" 
+}

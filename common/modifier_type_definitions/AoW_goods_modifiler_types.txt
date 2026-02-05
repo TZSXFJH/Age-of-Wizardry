@@ -1,0 +1,107 @@
+﻿goods_output_mana_add = {
+	color=good
+	percent = no
+	decimals = 0
+}
+
+goods_input_mana_add = {
+	color=bad
+	percent = no
+	decimals = 0
+}
+
+goods_output_mana_mult = {
+	color=good
+	percent = yes
+	decimals = 2
+}
+
+goods_output_magic_jewelry_add = {
+	color=good
+	percent = no
+	decimals = 0
+}
+
+goods_output_crystal_add = {
+	color = good
+	percent = no
+	decimals = 0
+}
+
+goods_input_crystal_add = {
+	color = bad
+	percent = no
+	decimals = 0
+}
+
+goods_input_obsidian_add = {
+	color = bad
+	percent = no
+	decimals = 0
+}
+
+goods_output_obsidian_add = {
+	color = good
+	percent = no
+	decimals = 0
+}
+
+goods_input_obsidian_mult = {
+	color=bad
+	percent = yes
+	decimals = 2
+}
+
+goods_output_obsidian_mult = {
+	color=good
+	percent = yes
+	decimals = 2
+}
+
+goods_input_magic_hat_add = {
+	color = bad
+	percent = no
+	decimals = 0
+}
+
+goods_output_magic_hat_add = {
+	color = good
+	percent = no
+	decimals = 0
+}
+
+goods_input_magic_hat_mult = {
+	color = bad
+	percent = yes
+	decimals = 2
+}
+
+goods_output_magic_hat_mult = {
+	color = good
+	percent = yes
+	decimals = 2
+}
+
+goods_output_magic_wand_add = {
+	color=good
+	percent = no
+	decimals = 0
+}
+
+goods_input_magic_wand_add = {
+	color=bad
+	percent = no
+	decimals = 0
+}
+
+goods_input_potions_add = {
+	color=bad
+	percent = no
+	decimals = 0
+}
+
+goods_output_potions_add = {
+	color=good
+	percent = no
+	decimals = 0
+}

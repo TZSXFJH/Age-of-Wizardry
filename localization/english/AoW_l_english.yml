@@ -1,0 +1,14 @@
+﻿l_english:
+ building_throughput_mana_mult: "@mana! Mana Crystal throughput"
+ building_throughput_mana_mult_desc: "@mana! Mana Crystal throughput"
+ state_building_magic_tower_max_level_add_desc: "Magic Tower's max level added by Technology"
+ state_building_magic_tower_max_level_add: "Magic Tower's max level added by Technology"
+ building_employment_mages_add_desc: "Modifies the amount of @mages! mages a building can hire per level"
+ building_employment_mages_add: "@mages! mages Per level"
+
+ modifier_magic_drained: "Magic density reduced"
+ 
+ popneed_magic_supply: "Magic Supply"
+
+ building_mages_mortality_mult: "@mages! Mortality Multiplier"
+ building_mages_mortality_mult_desc: "The mortality multiplier of @mages! mages"

@@ -1,0 +1,211 @@
+﻿# Obsidian
+GLOBAL = {
+	s:STATE_ERITREA = { add_state_trait = state_trait_obsidian }
+	s:STATE_OROMIA = { add_state_trait = state_trait_obsidian }
+	s:STATE_GONDER = { add_state_trait = state_trait_obsidian }
+	s:STATE_KENYA = { add_state_trait = state_trait_obsidian }
+	s:STATE_TANGANYIKA = { add_state_trait = state_trait_obsidian }
+	s:STATE_LINDI = { add_state_trait = state_trait_obsidian }
+	# ATLANTIC
+	s:STATE_SOUTH_ATLANTIC_ISLANDS = { add_state_trait = state_trait_obsidian }
+	s:STATE_CANARY_ISLANDS = { add_state_trait = state_trait_obsidian }
+	s:STATE_ICELAND = { add_state_trait = state_trait_obsidian }
+	# CANADA
+	s:STATE_BRITISH_COLUMBIA = { add_state_trait = state_trait_obsidian }
+	s:STATE_YUKON_TERRITORY = { add_state_trait = state_trait_obsidian }
+	# CENTRAL_AMERICAN
+	s:STATE_GUATEMALA = { add_state_trait = state_trait_obsidian }
+	s:STATE_HONDURAS = { add_state_trait = state_trait_obsidian }
+	# ASIA
+	# AFGHANISTAN
+	s:STATE_CENTRAL_HIGHLANDS = { add_state_trait = state_trait_obsidian }
+	# 
+	s:STATE_ARMENIA = { add_state_trait = state_trait_obsidian }
+	s:STATE_AZERBAIJAN = { add_state_trait = state_trait_obsidian }
+	s:STATE_GREATER_CAUCASUS = { add_state_trait = state_trait_obsidian }
+	s:STATE_NORTH_CAUCASUS = { add_state_trait = state_trait_obsidian }
+	s:STATE_GEORGIA = { add_state_trait = state_trait_obsidian }
+	# HUNGARY
+	s:STATE_SLOVAKIA = { add_state_trait = state_trait_obsidian }
+	# IRAN
+	s:STATE_TABRIZ = { add_state_trait = state_trait_obsidian }
+	# NORTH KOREA
+	s:STATE_SARIWON = { add_state_trait = state_trait_obsidian }
+	# RUSSIA
+	s:STATE_KAMCHATKA = { add_state_trait = state_trait_obsidian }
+	s:STATE_CHUKOTKA = { add_state_trait = state_trait_obsidian }
+	# CHINA
+	s:STATE_SOUTHERN_MANCHURIA = { add_state_trait = state_trait_obsidian }
+	s:STATE_OUTER_MANCHURIA = { add_state_trait = state_trait_obsidian }
+	s:STATE_NGARI = { add_state_trait = state_trait_obsidian }
+	# TURKEY
+	s:STATE_ERZURUM = { add_state_trait = state_trait_obsidian }
+	s:STATE_ADANA = { add_state_trait = state_trait_obsidian }
+	s:STATE_KONYA = { add_state_trait = state_trait_obsidian }
+	s:STATE_ANKARA = { add_state_trait = state_trait_obsidian }
+	s:STATE_AYDIN = { add_state_trait = state_trait_obsidian }
+	# UKRAINE
+	s:STATE_EAST_GALICIA = { add_state_trait = state_trait_obsidian }
+	# YEMEN
+	s:STATE_YEMEN = { add_state_trait = state_trait_obsidian }
+	# JAPAN
+	s:STATE_HOKKAIDO = { add_state_trait = state_trait_obsidian }
+	s:STATE_TOHOKU = { add_state_trait = state_trait_obsidian }
+	s:STATE_CHUBU = { add_state_trait = state_trait_obsidian }
+	s:STATE_KANTO = { add_state_trait = state_trait_obsidian }
+	s:STATE_CHUGOKU = { add_state_trait = state_trait_obsidian }
+	s:STATE_KYUSHU = { add_state_trait = state_trait_obsidian }
+	# MEDITERRANEAN 
+	# FRANCE - TODO
+	s:STATE_LANGUEDOC = { add_state_trait = state_trait_obsidian }
+	s:STATE_PROVENCE = { add_state_trait = state_trait_obsidian }
+	# GREECE
+	s:STATE_WEST_AEGEAN_ISLANDS = { add_state_trait = state_trait_obsidian }
+	s:STATE_EAST_AEGEAN_ISLANDS = { add_state_trait = state_trait_obsidian }
+	# ITALY
+	s:STATE_SICILY = { add_state_trait = state_trait_obsidian }
+	s:STATE_LAZIO = { add_state_trait = state_trait_obsidian }
+	s:STATE_SARDINIA = { add_state_trait = state_trait_obsidian }
+	# MEXICO
+	s:STATE_BAJA_CALIFORNIA = { add_state_trait = state_trait_obsidian }
+	s:STATE_CHIHUAHUA = { add_state_trait = state_trait_obsidian }
+	s:STATE_DURANGO = { add_state_trait = state_trait_obsidian }
+	s:STATE_MEXICO = { add_state_trait = state_trait_obsidian }
+	s:STATE_BAJIO = { add_state_trait = state_trait_obsidian }
+	s:STATE_JALISCO = { add_state_trait = state_trait_obsidian }
+	s:STATE_SONORA = { add_state_trait = state_trait_obsidian }
+	s:STATE_VERACRUZ = { add_state_trait = state_trait_obsidian }
+	s:STATE_ZACATECAS = { add_state_trait = state_trait_obsidian }
+	# PACIFIC
+	s:STATE_EASTERN_NEW_GUINEA = { add_state_trait = state_trait_obsidian }
+	s:STATE_VANUATU = { add_state_trait = state_trait_obsidian }
+	s:STATE_TAHITI = { add_state_trait = state_trait_obsidian }
+	s:STATE_TONGA = { add_state_trait = state_trait_obsidian }
+	# AUSTRALIA
+	s:STATE_NEW_SOUTH_WALES = { add_state_trait = state_trait_obsidian }
+	s:STATE_QUEENSLAND = { add_state_trait = state_trait_obsidian }
+	# NEW_ZEALAND
+	s:STATE_NORTH_ISLAND = { add_state_trait = state_trait_obsidian }
+	s:STATE_SOUTH_ISLAND = { add_state_trait = state_trait_obsidian }
+	# PHILIPPINES
+	s:STATE_LUZON = { add_state_trait = state_trait_obsidian }
+	s:STATE_VISAYAS = { add_state_trait = state_trait_obsidian }
+	s:STATE_MINDANAO = { add_state_trait = state_trait_obsidian }
+	# HAWAIIAN ISLANDS
+	s:STATE_HAWAIIAN_ISLANDS = { add_state_trait = state_trait_obsidian }
+	# SOUTH AMERICA
+	# ARGENTINA
+	s:STATE_JUJUY = { add_state_trait = state_trait_obsidian }
+	s:STATE_TUCUMAN = { add_state_trait = state_trait_obsidian }
+	s:STATE_RIO_NEGRO = { add_state_trait = state_trait_obsidian }
+	s:STATE_PATAGONIA = { add_state_trait = state_trait_obsidian }
+	# BOLIVIA
+	s:STATE_POTOSI = { add_state_trait = state_trait_obsidian }
+	# COLUMBIA
+	s:STATE_CAUCA = { add_state_trait = state_trait_obsidian }
+	# ECUADOR
+	s:STATE_ECUADOR = { add_state_trait = state_trait_obsidian }
+	# PERU
+	s:STATE_LIMA = { add_state_trait = state_trait_obsidian }
+	s:STATE_CAJAMARCA = { add_state_trait = state_trait_obsidian }
+	s:STATE_ICA = { add_state_trait = state_trait_obsidian }
+	# AMERICA
+	s:STATE_ALASKA = { add_state_trait = state_trait_obsidian }
+	s:STATE_ARIZONA = { add_state_trait = state_trait_obsidian }
+	s:STATE_CALIFORNIA = { add_state_trait = state_trait_obsidian }
+	s:STATE_COLORADO = { add_state_trait = state_trait_obsidian }
+	s:STATE_HAWAIIAN_ISLANDS = { add_state_trait = state_trait_obsidian }
+	s:STATE_IDAHO = { add_state_trait = state_trait_obsidian }
+	s:STATE_MONTANA = { add_state_trait = state_trait_obsidian }
+	s:STATE_NEVADA = { add_state_trait = state_trait_obsidian }
+	s:STATE_NEW_MEXICO = { add_state_trait = state_trait_obsidian }
+	s:STATE_OREGON = { add_state_trait = state_trait_obsidian }
+	s:STATE_SOUTH_DAKOTA = { add_state_trait = state_trait_obsidian }
+	s:STATE_TEXAS = { add_state_trait = state_trait_obsidian }
+	s:STATE_UTAH = { add_state_trait = state_trait_obsidian }
+	s:STATE_WASHINGTON = { add_state_trait = state_trait_obsidian }
+	s:STATE_WYOMING = { add_state_trait = state_trait_obsidian }
+}
+
+# Crystal
+GLOBAL = {
+	# SOUTH AMERICA
+	s:STATE_CAUCA = { add_state_trait = state_trait_crystal_abundant }
+	s:STATE_CUNDINAMARCA = { add_state_trait = state_trait_crystal_abundant }
+	s:STATE_ANTIOQUIA = { add_state_trait = state_trait_crystal_modest }
+	s:STATE_GUAYANA = { add_state_trait = state_trait_crystal_sparse }
+	s:STATE_CAJAMARCA = { add_state_trait = state_trait_crystal_sparse }
+	s:STATE_LIMA = { add_state_trait = state_trait_crystal_sparse }
+	s:STATE_ICA = { add_state_trait = state_trait_crystal_sparse }
+	s:STATE_AREQUIPA = { add_state_trait = state_trait_crystal_modest }
+	s:STATE_TARAPACA = { add_state_trait = state_trait_crystal_abundant }
+	s:STATE_SANTIAGO = { add_state_trait = state_trait_crystal_sparse }
+	s:STATE_PATAGONIA = { add_state_trait = state_trait_crystal_sparse }
+	s:STATE_TUCUMAN = { add_state_trait = state_trait_crystal_modest }
+	s:STATE_URUGUAY = { add_state_trait = state_trait_crystal_modest }
+	s:STATE_RIO_GRANDE_DO_SUL = { add_state_trait = state_trait_crystal_modest }
+	s:STATE_SANTA_CATARINA = { add_state_trait = state_trait_crystal_modest }
+	s:STATE_SANTA_CRUZ = { add_state_trait = state_trait_crystal_modest }
+	s:STATE_MINAS_GERAIS = { add_state_trait = state_trait_crystal_sparse }
+	s:STATE_RIO_DE_JANEIRO = { add_state_trait = state_trait_crystal_sparse }
+	s:STATE_BAHIA = { add_state_trait = state_trait_crystal_modest }
+	s:STATE_GOIAS = { add_state_trait = state_trait_crystal_abundant }
+	# NORTH AMERICA
+	s:STATE_PUERTO_RICO = { add_state_trait = state_trait_crystal_sparse }
+	s:STATE_GUATEMALA = { add_state_trait = state_trait_crystal_sparse }
+	s:STATE_BAJIO = { add_state_trait = state_trait_crystal_modest }
+	s:STATE_ZACATECAS = { add_state_trait = state_trait_crystal_modest }
+	s:STATE_SONORA = { add_state_trait = state_trait_crystal_abundant }
+	s:STATE_SINALOA = { add_state_trait = state_trait_crystal_sparse }
+	s:STATE_CALIFORNIA = { add_state_trait = state_trait_crystal_abundant }
+	s:STATE_ARIZONA = { add_state_trait = state_trait_crystal_abundant }
+	s:STATE_NEW_MEXICO = { add_state_trait = state_trait_crystal_modest }
+	s:STATE_COLORADO = { add_state_trait = state_trait_crystal_abundant }
+	s:STATE_UTAH = { add_state_trait = state_trait_crystal_modest }
+	s:STATE_OREGON = { add_state_trait = state_trait_crystal_modest }
+	s:STATE_IDAHO = { add_state_trait = state_trait_crystal_abundant }
+	s:STATE_WASHINGTON = { add_state_trait = state_trait_crystal_abundant }
+	s:STATE_SOUTH_DAKOTA = { add_state_trait = state_trait_crystal_sparse }
+	s:STATE_TEXAS = { add_state_trait = state_trait_crystal_sparse }
+	s:STATE_OKLAHOMA = { add_state_trait = state_trait_crystal_sparse }
+	s:STATE_ARKANSAS = { add_state_trait = state_trait_crystal_abundant }
+	s:STATE_ILLINOIS = { add_state_trait = state_trait_crystal_modest }
+	s:STATE_ALABAMA = { add_state_trait = state_trait_crystal_sparse }
+	s:STATE_MICHIGAN = { add_state_trait = state_trait_crystal_sparse }
+	s:STATE_SOUTH_CAROLINA = { add_state_trait = state_trait_crystal_abundant }
+	s:STATE_NORTH_CAROLINA = { add_state_trait = state_trait_crystal_abundant }
+	s:STATE_VIRGINIA = { add_state_trait = state_trait_crystal_modest }
+	s:STATE_DISTRICT_OF_COLUMBIA = { add_state_trait = state_trait_crystal_sparse }
+	s:STATE_MARYLAND = { add_state_trait = state_trait_crystal_sparse }
+	s:STATE_PENNSYLVANIA = { add_state_trait = state_trait_crystal_sparse }
+	s:STATE_NEW_JERSEY = { add_state_trait = state_trait_crystal_sparse }
+	s:STATE_NEW_YORK = { add_state_trait = state_trait_crystal_abundant }
+	s:STATE_NEW_HAMPSHIRE = { add_state_trait = state_trait_crystal_abundant }
+	s:STATE_NEWFOUNDLAND = { add_state_trait = state_trait_crystal_sparse }
+	s:STATE_BRITISH_COLUMBIA = { add_state_trait = state_trait_crystal_sparse }
+	s:STATE_ALASKA = { add_state_trait = state_trait_crystal_abundant }
+	#AFRICA
+	s:STATE_HEREROLAND = { add_state_trait = state_trait_crystal_modest }
+	s:STATE_TRANSVAAL = { add_state_trait = state_trait_crystal_abundant }
+	s:STATE_RIFT_VALLEY = { add_state_trait = state_trait_crystal_modest }
+	s:STATE_SOMALILAND = { add_state_trait = state_trait_crystal_modest }
+	#EUROPE
+	s:STATE_ASTURIAS = { add_state_trait = state_trait_crystal_modest }
+	s:STATE_CATALONIA = { add_state_trait = state_trait_crystal_sparse }
+	s:STATE_LANGUEDOC = { add_state_trait = state_trait_crystal_modest }
+	s:STATE_RHONE = { add_state_trait = state_trait_crystal_sparse }
+	s:STATE_LANCASHIRE = { add_state_trait = state_trait_crystal_sparse }
+	s:STATE_BRUNSWICK = { add_state_trait = state_trait_crystal_sparse }
+	#ASIA
+	s:STATE_BANGKOK = { add_state_trait = state_trait_crystal_modest }
+	s:STATE_CHIANG_MAI = { add_state_trait = state_trait_crystal_sparse }
+	s:STATE_LUZON = { add_state_trait = state_trait_crystal_sparse }
+	s:STATE_VISAYAS = { add_state_trait = state_trait_crystal_sparse }
+	s:STATE_MINDANAO = { add_state_trait = state_trait_crystal_sparse }
+	s:STATE_DZUNGARIA = { add_state_trait = state_trait_crystal_modest }
+	s:STATE_TRANS_BAIKAL = { add_state_trait = state_trait_crystal_sparse }
+	#OCEANIA
+	s:STATE_WESTERN_AUSTRALIA = { add_state_trait = state_trait_crystal_modest }
+	s:STATE_SOUTH_ISLAND = { add_state_trait = state_trait_crystal_abundant }
+	s:STATE_NORTH_ISLAND = { add_state_trait = state_trait_crystal_abundant}
+}

@@ -1,0 +1,69 @@
+﻿l_english:
+
+#-------------------Buildings------------------------
+
+ pmg_offensive_enchantment: "Offensive Enchantments"
+ pm_no_offensive_enchantment: "No Enchantments"
+ pm_enchanted_barrel: "Enchanted Barrels"
+ pm_levitate_magic_mark_engraved: "'Win Gar Dium Levi Ohhh Sa' magic mark engraved"
+ pm_ultimate_engrave_and_enchant: "Ultimate Engrave and Enchant"
+
+ pmg_defensive_enchantment: "Defensive Enchantments"
+ pm_no_defensive_enchantment: "No Enchantments"
+ pm_personal_magic_shield: "Magic Infused Battle Gears"
+ pm_portable_magic_shield: "Portable Magic Shield"
+ pm_shield_magic_mark_engraved: "Battle Gear with Magic Shield Engraved"
+
+ pmg_navy_defensive_enchantment: "Defensive Enchantments"
+ pm_navy_no_defensive_enchantment: "No Enchantments"
+ pm_navy_personal_magic_shield: "Bulky Magic Shield"
+ pm_navy_portable_magic_shield: "Portable Magic Shield"
+ pm_navy_shield_magic_mark_engraved: "Reinforcced Armor with engraved Magic Shield"
+
+#----------------------------
+
+ building_magic_tower: "Magic Tower"
+ pmg_shield_module: "Shield Modules"
+ pm_shield_module_off: "Shield Module Deactivated"
+ pm_light_shield: "Light Shield"
+ pm_medium_shield: "Medium Shield"
+ pm_heavy_shield: "Heavy Shield"
+
+ pmg_military_buff_module: "Military Buff Modules"
+ pm_military_buff_module_off: "Military Buff Modules Deactivated"
+ pm_offense_buff: "Offense Buff"
+ pm_defense_buff: "Defense Buff"
+ pm_mixed_buff: "Mixed Buff"
+
+ pmg_civilian_buff_module: "Civilian Buff Modules"
+ pm_civilian_buff_module_off: "Civilian Buff Modules Deactivated"
+ pm_civilian_birth_rate_buff: "Birth Rate Buff"
+ pm_civilian_mortality_buff: "Mortality Buff"
+ pm_clensed_mind: "Clensed Mind"
+
+ pmg_astrological_unit: "Astrological Unit"
+ pm_magic_buff_module_off: "No Astrological Unit"
+ pm_economic_buff: "Economic Buffs"
+ pm_social_buff: "Social Buffs"
+ pm_political_buff: "Political Buffs"
+
+#-----------------------Mobilization Option Group-----------------------------
+
+equipments: "Equipments"
+
+#------------------------Mobilization Options----------------------------
+
+mobilization_option_healing_potions: "Healing Potions"
+mobilization_option_magic_powered_personal_weapons: "Magic Powered Personal Weapons"
+mobilization_option_magic_artillery: "Magic Artillery"
+mobilization_option_magic_infused_personal_armor: "Magic Infused Personal Armor"
+mobilization_option_early_exoskeleton: "Early Exoskeleton"
+mobilization_option_exoskeleton: "Exoskeleton"
+mobilization_option_portable_shield_module: "Portable Shield Module"
+
+#------------------------Unit Types----------------------------
+
+combat_unit_type_magic_infantry: "Magic Infantry"
+combat_unit_type_runic_artillery: "Runic Artillery"
+combat_unit_type_magitek_artillery: "Magitek Artillery"
+combat_unit_type_battle_mages: "Battle mages"

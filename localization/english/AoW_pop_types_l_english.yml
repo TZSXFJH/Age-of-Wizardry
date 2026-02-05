@@ -1,0 +1,9 @@
+﻿l_english:
+ mages: "@mages! $mages_no_icon$"
+ mages_only_icon: "@mages!"
+ mages_no_icon: "mages"
+ mages_desc: "mages are individuals with special and powerful abilities. No matter what class or background people come from, they can become mages if they are gifted and have passed the training. Their political interests are Petite Bourgeoisie and Intelligentsia."
+ MAGES_QUALIFICATIONS_DESC: "Only pops with adequate [concept_literacy] can become #v $mages$#!. Potential increases with greater [concept_literacy] and [concept_wealth]. Pops whose [concept_culture] have low [concept_acceptance] take a much longer time. #v $Everybody$#! have a particularly easy time becoming #v $mages$#!."
+ POP_mages: "$mages$ [concept_profession]"
+ state_mages_investment_pool_efficiency_mult: "$mages$ [concept_investment_pool] contribution efficiency"
+ state_mages_investment_pool_efficiency_mult_desc: "An increase or decrease to how much the invested profits from $mages$ will contribute to the [concept_investment_pool]"

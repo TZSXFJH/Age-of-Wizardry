@@ -1,0 +1,250 @@
+﻿### ERA 1
+REPLACE_OR_CREATE:magic_warfare_9981 = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/magic_warfare_9981.dds"
+	category = military
+	modifier = {
+		country_infamy_generation_mult = -0.05
+	}
+	ai_weight = {
+		value = 3
+	}
+}
+
+REPLACE_OR_CREATE:magic_tower_9981 = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/magic_tower_9981.dds"
+	category = military
+	unlocking_technologies = {
+		magic_warfare_9981
+	}
+	modifier = {
+		state_building_magic_tower_max_level_add = 1
+	}
+	ai_weight = {
+		value = 3
+	}
+}
+
+REPLACE_OR_CREATE:legendary_buff_module_9981 = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/buff_module.dds"
+	category = military
+	unlocking_technologies = {
+		magic_tower_9981
+	}
+	ai_weight = {
+		value = 3
+	}
+}
+
+REPLACE_OR_CREATE:shield_module_9981 = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/shield_module.dds"
+	category = military
+	unlocking_technologies = {
+		magic_tower_9981
+	}
+	ai_weight = {
+		value = 3
+	}
+}
+
+REPLACE_OR_CREATE:magic_powered_weapon_9981 = {
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/magic_powered_weapon.dds"
+	category = military
+	unlocking_technologies = {
+		magic_warfare_9981
+	}
+	modifier = {
+	}
+	ai_weight = {
+		value = 3
+	}
+}
+
+REPLACE_OR_CREATE:magic_artillery_9981 = {
+	era = era_3
+	texture = "gfx/interface/icons/invention_icons/cannon_tech.dds"
+	category = military
+	unlocking_technologies = {
+		magic_powered_weapon_9981
+	}
+	modifier = {
+	}
+	ai_weight = {
+		value = 2
+	}
+}
+
+REPLACE_OR_CREATE:magic_infused_armor_9981 = {
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/magic_infused_armorr.dds"
+	category = military
+	unlocking_technologies = {
+		magic_warfare_9981
+	}
+	modifier = {
+		battle_casualties_mult = -0.01
+	}
+	ai_weight = {
+		value = 2
+	}
+}
+
+REPLACE_OR_CREATE:early_stage_exoskeleton_9981 = {
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/early_stage_exoskeleton.dds"
+	category = military
+	unlocking_technologies = {
+		magic_infused_armor_9981
+		advanced_shield_module_9981
+	}
+	ai_weight = {
+		value = 2
+	}
+}
+
+REPLACE_OR_CREATE:exoskeleton_9981 = {
+	era = era_5
+	texture = "gfx/interface/icons/invention_icons/exoskeleton.dds"
+	category = military
+	unlocking_technologies = {
+		early_stage_exoskeleton_9981
+		mastered_shield_module_9981
+	}
+	ai_weight = {
+		value = 2
+	}
+}
+
+REPLACE_OR_CREATE:real_mobile_armor_9981 = {
+	era = era_5
+	texture = "gfx/interface/icons/invention_icons/magic_infused_armorr.dds"
+	category = military
+	unlocking_technologies = {
+		exoskeleton_9981
+		mastered_shield_module_9981
+		legendary_buff_module_9981
+		ultimate_magic_tower_9981
+	}
+	ai_weight = {
+		value = 2
+	}
+}
+
+REPLACE_OR_CREATE:enchanted_magic_tower_9981 = {
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/enchanted_magic_tower.dds"
+	category = military
+	unlocking_technologies = {
+		magic_tower_9981
+	}
+	modifier = {
+		state_building_magic_tower_max_level_add = 1
+	}
+	ai_weight = {
+		value = 1
+	}
+}
+
+### ERA 3
+
+REPLACE_OR_CREATE:advanced_shield_module_9981 = {
+	era = era_3
+	texture = "gfx/interface/icons/invention_icons/advanced_shield_module.dds"
+	category = military
+	unlocking_technologies = {
+		shield_module_9981
+	}
+	ai_weight = {
+		value = 1
+	}
+}
+
+REPLACE_OR_CREATE:advanced_buff_module_9981 = {
+	era = era_3
+	texture = "gfx/interface/icons/invention_icons/advanced_buff.dds"
+	category = military
+	unlocking_technologies = {
+		# buff_module_9981
+	}
+	ai_weight = {
+		value = 1
+	}
+}
+
+REPLACE_OR_CREATE:engraved_enchanted_magic_tower_9981 = {
+	era = era_3
+	texture = "gfx/interface/icons/invention_icons/engraved_enchanted_magic_tower.dds"
+	category = military
+	unlocking_technologies = {
+		enchanted_magic_tower_9981
+	}
+	modifier = {
+		state_building_magic_tower_max_level_add = 1
+	}
+	ai_weight = {
+		value = 1
+	}
+}
+
+### ERA 4
+REPLACE_OR_CREATE:mastered_shield_module_9981 = {
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/mastered_shield_module.dds"
+	category = military
+	unlocking_technologies = {
+		advanced_shield_module_9981
+	}
+	ai_weight = {
+		value = 1
+	}
+}
+
+REPLACE_OR_CREATE:mastery_magic_tower_9981 = {
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/mastery_magic_tower.dds"
+	category = military
+	unlocking_technologies = {
+		engraved_enchanted_magic_tower_9981
+		advanced_buff_module_9981
+	}
+	modifier = {
+		state_building_magic_tower_max_level_add = 1
+	}
+	ai_weight = {
+		value = 1
+	}
+}
+
+### ERA 5
+
+REPLACE_OR_CREATE:legendary_buff_module_9981 = {
+	era = era_5
+	texture = "gfx/interface/icons/invention_icons/legendary_buff_module.dds"
+	category = military
+	unlocking_technologies = {
+		advanced_buff_module_9981
+		mastery_magic_tower_9981
+	}
+	ai_weight = {
+		value = 2
+	}
+}
+
+REPLACE_OR_CREATE:ultimate_magic_tower_9981 = {
+	era = era_5
+	texture = "gfx/interface/icons/invention_icons/ultimate_magic_tower.dds"
+	category = military
+	unlocking_technologies = {
+		mastery_magic_tower_9981
+	}
+	modifier = {
+		state_building_magic_tower_max_level_add = 1
+	}
+	ai_weight = {
+		value = 2
+	}
+}

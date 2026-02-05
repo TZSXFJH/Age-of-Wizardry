@@ -1,0 +1,404 @@
+﻿REPLACE_OR_CREATE:mobilization_option_healing_potions = {
+	texture = "gfx/interface/icons/mobilization_options/healing_potions.dds"
+	unlocking_technologies = {
+		triage
+		healing_potion_9981
+	}
+	possible = {
+		NOT = { 
+			scope:military_formation = { 
+				OR = {
+					has_mobilization_option = mobilization_option:mobilization_option_first_aid 
+					has_mobilization_option = mobilization_option:mobilization_option_field_hospitals
+				}
+			} 
+		}
+		market ?= {
+			mg:potions ?= {
+				market_goods_sell_orders > 0
+			}
+		}
+	}
+
+	
+	on_activate_while_mobilized = {
+		custom_tooltip = {
+			text = mobilization_option_it_hurts_organization_to_add_medic_support_tt
+			add_organization = {
+				value = organization
+				multiply = -0.25
+			}
+		}
+	}
+	
+	on_deactivate = {
+		custom_tooltip = {
+			text = mobilization_option_it_hurts_morale_and_organization_when_you_remove_medic_support_tt
+			every_combat_unit = {
+				add_morale = {
+					value = morale
+					multiply = -0.5
+				}
+			}
+			add_organization = {
+				value = organization
+				multiply = -0.25
+			}
+		}
+	}
+	
+	upkeep_modifier = {
+		goods_input_potions_add = 1.0
+	}
+	unit_modifier = {
+		unit_recovery_rate_add = 0.2
+	}
+	ai_weight = {
+		value = 1
+	}
+
+	group = medic_support
+}
+
+REPLACE_OR_CREATE:mobilization_option_magic_powered_personal_weapons = {
+	texture = "gfx/interface/icons/mobilization_options/magic_weapon.dds"
+
+	possible = {
+		NOT = { scope:military_formation = {
+				any_combat_unit = {
+				 has_unit_type = unit_type:combat_unit_type_magic_infantry }
+				} 
+			}
+		market ?= {
+			mg:mana ?= {
+				market_goods_sell_orders > 0
+			}
+		}
+	}
+	
+	on_activate_while_mobilized = {
+		custom_tooltip = {
+			text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+			add_organization = {
+				value = organization
+				multiply = -0.2
+			}
+		}
+	}
+	
+	on_deactivate = {
+		custom_tooltip = {
+			text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+			add_organization = {
+				value = organization
+				multiply = -0.8
+			}
+		}
+	}
+	
+	unlocking_technologies = {
+		magic_powered_weapon_9981
+	}
+	upkeep_modifier = {
+		goods_input_mana_add = 0.5
+		goods_input_small_arms_add = 1
+	}
+	unit_modifier = {
+		unit_offense_add = 5
+		unit_defense_add = 2
+		unit_morale_damage_mult = 0.15
+	}
+	ai_weight = {
+		value = 1
+	}
+
+    group = equipments
+}
+
+REPLACE_OR_CREATE:mobilization_option_magic_artillery = {
+	texture = "gfx/interface/icons/mobilization_options/cannon.dds"
+
+	possible = {
+		NOT = { scope:military_formation = {
+				any_combat_unit = {
+				 has_unit_type = unit_type:combat_unit_type_runic_artillery }
+				} 
+			}
+		NOT = { scope:military_formation = {
+				any_combat_unit = {
+				 has_unit_type = unit_type:combat_unit_type_magitek_artillery }
+				} 
+			}
+		market ?= {
+			mg:mana ?= {
+				market_goods_sell_orders > 0
+			}
+		}
+	}
+	
+	on_activate_while_mobilized = {
+		custom_tooltip = {
+			text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+			add_organization = {
+				value = organization
+				multiply = -0.5
+			}
+		}
+	}
+	
+	on_deactivate = {
+		custom_tooltip = {
+			text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+			add_organization = {
+				value = organization
+				multiply = -0.5
+			}
+		}
+	}
+	
+	unlocking_technologies = {
+		magic_artillery_9981
+	}
+	upkeep_modifier = {
+		goods_input_mana_add = 0.5
+		goods_input_artillery_add = 1
+	}
+	unit_modifier = {
+		unit_offense_add = 10
+		unit_defense_add = 5
+		unit_devastation_mult = 0.2
+		unit_morale_damage_mult = 0.2
+		unit_kill_rate_add = 0.1
+		military_formation_mobilization_speed_mult = -0.1
+	}
+	ai_weight = {
+		value = 1
+	}
+
+    group = equipments
+}
+
+REPLACE_OR_CREATE:mobilization_option_magic_infused_personal_armor = {
+	texture = "gfx/interface/icons/mobilization_options/armor.dds"
+
+	possible = {
+		NOT = { 
+			scope:military_formation = { 
+				OR = {
+					has_mobilization_option = mobilization_option:mobilization_option_early_exoskeleton
+					has_mobilization_option = mobilization_option:mobilization_option_exoskeleton
+				}
+			} 
+		}
+		market ?= {
+			mg:mana ?= {
+				market_goods_sell_orders > 0
+			}
+		}
+	}
+	
+	on_activate_while_mobilized = {
+		custom_tooltip = {
+			text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+			add_organization = {
+				value = organization
+				multiply = -0.5
+			}
+		}
+	}
+	
+	on_deactivate = {
+		custom_tooltip = {
+			text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+			add_organization = {
+				value = organization
+				multiply = -0.5
+			}
+		}
+	}
+	
+	unlocking_technologies = {
+		magic_infused_armor_9981
+	}
+	upkeep_modifier = {
+		goods_input_mana_add = 1
+	}
+	unit_modifier = {
+		unit_defense_add = 20
+	}
+	ai_weight = {
+		value = 1
+	}
+
+    group = equipments
+}
+
+REPLACE_OR_CREATE:mobilization_option_early_exoskeleton = {
+	texture = "gfx/interface/icons/mobilization_options/early_exoskeleton.dds"
+
+	possible = {
+		NOT = { 
+			scope:military_formation = { 
+				OR = {
+					has_mobilization_option = mobilization_option:mobilization_option_magic_infused_personal_armor
+					has_mobilization_option = mobilization_option:mobilization_option_exoskeleton			
+				}
+			} 
+		}
+		market ?= {
+			mg:mana ?= {
+				market_goods_sell_orders > 0
+			}
+		}
+	}
+	
+	on_activate_while_mobilized = {
+		custom_tooltip = {
+			text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+			add_organization = {
+				value = organization
+				multiply = -0.5
+			}
+		}
+	}
+	
+	on_deactivate = {
+		custom_tooltip = {
+			text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+			add_organization = {
+				value = organization
+				multiply = -0.5
+			}
+		}
+	}
+	
+	unlocking_technologies = {
+		early_stage_exoskeleton_9981
+	}
+	upkeep_modifier = {
+		goods_input_mana_add = 1
+		goods_input_steel_add = 2
+	}
+	unit_modifier = {
+		unit_defense_add = 30
+		military_formation_movement_speed_mult = 0.2
+		military_formation_mobilization_speed_mult = -0.1
+	}
+	ai_weight = {
+		value = 1
+	}
+
+    group = equipments
+}
+
+REPLACE_OR_CREATE:mobilization_option_exoskeleton = {
+	texture = "gfx/interface/icons/mobilization_options/exoskeleton.dds"
+
+	possible = {
+		NOT = { 
+			scope:military_formation = { 
+				OR = {
+					has_mobilization_option = mobilization_option:mobilization_option_magic_infused_personal_armor
+					has_mobilization_option = mobilization_option:mobilization_option_early_exoskeleton
+					has_mobilization_option = mobilization_option:mobilization_option_magic_powered_personal_weapons			
+				}
+			} 
+		}
+		market ?= {
+			mg:mana ?= {
+				market_goods_sell_orders > 0
+			}
+		}
+	}
+	
+	on_activate_while_mobilized = {
+		custom_tooltip = {
+			text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+			add_organization = {
+				value = organization
+				multiply = -0.2
+			}
+		}
+	}
+	
+	on_deactivate = {
+		custom_tooltip = {
+			text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+			add_organization = {
+				value = organization
+				multiply = -0.9
+			}
+		}
+	}
+	
+	unlocking_technologies = {
+		exoskeleton_9981
+	}
+	upkeep_modifier = {
+		goods_input_mana_add = 1.5
+		goods_input_steel_add = 2
+		goods_input_small_arms_add = 1
+	}
+	unit_modifier = {
+		unit_offense_add = 25
+		unit_defense_add = 40
+		military_formation_movement_speed_mult = 0.5
+		military_formation_mobilization_speed_mult = -0.15
+		unit_recovery_rate_add = 0.05
+		unit_morale_damage_mult = 0.15
+	}
+	ai_weight = {
+		value = 1
+	}
+
+    group = equipments
+}
+
+REPLACE_OR_CREATE:mobilization_option_portable_shield_module = {
+	texture = "gfx/interface/icons/mobilization_options/shield.dds"
+
+	possible = {
+		market ?= {
+			mg:mana ?= {
+				market_goods_sell_orders > 0
+			}
+		}
+	}
+	
+	on_activate_while_mobilized = {
+		custom_tooltip = {
+			text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+			add_organization = {
+				value = organization
+				multiply = -0.5
+			}
+		}
+	}
+	
+	on_deactivate = {
+		custom_tooltip = {
+			text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+			add_organization = {
+				value = organization
+				multiply = -0.5
+			}
+		}
+	}
+	
+	unlocking_technologies = {
+		advanced_shield_module_9981
+	}
+	upkeep_modifier = {
+		goods_input_mana_add = 0.5
+		goods_input_steel_add = 1
+	}
+	unit_modifier = {
+		unit_defense_add = 10
+		military_formation_movement_speed_mult = -0.05
+	}
+	ai_weight = {
+		value = 1
+	}
+
+    group = special_weapons
+}

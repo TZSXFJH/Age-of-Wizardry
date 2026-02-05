@@ -1,0 +1,31 @@
+﻿REPLACE_OR_CREATE:state_trait_obsidian = {
+	icon = "gfx/interface/icons/state_trait_icons/obsidian.dds"
+	
+	modifier = {
+		state_building_gemstone_mine_max_level_add = 15
+	}
+}
+
+REPLACE_OR_CREATE:state_trait_crystal_sparse = {
+	icon = "gfx/interface/icons/state_trait_icons/crystal.dds"
+	
+	modifier = {
+		state_building_gemstone_mine_max_level_add = 20
+	}
+}
+
+REPLACE_OR_CREATE:state_trait_crystal_modest = {
+	icon = "gfx/interface/icons/state_trait_icons/crystal.dds"
+	
+	modifier = {
+		state_building_gemstone_mine_max_level_add = 50
+	}
+}
+
+REPLACE_OR_CREATE:state_trait_crystal_abundant = {
+	icon = "gfx/interface/icons/state_trait_icons/crystal.dds"
+	
+	modifier = {
+		state_building_gemstone_mine_max_level_add = 80
+	}
+}

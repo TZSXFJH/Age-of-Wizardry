@@ -1,0 +1,104 @@
+﻿l_simp_chinese:
+ pmg_base_building_mana_infuse_industry: "魔能灌注产业"
+ pm_basic_infusion: "基础灌注"
+ pm_transmutation: "嬗变"
+ pm_electro_transmutation: "电驱嬗变"
+
+ pmg_automation_building_mana_infuse_industry: "自动化"
+ pm_manual_crystal_processing: "手工水晶加工"
+ pm_automated_crystal_processing: "自动水晶加工"
+
+ pmg_base_building_wand_production: "魔杖生产"
+ pm_traditional_production: "传统生产方式"
+ pm_wand_lathe: "魔能车床"
+ pm_wand_mechanized_workshops: "魔能自动化生产"
+ pm_wand_magic_mechanized_workshops: "魔能自动化附魔生产"
+
+ pmg_wand_production_enchantment: "附魔"
+ pm_wand_disabled_enchantment: "无附魔"
+ pm_wand_basic_enchantment: "基础附魔"
+ pm_wand_advanced_enchantment: "高阶附魔"
+ pm_wand_mastered_enchantment: "全方位附魔"
+
+ pmg_automation_building_wand_production: "自动化"
+ pm_watertube_boiler_building_wand_manufacturies: "魔能锅炉"
+ pm_rotary_valve_engine_building_wand_manufacturies: "魔能转机"
+ pm_assembly_lines_building_wand_manufacturies: "魔能动力线"
+ pm_mana_crystal_fired_plant: "魔力水晶烧制坊"
+
+
+ pmg_base_building_wood_to_hardwood: "硬木炼成"
+ pm_no_hardwood_transmutation_method: "未启用"
+ pm_basic_hardwood_transmutation_method: "基础硬木炼成"
+ pm_advanced_hardwood_transmutation_method: "高阶硬木炼成"
+ pm_mastered_hardwood_transmutation_method: "全功率硬木炼成"
+
+ pmg_base_building_sulfur_synthetic: "硫磺合成"
+ pm_no_sulfur_synthetic_method: "未启用"
+ pm_basic_sulfur_synthetic_method: "基本硫磺合成"
+ pm_advanced_sulfur_synthetic_method: "高阶硫磺合成"
+ pm_mastered_sulfur_synthetic_method: "全功率硫磺合成"
+
+ pmg_automation_building_transmutation_factory: "自动化"
+ pm_watertube_boiler_building_transmutation_factory: "魔能锅炉"
+ pm_rotary_valve_engine_building_transmutation_factory: "魔能转机"
+ pm_assembly_lines_building_transmutation_factory: "魔能动力线"
+
+ pmg_base_building_magic_academy: "魔法学院"
+ pm_magical_scholastics: "魔法学校"
+ pm_mages_and_society: "法师社会学"
+ pm_magic_and_ethics: "魔法伦理学"
+ pm_magic_and_philosophy: "魔法哲学"
+
+ pmg_academy_production: "艺术"
+ pm_academy_inactive: "未生效"
+ pm_magic_infused_art_and_culture: "附魔技艺"
+
+ pmg_magic_practice: "魔法练习"
+ pm_idle_mode_ac: "无魔法练习"
+ pm_coal_to_gold_practice: "煤变金炼成阵"
+ pm_mass_coal_to_gold_practice: "大功率煤变金炼成阵"
+
+ pmg_AOW_medical_aid: "医疗救助"
+ pm_healing_potion: "治疗药水"
+ pm_AOW_field_hospitals: "战地医院"
+
+ pmg_hsi_operation_center: "手术中心"
+ pm_community_care_center: "社区护理中心"
+ pm_medical_center: "医学中心"
+ pm_hospital_and_research_center: "研究医院综合体"
+
+ pmg_hsi_production_methods: "咒谱"
+ pm_ancient_recipe: "上古咒谱"
+ pm_improved_formula: "改进化咒谱"
+ pm_modern_formula: "现代化咒谱"
+
+ pmg_hsi_potion_sources: "药水来源"
+ pm_meat_source_potion: "肉源"
+ pm_vegan_source_potion: "素源"
+ pm_omnisource_potion: "混合来源"
+ pmg_automation_building_hsi: "自动化"
+
+ pm_watertube_boiler_building_hsi: "魔能锅炉"
+ pm_rotary_valve_engine_building_hsi: "魔能转机"
+ pm_assembly_lines_building_hsi: "魔能动力线"
+
+ modifier_magic_drained: "魔力浓度减少"
+ popneed_magic_supply: "魔法用品"
+ pm_wound_dressing: "伤口敷料"
+
+ pmg_magic_jewelry_production: "附魔首饰制作"
+ pm_hand_crafting_jewelry: "手工附魔"
+ pm_lost_wax_casting: "失蜡法"
+ pm_mechanical_infusion_with_spellbound_gears: "魔能机械灌注"
+
+ building_throughput_mana_mult: "@mana!魔力水晶吞吐量"
+ building_throughput_mana_mult_desc: "@mana!魔力水晶吞吐量"
+ state_building_magic_tower_max_level_add_desc: "科技加成魔能塔最大等级"
+ state_building_magic_tower_max_level_add: "科技加成魔能塔最大等级"
+ building_employment_mages_add_desc: "修正建筑每等级可以雇佣的@mages!法师数量"
+ building_employment_mages_add: "每级@mages!法师"
+
+
+ building_mages_mortality_mult: "@mages!法师死亡率"
+ building_mages_mortality_mult_desc: "@mages!法师死亡率"

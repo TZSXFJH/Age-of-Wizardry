@@ -1,0 +1,23 @@
+﻿building_employment_mages_add = {
+	color=good
+	percent = no
+	decimals = 0
+}
+
+building_mages_mortality_mult = {
+	color=bad
+	percent = yes
+	decimals = 0
+	game_data={
+		ai_value=0
+	}
+}
+
+state_mages_investment_pool_efficiency_mult={
+	decimals=0
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
