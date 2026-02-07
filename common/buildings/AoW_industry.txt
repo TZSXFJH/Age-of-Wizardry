@@ -5,7 +5,9 @@ REPLACE_OR_CREATE:building_mana_infuse_industry = {
 	icon = "gfx/interface/icons/building_icons/mana_infuse_industry.dds"
 	ownership_type = self
 	ai_nationalization_desire = 0.15
-	ai_value = 1900
+	ai_value = {
+		value = 2000
+	}
 	
 	unlocking_technologies = {
 		magic_extraction_and_processing_9981

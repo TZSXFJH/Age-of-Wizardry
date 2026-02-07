@@ -45,4 +45,3 @@ REPLACE_OR_CREATE:pmg_astrological_unit = {
 	}
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 }
-
