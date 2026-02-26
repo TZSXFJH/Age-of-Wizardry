@@ -150,3 +150,8 @@
 
 #
  pm_mana_crystal_fired_plant: "Mana Crystal-Fired Plant"
+
+# SUBSISTENCE
+ pmg_crystal_hunting_subsistence: "Crystal Hunting"
+ pm_crystal_hunting: "Crystal Hunting"
+ pmg_magic_build_construction_sector: "Magic Build Construction Sector"

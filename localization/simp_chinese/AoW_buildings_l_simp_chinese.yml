@@ -50,4 +50,8 @@
  pm_glass_thermal_recrystallization: "再结晶"
  pm_glass_aetheric_saturation: "以太饱和"
 
+# SUBSISTENCE
+ pmg_crystal_hunting_subsistence: "水晶收集"
+ pm_crystal_hunting: "水晶收集"
+
 

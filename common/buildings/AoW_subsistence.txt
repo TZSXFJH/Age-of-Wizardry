@@ -1,0 +1,29 @@
+﻿INJECT:building_subsistence_farm = {
+	production_method_groups = {
+		pmg_crystal_hunting_subsistence
+	}
+}
+
+INJECT:building_subsistence_orchard = {
+	production_method_groups = {
+		pmg_crystal_hunting_subsistence
+	}
+}
+
+INJECT:building_subsistence_pasture = {
+	production_method_groups = {
+		pmg_crystal_hunting_subsistence
+	}
+}
+
+INJECT:building_subsistence_fishing_village = {
+	production_method_groups = {
+		pmg_crystal_hunting_subsistence
+	}
+}
+
+INJECT:building_subsistence_rice_farm = {
+	production_method_groups = {
+		pmg_crystal_hunting_subsistence
+	}
+}

@@ -1,0 +1,9 @@
+﻿gui_sidebar_aow_button = {
+    icon = "gfx/interface/main_hud/aow_btn.dds"
+
+    show_in_list = no
+
+    priority = 0
+
+    character_ideology = no
+}

@@ -1,0 +1,5 @@
+﻿INJECT:building_construction_sector = {
+	production_method_groups = {
+		pmg_magic_build_construction_sector
+	}
+}

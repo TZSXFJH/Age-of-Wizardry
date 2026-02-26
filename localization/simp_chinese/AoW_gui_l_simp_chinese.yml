@@ -1,0 +1,5 @@
+﻿l_simp_chinese:
+  # Scripted gui used by button
+  gui_sidebar_aow_button: "gui_sidebar_aow_button"
+  # Name of the button that is shown in the hover popout
+  gui_sidebar_aow_button_desc: "魔法"

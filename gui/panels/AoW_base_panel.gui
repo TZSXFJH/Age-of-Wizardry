@@ -1,0 +1,1137 @@
+﻿# types aow_base_panel_types {
+
+#     type aow_base_panel = fullscreen_block_window {
+#         name = "aow_base_panel"
+#         datacontext = "[GetMetaPlayer.GetPlayedOrObservedCountry]"
+
+#         visible = "[GetVariableSystem.HasValue('com_open_window', 'gui_sidebar_aow_button')]"
+
+#         # 隐藏原游戏元素
+#         blockoverride "animation_state_block" {
+#             state = {
+#                 name = _show
+#                 # Close open panel before showing this one
+#                 on_finish = "[InformationPanelBar.ClosePanel]"
+#                 on_finish = "[MapListPanelManager.CloseCurrentPanel]"
+#                 # Fullscreen panels hide topbar
+#                 on_finish = "[GetVariableSystem.Set('com_fullscreen', 'com_fullscreen')]"
+#                 start_sound = {
+#                     soundeffect = "event:/SFX/UI/SideBar/markets"
+#                 }
+#                 start_sound = {
+#                     soundeffect = "snapshot:/Dynamic/mute_world_80"
+#                 }
+#                 start_sound = {
+#                     soundeffect = "snapshot:/Dynamic/mute_vfx_war_100"
+#                 }
+#             }
+
+#             state = {
+#                 name = _hide
+#                 on_finish = "[GetVariableSystem.Clear('com_fullscreen')]"
+#                 on_finish = "[GetScriptedGui('sgui_gate_base_tab_reset').Execute(GuiScope.SetRoot(Country.MakeScope).End)]"
+#                 start_sound = {
+#                     soundeffect = "event:/SFX/UI/SideBar/markets_stop"
+#                 }
+#             }
+#         }
+#         # header 名称替换
+#         blockoverride "window_header_name" {
+#             text = gg_panel_base_title
+#             default_format = "#title"
+#         }
+#         # 后退和关闭
+#         back_button_large = {
+#             position = { 61 116 }
+#             parentanchor = top|left
+#             onclick = "[GetVariableSystem.Clear('com_open_window')]"
+#             onclick = "[GetVariableSystem.Clear('com_alert_action')]"
+#             input_action = "back"
+#         }
+#         close_button_large = {
+#             name = "tutorial_highlight_close_button"
+#             parentanchor = top|right
+#             onclick = "[GetVariableSystem.Clear('com_open_window')]"
+#             onclick = "[GetVariableSystem.Clear('com_alert_action')]"
+#             shortcut = "close_window"
+#             position = { -56 116 }
+#         }
+
+#         blockoverride "back_button_fullscreen" {}
+
+#         blockoverride "close_button_position" {
+#             visible = no
+#         }
+
+#         # 头部
+#         blockoverride "fixed_top" {
+#             # 分类器
+#             tab_buttons_fullscreen = {
+
+#                 # Production
+#                 blockoverride "first_button" {
+#                     text = "PRODUCTION_NO_CONCEPT"
+#                 }
+#                 blockoverride "first_button_tooltip" {
+#                     tooltip = "PRODUCTION_NO_CONCEPT"
+#                 }
+#                 blockoverride "first_button_click" {
+#                     onclick = "[GetScriptedGui('sgui_gate_base_tab_production').Execute(GuiScope.SetRoot(Country.MakeScope).End)]"
+#                 }
+#                 blockoverride "first_button_visibility" {
+#                     visible = "[GetScriptedGui('sgui_gate_base_tab_production').IsShown(GuiScope.SetRoot(Country.MakeScope).End)]"
+#                 }
+#                 blockoverride "first_button_visibility_checked" {
+#                     visible = "[Not(GetScriptedGui('sgui_gate_base_tab_production').IsShown(GuiScope.SetRoot(Country.MakeScope).End))]"
+#                 }
+#                 blockoverride "first_button_selected" {
+#                     text = "PRODUCTION_NO_CONCEPT"
+#                 }
+
+#                 # Military
+#                 blockoverride "second_button" {
+#                     text = "MILITARY"
+#                 }
+#                 blockoverride "second_button_tooltip" {
+#                     tooltip = "MILITARY"
+#                 }
+#                 blockoverride "second_button_click" {
+#                     onclick = "[GetScriptedGui('sgui_gate_base_tab_military').Execute(GuiScope.SetRoot(Country.MakeScope).End)]"
+#                 }
+#                 blockoverride "second_button_visibility" {
+#                     visible = "[GetScriptedGui('sgui_gate_base_tab_military').IsShown(GuiScope.SetRoot(Country.MakeScope).End)]"
+#                 }
+#                 blockoverride "second_button_visibility_checked" {
+#                     visible = "[Not(GetScriptedGui('sgui_gate_base_tab_military').IsShown(GuiScope.SetRoot(Country.MakeScope).End))]"
+#                 }
+#                 blockoverride "second_button_selected" {
+#                     text = "MILITARY"
+#                 }
+
+#                 # Society
+#                 blockoverride "third_button" {  
+#                     text = "SOCIETY"
+#                 }
+#                 blockoverride "third_button_tooltip" {  
+#                     tooltip = "SOCIETY"
+#                 }
+#                 blockoverride "third_button_click" {  
+#                     onclick = "[GetScriptedGui('sgui_gate_base_tab_society').Execute(GuiScope.SetRoot(Country.MakeScope).End)]"
+#                 }
+#                 blockoverride "third_button_visibility" {
+#                     visible = "[GetScriptedGui('sgui_gate_base_tab_society').IsShown(GuiScope.SetRoot(Country.MakeScope).End)]"
+#                 }
+#                 blockoverride "third_button_visibility_checked" {
+#                     visible = "[Not(GetScriptedGui('sgui_gate_base_tab_society').IsShown(GuiScope.SetRoot(Country.MakeScope).End))]"
+#                 }
+#                 blockoverride "third_button_selected" {
+#                     text = "SOCIETY"
+#                 }
+#             }
+#         }
+
+#         # # 下部分, 可滚动缩放
+#         # blockoverride "scrollarea_content" {
+#         #     widget = {
+#         #         size = { 100% 100% }
+#         #         parentanchor = top
+
+#         #         background = {
+#         #             visible = "[GetScriptedGui('sgui_gate_base_tab_production').IsShown(GuiScope.SetRoot(Country.MakeScope).End)]"
+#         #             using = illu_alpha
+#         #             fittype = center
+#         #             texture = "gfx/interface/illustrations/tech_tree/illustration_tech_production.dds"
+#         #             using = default_content_fade
+#         #         }
+#         #         background = {
+#         #             visible = "[GetScriptedGui('sgui_gate_base_tab_military').IsShown(GuiScope.SetRoot(Country.MakeScope).End)]"
+#         #             using = illu_alpha
+#         #             fittype = center
+#         #             texture = "gfx/interface/illustrations/tech_tree/illustration_tech_military.dds"
+#         #             using = default_content_fade
+#         #         }
+#         #         background = {
+#         #             visible = "[GetScriptedGui('sgui_gate_base_tab_society').IsShown(GuiScope.SetRoot(Country.MakeScope).End)]"
+#         #             using = illu_alpha
+#         #             fittype = center
+#         #             texture = "gfx/interface/illustrations/tech_tree/illustration_tech_society.dds"
+#         #             using = default_content_fade
+#         #         }
+
+#         #         gate_tech_tree = {
+#         #             visible = yes
+#         #         }
+#         #     }
+#         # }
+#     }
+
+#     # # tech tree
+#     # type gate_tech_tree = zoomarea {
+#     #     name = gate_tech_tree
+#     #     allow_outside = yes
+#     #     size = { 100% 100% }
+
+#     #     state = {
+#     #         name = "_zoom_changed"
+#     #         duration = 0.15
+#     #     }
+#     #     scissor = yes
+
+#     #     zoom = 0.4
+#     #     zoom_step = 0.15
+#     #     zoom_min = 0.3
+#     #     zoom_max = 1
+#     #     draggable_by = left # Do not add 'middle' click here, otherwise you will re-introduce PRCAL-16945
+
+#     #     zoomwidget = {
+#     #         hbox = {
+#     #             layoutpolicy_vertical = expanding
+#     #             layoutpolicy_horizontal = expanding
+
+#     #             gate_tech_tree_production = {
+#     #                 blockoverride "visible" {
+#     #                     visible = "[GetScriptedGui('sgui_gate_base_tab_production').IsShown(GuiScope.SetRoot(Country.MakeScope).End)]"
+#     #                 }
+#     #             }
+
+#     #             gate_tech_tree_military = {
+#     #                 blockoverride "visible" {
+#     #                     visible = "[GetScriptedGui('sgui_gate_base_tab_military').IsShown(GuiScope.SetRoot(Country.MakeScope).End)]"
+#     #                 }
+#     #             }
+
+#     #             gate_tech_tree_society = {
+#     #                 blockoverride "visible" {
+#     #                     visible = "[GetScriptedGui('sgui_gate_base_tab_society').IsShown(GuiScope.SetRoot(Country.MakeScope).End)]"
+#     #                 }
+#     #             }
+#     #         }
+#     #     }
+#     # }
+
+#     # type gate_tech_tree_production = gate_tech_tree_content {
+#     #     blockoverride "era_01" {
+#     #         gate_tech_tree_row = {
+#     #             blockoverride "items" {
+#     #                 gate_tech_tree_node = {
+#     #                     blockoverride "context" {
+#     #                         datacontext = "[GetTechnology('gate_mana_extraction')]"
+#     #                         datacontext = "[GetScriptedGui('gate_mana_extraction')]"
+#     #                     }
+#     #                 }
+#     #                 gate_tech_tree_node = {
+#     #                     blockoverride "context" {
+#     #                         datacontext = "[GetTechnology('magic_dwarf_murk')]"
+#     #                         datacontext = "[GetScriptedGui('magic_dwarf_murk')]"
+#     #                     }
+#     #                 }
+#     #             }
+#     #         }
+#     #     }
+#     #     blockoverride "era_02" {
+#     #         gate_tech_tree_row = {
+#     #             blockoverride "items" {
+#     #                 gate_tech_tree_node = {
+#     #                     blockoverride "context" {
+#     #                         datacontext = "[GetTechnology('gate_improved_extraction')]"
+#     #                         datacontext = "[GetScriptedGui('gate_improved_extraction')]"
+#     #                     }
+#     #                 }
+#     #                 gate_tech_tree_node = {
+#     #                     blockoverride "context" {
+#     #                         datacontext = "[GetTechnology('magic_farming')]"
+#     #                         datacontext = "[GetScriptedGui('magic_farming')]"
+#     #                     }
+#     #                 }
+
+#     #                 gate_tech_tree_node = {
+#     #                     blockoverride "context" {
+#     #                         datacontext = "[GetTechnology('living_irrigation')]"
+#     #                         datacontext = "[GetScriptedGui('living_irrigation')]"
+#     #                     }
+#     #                 }
+#     #                 gate_tech_tree_node = {
+#     #                     blockoverride "context" {
+#     #                         datacontext = "[GetTechnology('simple_rune_carving')]"
+#     #                         datacontext = "[GetScriptedGui('simple_rune_carving')]"
+#     #                     }
+#     #                 }
+#     #             }
+#     #         }
+#     #         gate_tech_tree_row = {
+#     #             blockoverride "items" {
+#     #                 gate_tech_tree_node = {
+#     #                     blockoverride "context" {
+#     #                         datacontext = "[GetTechnology('magic_dwarf_murk_railways')]"
+#     #                         datacontext = "[GetScriptedGui('magic_dwarf_murk_railways')]"
+#     #                     }
+#     #                 }
+#     #                 gate_tech_tree_node = {
+#     #                     blockoverride "context" {
+#     #                         datacontext = "[GetTechnology('mana_cores')]"
+#     #                         datacontext = "[GetScriptedGui('mana_cores')]"
+#     #                     }
+#     #                 }
+#     #                 gate_tech_tree_node = {
+#     #                     blockoverride "context" {
+#     #                         datacontext = "[GetTechnology('arcane_foundries')]"
+#     #                         datacontext = "[GetScriptedGui('arcane_foundries')]"
+#     #                     }
+#     #                 }
+#     #             }
+#     #         }
+#     #     }
+#     #     blockoverride "era_03" {
+#     #         gate_tech_tree_row = {
+#     #             blockoverride "items" {
+#     #                 gate_tech_tree_node = {
+#     #                     blockoverride "context" {
+#     #                         datacontext = "[GetTechnology('gate_ley_line_tap')]"
+#     #                         datacontext = "[GetScriptedGui('gate_ley_line_tap')]"
+#     #                     }
+#     #                 }
+#     #                 gate_tech_tree_node = {
+#     #                     blockoverride "context" {
+#     #                         datacontext = "[GetTechnology('regenerative_timber')]"
+#     #                         datacontext = "[GetScriptedGui('regenerative_timber')]"
+#     #                     }
+#     #                 }
+#     #                 gate_tech_tree_node = {
+#     #                     blockoverride "context" {
+#     #                         datacontext = "[GetTechnology('mana_infused_fertilizers')]"
+#     #                         datacontext = "[GetScriptedGui('mana_infused_fertilizers')]"
+#     #                     }
+#     #                 }
+#     #             }
+#     #         }
+#     #     }
+#     #     blockoverride "era_04" {
+#     #         gate_tech_tree_row = {
+#     #             blockoverride "items" {
+#     #                 gate_tech_tree_node = {
+#     #                     blockoverride "context" {
+#     #                         datacontext = "[GetTechnology('magic_golems')]"
+#     #                         datacontext = "[GetScriptedGui('magic_golems')]"
+#     #                     }
+#     #                 }
+#     #             }
+#     #         }
+#     #     }
+#     # }
+
+#     # type gate_tech_tree_military = gate_tech_tree_content {
+#     #     blockoverride "era_01" {
+#     #         gate_tech_tree_row = {
+#     #             blockoverride "items" {
+#     #                 gate_tech_tree_node = {
+#     #                     blockoverride "context" {
+#     #                         datacontext = "[GetTechnology('mage_infantry')]"
+#     #                         datacontext = "[GetScriptedGui('mage_infantry')]"
+#     #                     }
+#     #                 }
+#     #                 gate_tech_tree_node = {
+#     #                     blockoverride "context" {
+#     #                         datacontext = "[GetTechnology('battlefield_wards')]"
+#     #                         datacontext = "[GetScriptedGui('battlefield_wards')]"
+#     #                     }
+#     #                 }
+#     #             }
+#     #         }
+#     #     }
+#     #     blockoverride "era_02" {
+#     #         gate_tech_tree_row = {
+#     #             blockoverride "items" {
+#     #                 gate_tech_tree_node = {
+#     #                     blockoverride "context" {
+#     #                         datacontext = "[GetTechnology('gate_arcane_warfare_doctrine')]"
+#     #                         datacontext = "[GetScriptedGui('gate_arcane_warfare_doctrine')]"
+#     #                     }
+#     #                 }
+#     #                 gate_tech_tree_node = {
+#     #                     blockoverride "context" {
+#     #                         datacontext = "[GetTechnology('gate_mana_weaponization')]"
+#     #                         datacontext = "[GetScriptedGui('gate_mana_weaponization')]"
+#     #                     }
+#     #                 }
+
+#     #                 gate_tech_tree_node = {
+#     #                     blockoverride "context" {
+#     #                         datacontext = "[GetTechnology('mage_artillery')]"
+#     #                         datacontext = "[GetScriptedGui('mage_artillery')]"
+#     #                     }
+#     #                 }
+#     #                 gate_tech_tree_node = {
+#     #                     blockoverride "context" {
+#     #                         datacontext = "[GetTechnology('ritual_magic')]"
+#     #                         datacontext = "[GetScriptedGui('ritual_magic')]"
+#     #                     }
+#     #                 }
+#     #             }
+#     #         }
+#     #     }
+#     #     blockoverride "era_03" {
+#     #         gate_tech_tree_row = {
+#     #             blockoverride "items" {
+#     #                 gate_tech_tree_node = {
+#     #                     blockoverride "context" {
+#     #                         datacontext = "[GetTechnology('gate_shadow_infiltration_tactics')]"
+#     #                         datacontext = "[GetScriptedGui('gate_shadow_infiltration_tactics')]"
+#     #                     }
+#     #                 }
+#     #             }
+#     #         }
+#     #     }
+#     #     blockoverride "era_04" {
+#     #         gate_tech_tree_row = {
+#     #             blockoverride "items" {
+#     #                 gate_tech_tree_node = {
+#     #                     blockoverride "context" {
+#     #                         datacontext = "[GetTechnology('gate_runic_armor_forging')]"
+#     #                         datacontext = "[GetScriptedGui('gate_runic_armor_forging')]"
+#     #                     }
+#     #                 }
+#     #             }
+#     #         }
+#     #     }
+#     #     blockoverride "era_05" {
+#     #         gate_tech_tree_row = {
+#     #             blockoverride "items" {
+#     #                 gate_tech_tree_node = {
+#     #                     blockoverride "context" {
+#     #                         datacontext = "[GetTechnology('gate_commando_thaumaturgy')]"
+#     #                         datacontext = "[GetScriptedGui('gate_commando_thaumaturgy')]"
+#     #                     }
+#     #                 }
+#     #             }
+#     #         }
+#     #     }
+#     # }
+
+#     # type gate_tech_tree_society = gate_tech_tree_content {
+#     #     blockoverride "era_01" {
+#     #         gate_tech_tree_row = {
+#     #             blockoverride "items" {
+#     #                 gate_tech_tree_node = {
+#     #                     blockoverride "context" {
+#     #                         datacontext = "[GetTechnology('dwarven_gate_immigration')]"
+#     #                         datacontext = "[GetScriptedGui('dwarven_gate_immigration')]"
+#     #                     }
+#     #                 }
+#     #                 gate_tech_tree_node = {
+#     #                     blockoverride "context" {
+#     #                         datacontext = "[GetTechnology('orcish_gate_immigration')]"
+#     #                         datacontext = "[GetScriptedGui('orcish_gate_immigration')]"
+#     #                     }
+#     #                 }
+#     #                 gate_tech_tree_node = {
+#     #                     blockoverride "context" {
+#     #                         datacontext = "[GetTechnology('orc_clan_support')]"
+#     #                         datacontext = "[GetScriptedGui('orc_clan_support')]"
+#     #                     }
+#     #                 }
+#     #                 gate_tech_tree_node = {
+#     #                     blockoverride "context" {
+#     #                         datacontext = "[GetTechnology('elven_gate_immigration')]"
+#     #                         datacontext = "[GetScriptedGui('elven_gate_immigration')]"
+#     #                     }
+#     #                 }
+#     #                 gate_tech_tree_node = {
+#     #                     blockoverride "context" {
+#     #                         datacontext = "[GetTechnology('elven_support')]"
+#     #                         datacontext = "[GetScriptedGui('elven_support')]"
+#     #                     }
+#     #                 }
+#     #                 gate_tech_tree_node = {
+#     #                     blockoverride "context" {
+#     #                         datacontext = "[GetTechnology('gnomish_gate_immigration')]"
+#     #                         datacontext = "[GetScriptedGui('gnomish_gate_immigration')]"
+#     #                     }
+#     #                 }
+#     #                 gate_tech_tree_node = {
+#     #                     blockoverride "context" {
+#     #                         datacontext = "[GetTechnology('gnomish_harmony')]"
+#     #                         datacontext = "[GetScriptedGui('gnomish_harmony')]"
+#     #                     }
+#     #                 }
+#     #                 gate_tech_tree_node = {
+#     #                     blockoverride "context" {
+#     #                         datacontext = "[GetTechnology('bear_gate_immigration')]"
+#     #                         datacontext = "[GetScriptedGui('bear_gate_immigration')]"
+#     #                     }
+#     #                 }
+#     #                 gate_tech_tree_node = {
+#     #                     blockoverride "context" {
+#     #                         datacontext = "[GetTechnology('mana_lanterns')]"
+#     #                         datacontext = "[GetScriptedGui('mana_lanterns')]"
+#     #                     }
+#     #                 }
+#     #             }
+#     #         }
+#     #     }
+#     #     blockoverride "era_02" {
+#     #         gate_tech_tree_row = {
+#     #             blockoverride "items" {
+#     #                 gate_tech_tree_node = {
+#     #                     blockoverride "context" {
+#     #                         datacontext = "[GetTechnology('formalized_magic')]"
+#     #                         datacontext = "[GetScriptedGui('formalized_magic')]"
+#     #                     }
+#     #                 }
+#     #                 gate_tech_tree_node = {
+#     #                     blockoverride "context" {
+#     #                         datacontext = "[GetTechnology('monster_compendium')]"
+#     #                         datacontext = "[GetScriptedGui('monster_compendium')]"
+#     #                     }
+#     #                 }
+
+#     #                 gate_tech_tree_node = {
+#     #                     blockoverride "context" {
+#     #                         datacontext = "[GetTechnology('healing_circles')]"
+#     #                         datacontext = "[GetScriptedGui('healing_circles')]"
+#     #                     }
+#     #                 }
+#     #                 gate_tech_tree_node = {
+#     #                     blockoverride "context" {
+#     #                         datacontext = "[GetTechnology('arcane_infrastructure')]"
+#     #                         datacontext = "[GetScriptedGui('arcane_infrastructure')]"
+#     #                     }
+#     #                 }
+#     #             }
+#     #         }
+#     #         gate_tech_tree_row = {
+#     #             blockoverride "items" {
+#     #                 gate_tech_tree_node = {
+#     #                     blockoverride "context" {
+#     #                         datacontext = "[GetTechnology('ethereal_messaging')]"
+#     #                         datacontext = "[GetScriptedGui('ethereal_messaging')]"
+#     #                     }
+#     #                 }
+#     #             }
+#     #         }
+#     #     }
+#     #     blockoverride "era_03" {
+#     #         gate_tech_tree_row = {
+#     #             blockoverride "items" {
+#     #                 gate_tech_tree_node = {
+#     #                     blockoverride "context" {
+#     #                         datacontext = "[GetTechnology('magic_science')]"
+#     #                         datacontext = "[GetScriptedGui('magic_science')]"
+#     #                     }
+#     #                 }
+#     #                 gate_tech_tree_node = {
+#     #                     blockoverride "context" {
+#     #                         datacontext = "[GetTechnology('mana_linked_education')]"
+#     #                         datacontext = "[GetScriptedGui('mana_linked_education')]"
+#     #                     }
+#     #                 }
+#     #                 gate_tech_tree_node = {
+#     #                     blockoverride "context" {
+#     #                         datacontext = "[GetTechnology('thaumaturgic_courts')]"
+#     #                         datacontext = "[GetScriptedGui('thaumaturgic_courts')]"
+#     #                     }
+#     #                 }
+#     #             }
+#     #         }
+#     #     }
+#     #     blockoverride "era_04" {
+#     #         gate_tech_tree_row = {
+#     #             blockoverride "items" {
+#     #                 gate_tech_tree_node = {
+#     #                     blockoverride "context" {
+#     #                         datacontext = "[GetTechnology('soulbound_currency')]"
+#     #                         datacontext = "[GetScriptedGui('soulbound_currency')]"
+#     #                     }
+#     #                 }
+#     #             }
+#     #         }
+#     #     }
+#     # }
+
+#     # type gate_tech_tree_content = vbox {
+#     #     layoutpolicy_vertical = expanding
+#     #     layoutpolicy_horizontal = expanding
+#     #     spacing = 200
+#     #     margin = { 100 100 }
+
+#     #     block "visible" {
+#     #         visible = yes
+#     #     }
+
+#     #     hbox = {
+#     #         layoutpolicy_horizontal = expanding
+#     #         spacing = 200
+#     #         background = {
+#     #             size = { 200% 100% }
+#     #             using = tech_tree_divider
+#     #             alpha = 0.15
+#     #             margin = { 1350 50 }
+#     #         }
+
+#     #         gate_tech_tree_era = {
+#     #             blockoverride "text" {
+#     #                 raw_text = "I"
+#     #             }
+#     #         }
+
+#     #         vbox = {
+#     #             spacing = 100
+#     #             block "era_01" {
+#     #                 # Fill through override
+#     #                 visible = no
+#     #             }
+#     #         }
+
+#     #         expand = {}
+#     #     }
+
+#     #     hbox = {
+#     #         layoutpolicy_horizontal = expanding
+#     #         spacing = 200
+
+#     #         gate_tech_tree_era = {
+#     #             blockoverride "text" {
+#     #                 raw_text = "II"
+#     #             }
+#     #         }
+
+#     #         vbox = {
+#     #             spacing = 100
+#     #             block "era_02" {
+#     #                 # Fill through override
+#     #                 visible = no
+#     #             }
+#     #         }
+
+#     #         expand = {}
+#     #     }
+
+#     #     hbox = {
+#     #         layoutpolicy_horizontal = expanding
+#     #         spacing = 200
+#     #         background = {
+#     #             size = { 200% 100% }
+#     #             using = tech_tree_divider
+#     #             alpha = 0.15
+#     #             margin = { 1350 50 }
+#     #         }
+
+#     #         gate_tech_tree_era = {
+#     #             blockoverride "text" {
+#     #                 raw_text = "III"
+#     #             }
+#     #         }
+
+#     #         vbox = {
+#     #             spacing = 100
+#     #             block "era_03" {
+#     #                 # Fill through override
+#     #                 visible = no
+#     #             }
+#     #         }
+
+#     #         expand = {}
+#     #     }
+
+#     #     hbox = {
+#     #         layoutpolicy_horizontal = expanding
+#     #         spacing = 200
+
+#     #         gate_tech_tree_era = {
+#     #             blockoverride "text" {
+#     #                 raw_text = "IV"
+#     #             }
+#     #         }
+
+#     #         vbox = {
+#     #             spacing = 100
+#     #             block "era_04" {
+#     #                 # Fill through override
+#     #                 visible = no
+#     #             }
+#     #         }
+
+#     #         expand = {}
+#     #     }
+
+#     #     hbox = {
+#     #         layoutpolicy_horizontal = expanding
+#     #         spacing = 200
+#     #         background = {
+#     #             size = { 200% 100% }
+#     #             using = tech_tree_divider
+#     #             alpha = 0.15
+#     #             margin = { 1350 50 }
+#     #         }
+
+#     #         gate_tech_tree_era = {
+#     #             blockoverride "text" {
+#     #                 raw_text = "V"
+#     #             }
+#     #         }
+
+#     #         hbox = {
+#     #             spacing = 100
+#     #             block "era_05" {
+#     #                 # Fill through override
+#     #                 visible = no
+#     #             }
+#     #         }
+
+#     #         expand = {}
+#     #     }
+#     # }
+
+#     # type gate_tech_tree_era = widget {
+#     #     size = { 200 100 }
+#     #     background = {
+#     #         using = entry_bg_simple
+#     #     }
+#     #     textbox = {
+#     #         size = { 100% 100% }
+#     #         block "text" {
+#     #             raw_text = "gate_tech_tree_era - text"
+#     #         }
+#     #         align = center
+#     #         default_format = "#header"
+#     #         using = header_font_fancy_size
+#     #     }
+#     # }
+
+#     # type gate_tech_tree_row = hbox {
+#     #     layoutpolicy_horizontal = expanding
+#     #     spacing = 200
+
+#     #     block "items" {
+
+#     #     }
+
+#     #     expand = {}
+#     # }
+
+#     # type gate_tech_tree_node = widget {
+#     #     block "tech_visibility" {
+#     #         visible = "[Or(ScriptedGui.IsShown(GuiScope.SetRoot(Country.MakeScope).End), Technology.HasResearchedTech(GetPlayer.Self))]"
+#     #     }
+#     #     size = { 465 150 }
+#     #     tooltipwidget = {
+#     #         FancyTooltip_Technology_Tech_Tree = {}
+#     #     }
+
+#     #     block "context" {
+#     #         visible = no
+#     #         #datacontext = "[GetTechnology('some_technology')]"
+#     #         #datacontext = "[GetScriptedGui('some_technology')]"
+#     #     }
+
+#     #     block "tech_state" {
+
+#     #     }
+
+#     #     using = default_fade_in_out
+
+#     #     ### RESEARCH BUTTON BACKGROUND
+#     #     button = {
+#     #         size = { 80% 100% }
+#     #         parentanchor = right
+#     #         using = default_button_action
+#     #         enabled = "[And3(
+#     #                         ScriptedGui.IsValid(GuiScope.SetRoot(Country.MakeScope).End),
+#     #                         GetScriptedGui('sgui_gate_window_execute_research').IsValid(GuiScope.SetRoot(Country.MakeScope).AddScope('technology', Technology.MakeScope).End),
+#     #                         GreaterThanOrEqualTo_CFixedPoint(Country.MakeScope.Var('magic_innovation').GetValue, Technology.GetCost(Country.Self))
+#     #                     )]"
+#     #         using = technology_confirm_button_sound
+#     #         using = shimmer
+#     #         onclick = "[GetScriptedGui('sgui_gate_window_execute_research').Execute(GuiScope
+#     #                             .SetRoot(Country.MakeScope)
+#     #                             .AddScope('technology', Technology.MakeScope)
+#     #                             .AddScope('cost', MakeScopeValue(Technology.GetCost(Country.Self)))
+#     #                             .End
+#     #                         )]"
+#     #         onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(Country.MakeScope).AddScope('technology', Technology.MakeScope).End)]"
+#     #     }
+
+#     #     ### SIMPLE RECTANGULAR BACKGROUND GLOW
+#     #     block "glow_animation" {
+#     #         widget = {
+#     #             visible = "[And3(
+#     #                 ScriptedGui.IsValid(GuiScope.SetRoot(Country.MakeScope).End),
+#     #                 GetScriptedGui('sgui_gate_window_execute_research').IsValid(GuiScope.SetRoot(Country.MakeScope).AddScope('technology', Technology.MakeScope).End),
+#     #                 GreaterThanOrEqualTo_CFixedPoint(Country.MakeScope.Var('magic_innovation').GetValue, Technology.GetCost(Country.Self))
+#     #             )]"
+#     #             size = { 100% 100% }
+#     #             parentanchor = bottom|hcenter
+#     #             position = { 0 0 }
+#     #             using = ui_event_glow_animation_looping
+
+#     #             blockoverride "fade" {
+#     #                 modify_texture = {
+#     #                     texture = "gfx/interface/masks/fade_horizontal_center.dds"
+#     #                     spriteType = Corneredstretched
+#     #                     spriteborder = { 0 0 }
+#     #                     blend_mode = alphamultiply
+#     #                 }
+#     #             }
+#     #         }
+#     #     }
+
+#     #     ### BACKGROUND
+#     #     widget = {
+#     #         parentanchor = top|right
+
+#     #         size = { 80% 100% }
+
+#     #         background = {
+#     #             visible = "[Not(Technology.HasResearchedTech(GetPlayer.Self))]"
+#     #             using = entry_fancy_header_colored
+#     #             using = dark_area
+#     #         }
+
+#     #         background = {
+#     #             visible = "[Technology.HasResearchedTech(GetPlayer.Self)]"
+#     #             using = paper_bg
+#     #         }
+
+#     #         icon = {
+#     #             using = highlighted_square_selection
+#     #             visible = "[ObjectsEqual(GetPlayer.GetCurrentlyResearchedTechnology, Technology.Self)]"
+#     #         }
+#     #     }
+
+#     #     ### TECH NAME
+#     #     block "tech_name" {
+#     #         widget = {
+#     #             size = { 330 60 }
+#     #             parentanchor = right
+
+#     #             block "name_background" {
+#     #                 background = {
+#     #                     visible = "[Not(Technology.HasResearchedTech(GetPlayer.Self))]"
+#     #                     using = fade_right_entry_fancy_header_colored
+#     #                     using = dark_area
+#     #                 }
+
+#     #                 background = {
+#     #                     visible = "[Technology.HasResearchedTech(GetPlayer.Self)]"
+#     #                     using = paper_bg
+#     #                 }
+#     #             }
+
+#     #             textbox = {
+#     #                 text = "[Technology.GetNameNoFormatting]"
+#     #                 size = { 85% 100% }
+#     #                 margin = { 0 5 }
+#     #                 margin_left = 30
+#     #                 multiline = yes
+#     #                 elide = right
+#     #                 align = center|nobaseline
+#     #                 parentanchor = center
+
+#     #                 block "name_formatting" {}
+
+#     #                 block "alpha" {
+#     #                     alpha = 1
+#     #                 }
+
+#     #                 fontsize = 36
+#     #                 fontsize_min = 22
+#     #             }
+#     #         }
+#     #     }
+
+#     #     ### TECH ICON FRAME BACKGROUND
+#     #     block "round_frame" {
+#     #         icon = {
+#     #             texture = "gfx/interface/backgrounds/round_frame_dec.dds"
+#     #             parentanchor = vcenter
+#     #             size = { 180 180 }
+#     #             alwaystransparent = yes
+#     #         }
+#     #     }
+
+#     #     ### TECH ICON BUTTON
+#     #     button = {
+#     #         size = { 138 138 }
+#     #         texture = "[Technology.GetTexture]"
+#     #         parentanchor = vcenter
+#     #         position = { 20 0 }
+#     #         enabled = "[And3(
+#     #             ScriptedGui.IsValid(GuiScope.SetRoot(Country.MakeScope).End),
+#     #             GetScriptedGui('sgui_gate_window_execute_research').IsValid(GuiScope.SetRoot(Country.MakeScope).AddScope('technology', Technology.MakeScope).End),
+#     #             GreaterThanOrEqualTo_CFixedPoint(Country.MakeScope.Var('magic_innovation').GetValue, Technology.GetCost(Country.Self))
+#     #         )]"
+#     #         blockoverride "sound" {
+#     #             using = technology_confirm_button_sound
+#     #         }
+#     #         onclick = "[GetScriptedGui('sgui_gate_window_execute_research').Execute(GuiScope
+#     #                             .SetRoot(Country.MakeScope)
+#     #                             .AddScope('technology', Technology.MakeScope)
+#     #                             .AddScope('cost', MakeScopeValue(Technology.GetCost(Country.Self)))
+#     #                             .End
+#     #                         )]"
+#     #         onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(Country.MakeScope).AddScope('technology', Technology.MakeScope).End)]"
+#     #     }
+
+#     #     ### TECH ICON - HAS RESEARCHED OR IS RESEARCHING
+#     #     icon = {
+#     #         visible = "[Technology.HasResearchedTech(GetPlayer.Self)]"
+#     #         size = { 138 138 }
+#     #         texture = "[Technology.GetTexture]"
+#     #         parentanchor = vcenter
+#     #         position = { 20 0 }
+#     #     }
+
+#     #     ### UNLOCK ICONS
+#     #     textbox = {
+#     #         parentanchor = bottom|left
+#     #         position = { 200 -30 }
+#     #         size = { 200 30 }
+#     #         align = center
+#     #         raw_text = "@magic_innovation! [Technology.GetCost(GetPlayer.Self)|*0v]"
+#     #         using = fontsize_mega
+#     #     }
+
+#     #     ### ERA
+#     #     widget = {
+#     #         size = { 40 40 }
+#     #         parentanchor = left|bottom
+#     #         position = { 70 15 }
+
+#     #         icon = {
+#     #             size = { 100% 100% }
+#     #             texture = "gfx/interface/backgrounds/round_button_bg.dds"
+#     #             block "enabled" {}
+#     #         }
+
+#     #         textbox = {
+#     #             text = "TECHNOLOGY_TYPE_DESCRIPTION"
+#     #             align = center|nobaseline
+#     #             using = fontsize_xxl
+#     #             parentanchor = center
+#     #             block "alpha" {}
+#     #         }
+#     #     }
+#     # }
+
+#     # type gate_diplo_button = button_icon_round_action {
+#     #     using = tooltip_se
+
+#     #     block "datacontext" {}
+
+#     #     block "button_properties" {
+#     #         enabled = "[IsValid(DiplomaticAction.ExecuteAction)]"
+#     #         onclick = "[DiplomaticAction.ExecuteWithConfirmation]"
+#     #     }
+
+#     #     block "clicksound" {
+#     #         using = generic_diplomatic_action_sound
+#     #     }
+
+#     #     tooltipwidget = {
+#     #         FancyTooltip_DiplomaticActionWithTargetCountry = {}
+#     #     }
+
+#     #     blockoverride "size" {
+#     #         block "autonomy_button_size" {
+#     #             size = { 38	38 }
+#     #         }
+#     #     }
+
+#     #     blockoverride "icon_size" {
+#     #         size = { 60% 60% }
+#     #     }
+
+#     #     blockoverride "icon" {
+#     #         texture = "[DiplomaticAction.GetType.GetTexture]"
+#     #     }
+#     # }
+
+#     # type gate_projects = vbox {
+#     #     layoutpolicy_vertical = expanding
+#     #     spacing = 20
+#     #     margin = { 20 20 }
+
+#     #     textbox = {
+#     #         text = concept_gate_project_desc
+#     #         minimumsize = { 350 -1 }
+#     #         maximumsize = { 500 -1 }
+#     #         align = center
+#     #         multiline = yes
+#     #         autoresize = yes
+#     #         background = {
+#     #             using = entry_bg_simple
+#     #         }
+#     #         margin = { 20 20 }
+#     #     }
+
+#     #     divider_decorative = {}
+
+#     #     hbox = {
+#     #         layoutpolicy_horizontal = expanding
+#     #         layoutpolicy_vertical = expanding
+#     #         spacing = 100
+#     #         vbox = {
+#     #             layoutpolicy_horizontal = expanding
+#     #             layoutpolicy_vertical = expanding
+#     #             spacing = 20
+
+#     #             gate_left_icon_button = {
+#     #                 blockoverride "datacontext" {
+#     #                     datacontext = "[GetScriptedGui('gg_project_expand_research_institute')]"
+#     #                 }
+#     #                 blockoverride "button_content" {
+#     #                     text = button_project_expand_research_institute
+#     #                 }
+#     #                 blockoverride "icon" {
+#     #                     texture = "gfx/interface/icons/gui_icons/projects/gate_project_magic_innovation.dds"
+#     #                 }
+#     #                 blockoverride "tooltip" {
+#     #                     tooltipwidget = {
+#     #                         RegularTooltip = {
+#     #                             blockoverride "tooltip_content" {
+#     #                                 custom_tooltip_textbox = {
+#     #                                     text = "[concept_gate_project]"
+#     #                                     default_format = "#header"
+#     #                                 }
+#     #                                 custom_tooltip_textbox_with_empty_line = {
+#     #                                     text = je_gate_project_expand_research_institute_description
+#     #                                 }
+#     #                                 custom_tooltip_textbox = {
+#     #                                     text = "[ScriptedGui.BuildTooltip(GuiScope.SetRoot(Country.MakeScope).End)]"
+#     #                                 }
+#     #                             }
+#     #                         }
+#     #                     }
+#     #                 }
+#     #             }
+#     #             gate_left_icon_button = {
+#     #                 blockoverride "datacontext" {
+#     #                     datacontext = "[GetScriptedGui('gg_project_domain')]"
+#     #                 }
+#     #                 blockoverride "button_content" {
+#     #                     text = button_project_domain
+#     #                 }
+#     #                 blockoverride "icon" {
+#     #                     texture = "gfx/interface/icons/gui_icons/gate_magic_researcher.dds"
+#     #                 }
+#     #                 blockoverride "tooltip" {
+#     #                     tooltipwidget = {
+#     #                         RegularTooltip = {
+#     #                             blockoverride "tooltip_content" {
+#     #                                 custom_tooltip_textbox = {
+#     #                                     text = "[concept_gate_project]"
+#     #                                     default_format = "#header"
+#     #                                 }
+#     #                                 custom_tooltip_textbox_with_empty_line = {
+#     #                                     text = je_gate_project_domain_description
+#     #                                 }
+#     #                                 custom_tooltip_textbox = {
+#     #                                     text = "[ScriptedGui.BuildTooltip(GuiScope.SetRoot(Country.MakeScope).End)]"
+#     #                                 }
+#     #                             }
+#     #                         }
+#     #                     }
+#     #                 }
+#     #             }
+
+#     #             expand = {}
+#     #         }
+#     #         vbox = {
+#     #             layoutpolicy_horizontal = expanding
+#     #             layoutpolicy_vertical = expanding
+#     #             spacing = 20
+
+#     #             gate_left_icon_button = {
+#     #                 blockoverride "datacontext" {
+#     #                     datacontext = "[GetScriptedGui('gg_project_improve_mana_extraction')]"
+#     #                 }
+#     #                 blockoverride "button_content" {
+#     #                     text = button_project_improve_mana_extraction
+#     #                 }
+#     #                 blockoverride "icon" {
+#     #                     texture = "gfx/interface/icons/gui_icons/projects/gate_project_magic_crystal.dds"
+#     #                 }
+#     #                 blockoverride "tooltip" {
+#     #                     tooltipwidget = {
+#     #                         RegularTooltip = {
+#     #                             blockoverride "tooltip_content" {
+#     #                                 custom_tooltip_textbox = {
+#     #                                     text = "[concept_gate_project]"
+#     #                                     default_format = "#header"
+#     #                                 }
+#     #                                 custom_tooltip_textbox_with_empty_line = {
+#     #                                     text = je_gate_project_improve_mana_extraction_description
+#     #                                 }
+#     #                                 custom_tooltip_textbox = {
+#     #                                     text = "[ScriptedGui.BuildTooltip(GuiScope.SetRoot(Country.MakeScope).End)]"
+#     #                                 }
+#     #                             }
+#     #                         }
+#     #                     }
+#     #                 }
+#     #             }
+#     #             gate_left_icon_button = {
+#     #                 blockoverride "datacontext" {
+#     #                     datacontext = "[GetScriptedGui('gg_project_modernize_seed_selection')]"
+#     #                 }
+#     #                 blockoverride "button_content" {
+#     #                     text = button_project_modernize_seed_selection
+#     #                 }
+#     #                 blockoverride "icon" {
+#     #                     texture = "gfx/interface/icons/gui_icons/projects/gate_project_magic_seeds.dds"
+#     #                 }
+#     #                 blockoverride "tooltip" {
+#     #                     tooltipwidget = {
+#     #                         RegularTooltip = {
+#     #                             blockoverride "tooltip_content" {
+#     #                                 custom_tooltip_textbox = {
+#     #                                     text = "[concept_gate_project]"
+#     #                                     default_format = "#header"
+#     #                                 }
+#     #                                 custom_tooltip_textbox_with_empty_line = {
+#     #                                     text = je_gate_project_modernize_seed_selection_description
+#     #                                 }
+#     #                                 custom_tooltip_textbox = {
+#     #                                     text = "[ScriptedGui.BuildTooltip(GuiScope.SetRoot(Country.MakeScope).End)]"
+#     #                                 }
+#     #                             }
+#     #                         }
+#     #                     }
+#     #                 }
+#     #             }
+#     #             gate_left_icon_button = {
+#     #                 blockoverride "datacontext" {
+#     #                     datacontext = "[GetScriptedGui('gg_project_artificial_ecosystem')]"
+#     #                 }
+#     #                 blockoverride "button_content" {
+#     #                     text = button_project_artificial_ecosystem
+#     #                 }
+#     #                 blockoverride "icon" {
+#     #                     texture = "gfx/interface/icons/gui_icons/projects/gate_project_artificial_ecosystem.dds"
+#     #                 }
+#     #                 blockoverride "tooltip" {
+#     #                     tooltipwidget = {
+#     #                         RegularTooltip = {
+#     #                             blockoverride "tooltip_content" {
+#     #                                 custom_tooltip_textbox = {
+#     #                                     text = "[concept_gate_project]"
+#     #                                     default_format = "#header"
+#     #                                 }
+#     #                                 custom_tooltip_textbox_with_empty_line = {
+#     #                                     text = je_gate_project_artificial_ecosystem_description
+#     #                                 }
+#     #                                 custom_tooltip_textbox = {
+#     #                                     text = "[ScriptedGui.BuildTooltip(GuiScope.SetRoot(Country.MakeScope).End)]"
+#     #                                 }
+#     #                             }
+#     #                         }
+#     #                     }
+#     #                 }
+#     #             }
+
+#     #             expand = {}
+#     #         }
+#     #     }
+
+#     # }
+
+# }

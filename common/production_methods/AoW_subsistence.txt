@@ -1,0 +1,8 @@
+﻿pm_crystal_hunting = {
+	texture = "gfx/interface/icons/production_method_icons/subsistence_farming.dds"
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_crystal_add = 0.1
+		}
+	}
+}

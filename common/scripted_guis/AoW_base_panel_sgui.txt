@@ -1,0 +1,9 @@
+﻿gui_sidebar_aow_button = {
+	scope = country
+
+	effect = {
+		# set_variable = {
+        #     name = aow_base_panel_active_tab
+        # }  
+	}
+}

@@ -1,0 +1,9 @@
+﻿# This script is run on game creation
+GLOBAL = {
+
+   add_to_global_variable_list = {
+       name = custom_button_list_flag
+       target = flag:gui_sidebar_aow_button
+   }
+
+}
